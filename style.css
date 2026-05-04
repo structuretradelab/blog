@@ -74,8 +74,18 @@ nav a:hover {
 .section-title {
     text-align: center;
     font-size: 1.8rem;
-    margin-bottom: 30px;
+    margin-bottom: 5px;  /* reduced from 30px to make room for subtitle */
     color: #0a2540;
+}
+
+.section-subtitle {
+    text-align: center;
+    font-size: 1rem;
+    color: #4a5568;
+    margin-bottom: 30px;  /* moves the spacing here instead */
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .category-grid {
     display: flex;
