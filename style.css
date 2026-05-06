@@ -372,6 +372,15 @@ nav a:hover {
     margin-bottom: 15px;
 }
 
+.article-category a {
+    text-decoration: none;
+    color: #0a2540;
+}
+
+.article-category a:hover {
+    color: #00b4d8;
+}
+
 .article-title {
     font-size: 2.2rem;
     line-height: 1.3;
