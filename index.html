@@ -1,63 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-9HB3LHNF2W"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-9HB3LHNF2W');
-</script>
-
+     <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9HB3LHNF2W"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-9HB3LHNF2W');
+    </script>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Structure Trade Lab Blog — Essential forex trading education, risk management guides, position sizing tutorials, and trading psychology insights from 6+ years of experience.">
-    <title>Structure Trade Lab Blog — Essential Forex Trading Education</title>
+    <meta name="description" content="Forex trading blog with real lessons from 6+ years of experience. Learn leverage, risk management, position sizing, and trading psychology. No hype, just practical education.">
+    <title>Forex Trading Blog — Structure Trade Lab</title>
     <link rel="stylesheet" href="style.css">
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Blog",
+        "name": "Structure Trade Lab Blog",
+        "description": "Practical forex trading education from 6+ years of experience. No hype. No get-rich-quick promises.",
+        "url": "https://blog.structuretradelab.com",
+        "publisher": {
+            "@type": "Person",
+            "name": "Structure Trade Lab"
+        }
+    }
+    </script>
 </head>
 <body>
+
+    <!-- HEADER -->
     <header>
         <div class="container header-flex">
             <div class="logo">
-                <a href="https://structuretradelab.com">
+                <a href="https://blog.structuretradelab.com">
                     <h1>📊 Structure Trade Lab</h1>
                     <p>Trade with Structure. Trade with a Plan.</p>
                 </a>
             </div>
             <nav>
                 <a href="https://structuretradelab.com">Home</a>
-                <a href="/">Blog</a>
+                <a href="https://blog.structuretradelab.com">Blog</a>
                 <a href="https://tools.structuretradelab.com">Tools</a>
                 <a href="https://structuretradelab.com/about">About</a>
             </nav>
         </div>
     </header>
 
-    <section class="page-header">
+    <!-- HERO SECTION -->
+    <div class="blog-hero">
         <div class="container">
-            <h1>📝 The Structure Trade Lab Blog</h1>
-            <p>Real trading education from 6+ years in the trenches.</p>
+            <h1>Forex Trading Blog — Real Lessons from 6+ Years</h1>
+            <p>No hype. No get-rich-quick promises. Just practical education on leverage, risk management, position sizing, and trading psychology.</p>
         </div>
-    </section>
+    </div>
 
-  
+    <div class="container">
         
-    
+        <!-- FEATURED POSTS (3 latest) -->
+        <section class="featured-section">
+            <h2 class="section-title">⭐ Featured Articles</h2>
+            <p class="section-subtitle">Start here — the most essential guides for beginners</p>
+            <div class="featured-grid">
+                <div class="featured-item">
+                    <div class="sidebar-category">🚀 Getting Started</div>
+                    <h3><a href="/category/getting-started/how-to-start-forex-trading/">How to Start Forex Trading: A Step-by-Step Guide for Absolute Beginners</a></h3>
+                    <p>If you're reading this, you've probably heard about forex trading and want to know how to start. Let me be honest with you from the start...</p>
+                </div>
+                <!-- Add more featured posts as you publish -->
+                <div class="featured-item">
+                    <div class="sidebar-category">⚖️ Leverage</div>
+                    <h3><a href="#">What is Leverage? (Coming Soon)</a></h3>
+                    <p>Understanding leverage is the single most important skill for survival. Coming soon.</p>
+                </div>
+                <div class="featured-item">
+                    <div class="sidebar-category">🛡️ Risk Management</div>
+                    <h3><a href="#">Risk Management 101 (Coming Soon)</a></h3>
+                    <p>The 1% rule, position sizing, and why risk management matters more than your strategy.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CATEGORY GRID (All 8 categories) -->
+        <section class="categories-section">
+            <h2 class="section-title">📚 Browse by Topic</h2>
+            <p class="section-subtitle">Find the right guide for your level</p>
+            <div class="category-grid">
+                <a href="/category/getting-started/" class="category-card">🚀 Getting Started</a>
+                <a href="/category/leverage/" class="category-card">⚖️ Leverage & Margin</a>
+                <a href="/category/risk-management/" class="category-card">🛡️ Risk Management</a>
+                <a href="/category/position-sizing/" class="category-card">📐 Position Sizing</a>
+                <a href="/category/psychology/" class="category-card">🧠 Trading Psychology</a>
+                <a href="/category/strategy/" class="category-card">📈 Strategy & Analysis</a>
+                <a href="/category/mistakes/" class="category-card">⚠️ Common Mistakes</a>
+                <a href="/category/tools/" class="category-card">🔧 Tools & Resources</a>
+            </div>
+        </section>
+
+        <!-- LATEST POSTS GRID -->
+        <section class="latest-section">
+            <h2 class="section-title">📖 Latest Articles</h2>
+            <p class="section-subtitle">New content added regularly</p>
+            <div class="posts-grid">
+                
+                <!-- Post 1 -->
+                <div class="post-card">
+                    <div class="post-content">
+                        <div class="post-category">🚀 Getting Started</div>
+                        <h3 class="post-title"><a href="/category/getting-started/how-to-start-forex-trading/">How to Start Forex Trading: A Step-by-Step Guide for Absolute Beginners</a></h3>
+                        <p class="post-excerpt">If you're reading this, you've probably heard about forex trading and want to know how to start. Let me be honest with you from the start...</p>
+                        <div class="post-meta">
+                            <span>📅 May 2026</span>
+                            <a href="/category/getting-started/how-to-start-forex-trading/" class="read-more">Read more →</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Post 2 (placeholder) -->
+                <div class="post-card">
+                    <div class="post-content">
+                        <div class="post-category">⚖️ Leverage</div>
+                        <h3 class="post-title"><a href="#">What is Leverage in Forex? (Coming Soon)</a></h3>
+                        <p class="post-excerpt">A complete beginner's guide to understanding leverage, margin calls, and how to use leverage safely.</p>
+                        <div class="post-meta">
+                            <span>📅 Coming Soon</span>
+                            <a href="#" class="read-more">Read more →</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Post 3 (placeholder) -->
+                <div class="post-card">
+                    <div class="post-content">
+                        <div class="post-category">🛡️ Risk Management</div>
+                        <h3 class="post-title"><a href="#">Risk Management 101 (Coming Soon)</a></h3>
+                        <p class="post-excerpt">Learn the 1% rule, proper stop loss placement, and how to protect your trading capital from big losses.</p>
+                        <div class="post-meta">
+                            <span>📅 Coming Soon</span>
+                            <a href="#" class="read-more">Read more →</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Add more posts as you publish (6-9 total) -->
+                
+            </div>
+            <div class="view-all">
+                <a href="/category/" class="btn-outline">View All Categories →</a>
+            </div>
+        </section>
+
+        <!-- SOFT CTA (Not Aggressive) -->
+        <div class="blog-cta">
+            <h3>Ready to Start Your Trading Journey?</h3>
+            <p>I've documented my entire broker setup — tight spreads, instant withdrawals, and why I've stuck with Exness for years.</p>
+            <a href="https://structuretradelab.com/broker-setup/" class="btn">View My Broker Setup →</a>
+            <p class="disclosure-small">📌 I'm an Introducing Broker. I earn commission when you trade. No extra cost to you.</p>
+        </div>
+        
+    </div>
+
+    <!-- FOOTER -->
     <footer>
         <div class="container">
             <div class="footer-disclosure">
-                <strong>Disclosure:</strong> Structure Trade Lab is an independent educational website. I may participate in affiliate programs and earn commissions when you trade through links on this site. This does not affect your trading conditions or costs. I only recommend brokers I personally use and trust.
+                <strong>Disclosure:</strong> Structure Trade Lab is an independent educational website. As an Introducing Broker (IB), I may earn commissions when you trade through links on this site. This does not affect your trading conditions or costs.
             </div>
             <div class="footer-disclosure">
-                <strong>Risk Warning:</strong> Trading forex and CFDs carries a high level of risk. Past performance does not guarantee future results. The information on this site is for educational purposes only and should not be considered financial advice. Only trade with money you can afford to lose.
+                <strong>Risk Warning:</strong> Trading forex and CFDs carries a high level of risk. Past performance does not guarantee future results. Only trade with money you can afford to lose.
             </div>
             <p>© <span id="current-year"></span> Structure Trade Lab. All rights reserved.</p>
             <p style="margin-top: 10px;">
                 <a href="https://structuretradelab.com">Home</a> | 
-                <a href="/">Blog</a> | 
+                <a href="https://blog.structuretradelab.com">Blog</a> | 
                 <a href="https://tools.structuretradelab.com">Tools</a> |
                 <a href="https://structuretradelab.com/about">About</a>
             </p>
