@@ -16,7 +16,8 @@
     <meta name="keywords" content="demo trading explained, forex demo account, how to use demo account, demo trading for beginners, practice trading">
     <meta name="author" content="Structure Trade Lab">
     <title>Demo Trading Explained: Why You Need 3 Months Before Going Live | Structure Trade Lab</title>
-    <link rel="stylesheet" href="https://structuretradelab.com/assets/css/style.css">
+    <link rel="stylesheet" href="https://structuretradelab.com/assets/css/common.css">
+    <link rel="stylesheet" href="https://structuretradelab.com/assets/css/article.css.css">
     
     <script type="application/ld+json">
     {
@@ -55,7 +56,23 @@
                     <p>Trade with Structure. Trade with a Plan.</p>
                 </a>
             </div>
-            <nav>
+            
+            <div style="display: flex; align-items: center; gap: 15px;">
+                <!-- Dark Mode Toggle Button -->
+                 <button class="dark-mode-toggle" id="darkModeToggle" aria-label="Dark mode">
+                    <span class="toggle-icon">🌙</span>
+                    <span class="toggle-text">Dark</span>
+                </button>
+                
+                <!-- Hamburger Button -->
+                 <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            
+            <nav id="mainNav">
                 <a href="https://structuretradelab.com">Home</a>
                 <a href="/">Blog</a>
                 <a href="https://tools.structuretradelab.com">Tools</a>
@@ -63,6 +80,9 @@
             </nav>
         </div>
     </header>
+    
+    <!-- Overlay for mobile menu -->
+     <div class="menu-overlay" id="menuOverlay"></div>
 
     <!-- ARTICLE -->
     <article class="article-container">
@@ -266,8 +286,7 @@
         </div>
     </footer>
 
-    <script>
-        document.getElementById('current-year').textContent = new Date().getFullYear();
-    </script>
+    <!-- JavaScript for Hamburger Menu & Year -->
+    <script src="https://structuretradelab.com/assets/js/common.js" defer></script>
 </body>
 </html>
