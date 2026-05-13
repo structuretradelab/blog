@@ -1,22 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-     <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9HB3LHNF2W"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-9HB3LHNF2W');
-    </script>
-    
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Forex trading blog with real lessons from 6+ years of experience. Learn leverage, risk management, position sizing, and trading psychology. No hype, just practical education.">
+    <meta name="description"
+        content="Forex trading blog with real lessons from 6+ years of experience. Learn leverage, risk management, position sizing, and trading psychology. No hype, just practical education.">
     <title>Forex Trading Blog — Structure Trade Lab</title>
+
+    <script>
+        (function () {
+            const savedTheme = localStorage.getItem('theme');
+            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+                document.documentElement.classList.add('dark-mode');
+            }
+        })();
+    </script>
+    
     <link rel="stylesheet" href="https://structuretradelab.com/assets/css/common.css">
     <link rel="stylesheet" href="https://structuretradelab.com/assets/css/blog.css">
-    
+
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -31,6 +36,7 @@
     }
     </script>
 </head>
+
 <body>
 
     <!-- HEADER -->
@@ -42,22 +48,22 @@
                     <p>Trade with Structure. Trade with a Plan.</p>
                 </a>
             </div>
-            
+
             <div style="display: flex; align-items: center; gap: 15px;">
                 <!-- Dark Mode Toggle Button -->
-                 <button class="dark-mode-toggle" id="darkModeToggle" aria-label="Dark mode">
+                <button class="dark-mode-toggle" id="darkModeToggle" aria-label="Dark mode">
                     <span class="toggle-icon">🌙</span>
                     <span class="toggle-text">Dark</span>
                 </button>
-                
+
                 <!-- Hamburger Button -->
-                 <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
+                <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
                     <span></span>
                     <span></span>
                     <span></span>
                 </button>
             </div>
-            
+
             <nav id="mainNav">
                 <a href="https://structuretradelab.com">Home</a>
                 <a href="/">Blog</a>
@@ -66,21 +72,22 @@
             </nav>
         </div>
     </header>
-    
+
     <!-- Overlay for mobile menu -->
-     <div class="menu-overlay" id="menuOverlay"></div>
+    <div class="menu-overlay" id="menuOverlay"></div>
 
 
     <!-- HERO SECTION -->
     <div class="blog-hero">
         <div class="container">
             <h1>Forex Trading Blog — Real Lessons from 6+ Years</h1>
-            <p>No hype. No get-rich-quick promises. Just practical education on leverage, risk management, position sizing, and trading psychology.</p>
+            <p>No hype. No get-rich-quick promises. Just practical education on leverage, risk management, position
+                sizing, and trading psychology.</p>
         </div>
     </div>
 
     <div class="container">
-        
+
         <!-- FEATURED POSTS (3 latest) -->
         <section class="featured-section">
             <h2 class="section-title">⭐ Featured Articles</h2>
@@ -88,19 +95,25 @@
             <div class="featured-grid">
                 <div class="featured-item">
                     <div class="sidebar-category">🚀 Getting Started</div>
-                    <h3><a href="/category/getting-started/how-to-start-forex-trading/">How to Start Forex Trading: A Step-by-Step Guide for Absolute Beginners</a></h3>
-                    <p>If you're reading this, you've probably heard about forex trading and want to know how to start. Let me be honest with you from the start...</p>
+                    <h3><a href="/category/getting-started/how-to-start-forex-trading/">How to Start Forex Trading: A
+                            Step-by-Step Guide for Absolute Beginners</a></h3>
+                    <p>If you're reading this, you've probably heard about forex trading and want to know how to start.
+                        Let me be honest with you from the start...</p>
                 </div>
                 <!-- Add more featured posts as you publish -->
                 <div class="featured-item">
                     <div class="sidebar-category">⚖️ Leverage & Margin</div>
-                    <h3><a href="/category/leverage-&-margin/what-is-leverage-in-forex/">What is Leverage in Forex? A Complete Beginner's Guide</a></h3>
-                    <p>If there's one concept in forex that confuses beginners more than any other, it's leverage. Learn how it works, the risks,...</p>
+                    <h3><a href="/category/leverage-&-margin/what-is-leverage-in-forex/">What is Leverage in Forex? A
+                            Complete Beginner's Guide</a></h3>
+                    <p>If there's one concept in forex that confuses beginners more than any other, it's leverage. Learn
+                        how it works, the risks,...</p>
                 </div>
                 <div class="featured-item">
                     <div class="sidebar-category">🛡️ Risk Management</div>
-                    <h3><a href="category/risk-management/risk-management-101/">Risk Management 101: The Golden Rules Every Trader Must Follow</a></h3>
-                    <p>The single most important skill in trading. Learn the 1% rule, stop losses, risk reward, and how to protect your capital...</p>
+                    <h3><a href="category/risk-management/risk-management-101/">Risk Management 101: The Golden Rules
+                            Every Trader Must Follow</a></h3>
+                    <p>The single most important skill in trading. Learn the 1% rule, stop losses, risk reward, and how
+                        to protect your capital...</p>
                 </div>
             </div>
         </section>
@@ -126,48 +139,56 @@
             <h2 class="section-title">📖 Latest Articles</h2>
             <p class="section-subtitle">New content added regularly</p>
             <div class="posts-grid">
-                
+
                 <!-- Post 1 -->
                 <div class="post-card">
                     <div class="post-content">
                         <div class="post-category">🚀 Getting Started</div>
-                        <h3 class="post-title"><a href="/category/getting-started/how-to-start-forex-trading/">How to Start Forex Trading: A Step-by-Step Guide for Absolute Beginners</a></h3>
-                        <p class="post-excerpt">If you're reading this, you've probably heard about forex trading and want to know how to start. Let me be honest with you from the start...</p>
+                        <h3 class="post-title"><a href="/category/getting-started/how-to-start-forex-trading/">How to
+                                Start Forex Trading: A Step-by-Step Guide for Absolute Beginners</a></h3>
+                        <p class="post-excerpt">If you're reading this, you've probably heard about forex trading and
+                            want to know how to start. Let me be honest with you from the start...</p>
                         <div class="post-meta">
                             <span>📅 May 2026</span>
-                            <a href="/category/getting-started/how-to-start-forex-trading/" class="read-more">Read more →</a>
+                            <a href="/category/getting-started/how-to-start-forex-trading/" class="read-more">Read more
+                                →</a>
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Post 2 (placeholder) -->
                 <div class="post-card">
                     <div class="post-content">
                         <div class="post-category">⚖️ Leverage & Margin</div>
-                        <h3 class="post-title"><a href="/category/leverage-&-margin/what-is-leverage-in-forex/">What is Leverage in Forex? A Complete Beginner's Guide</a></h3>
-                        <p class="post-excerpt">If there's one concept in forex that confuses beginners more than any other, it's leverage. Learn how it works, the risks,...</p>
+                        <h3 class="post-title"><a href="/category/leverage-&-margin/what-is-leverage-in-forex/">What is
+                                Leverage in Forex? A Complete Beginner's Guide</a></h3>
+                        <p class="post-excerpt">If there's one concept in forex that confuses beginners more than any
+                            other, it's leverage. Learn how it works, the risks,...</p>
                         <div class="post-meta">
                             <span>📅 Coming Soon</span>
-                            <a href="/category/leverage-&-margin/what-is-leverage-in-forex/" class="read-more">Read more →</a>
+                            <a href="/category/leverage-&-margin/what-is-leverage-in-forex/" class="read-more">Read more
+                                →</a>
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Post 3 (placeholder) -->
                 <div class="post-card">
                     <div class="post-content">
                         <div class="post-category">🛡️ Risk Management</div>
-                        <h3 class="post-title"><a href="category/risk-management/risk-management-101/">Risk Management 101: The Golden Rules Every Trader Must Follow</a></h3>
-                        <p class="post-excerpt">The single most important skill in trading. Learn the 1% rule, stop losses, risk reward, and how to protect your capital...</p>
+                        <h3 class="post-title"><a href="category/risk-management/risk-management-101/">Risk Management
+                                101: The Golden Rules Every Trader Must Follow</a></h3>
+                        <p class="post-excerpt">The single most important skill in trading. Learn the 1% rule, stop
+                            losses, risk reward, and how to protect your capital...</p>
                         <div class="post-meta">
                             <span>📅 Coming Soon</span>
                             <a href="category/risk-management/risk-management-101/" class="read-more">Read more →</a>
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Add more posts as you publish (6-9 total) -->
-                
+
             </div>
             <div class="view-all">
                 <a href="/category/" class="btn-outline">View All Categories →</a>
@@ -175,7 +196,7 @@
         </section>
 
         <!-- SOFT CTA (Not Aggressive) -->
-         <!--
+        <!--
         <div class="blog-cta">
             <h3>Ready to Start Your Trading Journey?</h3>
             <p>I've documented my entire broker setup — tight spreads, instant withdrawals, and why I've stuck with Exness for years.</p>
@@ -183,29 +204,33 @@
             <p class="disclosure-small">📌 I'm an Introducing Broker. I earn commission when you trade. No extra cost to you.</p>
         </div>
         -->
-        
+
     </div>
 
     <!-- FOOTER -->
     <footer>
         <div class="container">
             <div class="footer-disclosure">
-                <strong>Disclosure:</strong> Structure Trade Lab is an independent educational website. As an Introducing Broker (IB), I may earn commissions when you trade through links on this site. This does not affect your trading conditions or costs.
+                <strong>Disclosure:</strong> Structure Trade Lab is an independent educational website. As an
+                Introducing Broker (IB), I may earn commissions when you trade through links on this site. This does not
+                affect your trading conditions or costs.
             </div>
             <div class="footer-disclosure">
-                <strong>Risk Warning:</strong> Trading forex and CFDs carries a high level of risk. Past performance does not guarantee future results. Only trade with money you can afford to lose.
+                <strong>Risk Warning:</strong> Trading forex and CFDs carries a high level of risk. Past performance
+                does not guarantee future results. Only trade with money you can afford to lose.
             </div>
             <p>© <span id="current-year"></span> Structure Trade Lab. All rights reserved.</p>
             <p style="margin-top: 10px;">
-                <a href="https://structuretradelab.com">Home</a> | 
-                <a href="/">Blog</a> | 
+                <a href="https://structuretradelab.com">Home</a> |
+                <a href="/">Blog</a> |
                 <a href="https://tools.structuretradelab.com">Tools</a> |
                 <a href="https://structuretradelab.com/about">About</a>
             </p>
         </div>
     </footer>
-    
+
     <!-- JavaScript for Hamburger Menu & Year -->
     <script src="https://structuretradelab.com/assets/js/common.js" defer></script>
 </body>
+
 </html>
