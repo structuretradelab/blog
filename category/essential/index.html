@@ -21,15 +21,32 @@
     <link rel="stylesheet" href="https://structuretradelab.com/assets/css/each-category.css">
 </head>
 <body>
+    <!-- HEADER -->
     <header>
         <div class="container header-flex">
             <div class="logo">
                 <a href="https://structuretradelab.com">
-                    <h1>📐 Structure Trade Lab</h1>
+                    <h1>📊 Structure Trade Lab</h1>
                     <p>Trade with Structure. Trade with a Plan.</p>
                 </a>
             </div>
-            <nav>
+            
+            <div style="display: flex; align-items: center; gap: 15px;">
+                <!-- Dark Mode Toggle Button -->
+                 <button class="dark-mode-toggle" id="darkModeToggle" aria-label="Dark mode">
+                    <span class="toggle-icon">🌙</span>
+                    <span class="toggle-text">Dark</span>
+                </button>
+                
+                <!-- Hamburger Button -->
+                 <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            
+            <nav id="mainNav">
                 <a href="https://structuretradelab.com">Home</a>
                 <a href="/">Blog</a>
                 <a href="https://tools.structuretradelab.com">Tools</a>
@@ -37,6 +54,10 @@
             </nav>
         </div>
     </header>
+    
+    <!-- Overlay for mobile menu -->
+     <div class="menu-overlay" id="menuOverlay"></div>
+     
 
     <section class="page-header">
         <div class="container">
