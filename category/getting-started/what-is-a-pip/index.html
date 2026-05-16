@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="What is a pip in forex? Learn the definition of a pip, how to calculate pip value, and why it matters for position sizing and risk management.">
+    <meta name="keywords" content="what is a pip in forex, pip definition, pip value calculator, how to calculate pips, forex pip explained">
+    <meta name="author" content="Structure Trade Lab">
+    <title>What is a Pip in Forex? How to Calculate Pip Value | Structure Trade Lab</title>
+
+    <script>
+        (function () {
+            const savedTheme = localStorage.getItem('theme');
+            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+                document.documentElement.classList.add('dark-mode');
+            }
+        })();
+    </script>
+    
+    <link rel="stylesheet" href="https://structuretradelab.com/assets/css/common.css">
+    <link rel="stylesheet" href="https://structuretradelab.com/assets/css/article.css">
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "What is a Pip in Forex? How to Calculate Pip Value",
+        "description": "What is a pip in forex? Learn the definition of a pip, how to calculate pip value, and why it matters for position sizing and risk management.",
+        "image": "https://blog.structuretradelab.com/category/getting-started/what-is-a-pip/pip-explained-featured.jpg",
+        "author": {
+            "@type": "Person",
+            "name": "Structure Trade Lab",
+            "url": "https://structuretradelab.com/about"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Structure Trade Lab"
+        },
+        "datePublished": "2026-05-16",
+        "dateModified": "2026-05-16",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://blog.structuretradelab.com/category/getting-started/what-is-a-pip/"
+        },
+        "keywords": "what is a pip in forex, pip definition, how to calculate pips, forex pip explained"
+    }
+    </script>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="container header-flex">
+            <div class="logo">
+                <a href="https://structuretradelab.com">
+                    <h1>📊 Structure Trade Lab</h1>
+                    <p>Trade with Structure. Trade with a Plan.</p>
+                </a>
+            </div>
+            
+            <div style="display: flex; align-items: center; gap: 15px;">
+                <!-- Dark Mode Toggle Button -->
+                <button class="dark-mode-toggle" id="darkModeToggle" aria-label="Dark mode">
+                    <span class="toggle-icon">🌙</span>
+                    <span class="toggle-text">Dark</span>
+                </button>
+                
+                <!-- Hamburger Button -->
+                <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            
+            <nav id="mainNav">
+                <a href="https://structuretradelab.com">Home</a>
+                <a href="/">Blog</a>
+                <a href="https://tools.structuretradelab.com">Tools</a>
+                <a href="https://structuretradelab.com/about">About</a>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Overlay for mobile menu -->
+    <div class="menu-overlay" id="menuOverlay"></div>
+
+    <!-- ARTICLE -->
+    <article class="article-container">
+        <div class="article-header">
+            <div class="article-category"><a href="/category/getting-started/">🚀 Getting Started (Beginners)</a></div>
+            <h1 class="article-title">What is a Pip in Forex? How to Calculate Pip Value</h1>
+            <div class="article-meta">
+                <span>📅 Published: May 2026</span>
+                <span>📖 7 min read</span>
+                <span>🏷️ Category: Getting Started</span>
+            </div>
+        </div>
+        
+        <!-- FEATURED IMAGE -->
+        <div class="featured-image">
+            <img src="pip-explained-featured.jpg" 
+                 alt="Forex chart with magnifying glass zooming into price levels showing 1.1051 to 1.1050 movement with plus 1 pip" 
+                 loading="eager"
+                 width="800"
+                 height="450">
+        </div>
+        
+        <div class="article-content">
+
+            <p>When I first started trading, I kept hearing the word "pip" and had no idea what it meant. "The pair moved 50 pips." "I lost 20 pips on that trade." It sounded like a secret language.</p>
+
+            <p><strong>A pip is the smallest price move in forex.</strong> Understanding pips is essential because everything in trading — your profit, loss, risk, and position size — is measured in pips.</p>
+
+            <p>In this guide, I'll explain exactly what a pip is, how to calculate pip value, and why it's the foundation of position sizing and risk management.</p>
+
+            <div class="info-box">
+                <strong>💡 Key Takeaway:</strong> For most pairs, 1 pip = 0.0001. For a standard lot, 1 pip = $10. For a micro lot, 1 pip = $0.10.
+            </div>
+
+            <!-- TABLE OF CONTENTS -->
+            <div class="table-of-contents">
+                <h3>📑 What You'll Learn</h3>
+                <ul>
+                    <li><a href="#what-is-a-pip">What is a Pip?</a></li>
+                    <li><a href="#pip-examples">Pip Examples in Real Trading</a></li>
+                    <li><a href="#pipettes">What About Pipettes (Fractional Pips)?</a></li>
+                    <li><a href="#pip-value">How to Calculate Pip Value</a></li>
+                    <li><a href="#pip-calculator">Pip Value Reference Table</a></li>
+                    <li><a href="#why-it-matters">Why Pips Matter for Risk Management</a></li>
+                </ul>
+            </div>
+
+            <!-- INTERNAL LINK TO POST #2 -->
+            <div class="internal-link">
+                📖 <strong>Related Reading:</strong> <a href="/category/getting-started/what-is-forex-trading/">What is Forex Trading?</a> — If you're new, start here to understand the market basics.
+            </div>
+
+            <!-- SECTION 1 -->
+            <h2 id="what-is-a-pip">What is a Pip?</h2>
+            
+            <p><strong>PIP</strong> stands for <strong>Percentage in Point</strong>. It's the smallest price change in a currency pair.</p>
+            
+            <p>For most currency pairs, a pip is the 4th decimal place: <strong>0.0001</strong>.</p>
+            
+            <p><strong>Example:</strong> If EUR/USD moves from 1.1000 to 1.1001, that's a 1 pip move.</p>
+            
+            <div class="info-box">
+                <strong>📊 The Exception — JPY Pairs:</strong> For pairs involving the Japanese Yen (USD/JPY, EUR/JPY, GBP/JPY), a pip is the 2nd decimal place: <strong>0.01</strong>. If USD/JPY moves from 150.00 to 150.01, that's a 1 pip move.
+            </div>
+
+            <!-- SECTION 2 -->
+            <h2 id="pip-examples">Pip Examples in Real Trading</h2>
+            
+            <table class="spreads-table">
+                <thead>
+                    <tr><th>Pair</th><th>Price Moves From</th><th>Price Moves To</th><th>Pip Movement</th></tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>EUR/USD</td>
+                        <td>1.1050</td>
+                        <td>1.1070</td>
+                        <td>20 pips</td>
+                    </tr>
+                    <tr>
+                        <td>GBP/USD</td>
+                        <td>1.2800</td>
+                        <td>1.2825</td>
+                        <td>25 pips</td>
+                    </tr>
+                    <tr>
+                        <td>USD/JPY</td>
+                        <td>150.00</td>
+                        <td>150.50</td>
+                        <td>50 pips</td>
+                    </tr>
+                    <tr>
+                        <td>AUD/USD</td>
+                        <td>0.6700</td>
+                        <td>0.6715</td>
+                        <td>15 pips</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- SECTION 3 -->
+            <h2 id="pipettes">What About Pipettes (Fractional Pips)?</h2>
+            
+            <p>Most brokers now show <strong>pipettes</strong> — a 5th decimal place (or 3rd for JPY pairs). A pipette is one-tenth of a pip.</p>
+            
+            <p><strong>Example:</strong> If EUR/USD shows 1.10505 and moves to 1.10515, that's a 1 pipette move (0.1 pips).</p>
+            
+            <div class="info-box">
+                <strong>📌 Pro Tip:</strong> Don't worry about pipettes. Most traders think in whole pips. Your profit/loss will be the same. Pipettes just give more price precision.
+            </div>
+
+            <!-- SECTION 4 -->
+            <h2 id="pip-value">How to Calculate Pip Value</h2>
+            
+            <p><strong>Pip value tells you how much money you gain or lose per pip of movement.</strong> This depends on three things:</p>
+            <ul>
+                <li>The currency pair you're trading</li>
+                <li>Your lot size</li>
+                <li>Your account currency</li>
+            </ul>
+            
+            <p><strong>The simple formula (for USD accounts):</strong></p>
+            
+            <ul>
+                <li>1 standard lot = <strong>$10 per pip</strong></li>
+                <li>1 mini lot (0.1) = <strong>$1 per pip</strong></li>
+                <li>1 micro lot (0.01) = <strong>$0.10 per pip</strong></li>
+                <li>1 nano lot (0.001) = <strong>$0.01 per pip</strong></li>
+            </ul>
+            
+            <div class="info-box">
+                <strong>📊 Example:</strong> If you trade 0.1 lots (1 mini lot) on EUR/USD and the price moves 20 pips, you gain or lose $20 (20 pips × $1 per pip).
+            </div>
+
+            <!-- INTERNAL LINK TO POST #6 -->
+            <div class="internal-link">
+                📖 <strong>Related Reading:</strong> <a href="/category/position-sizing/position-sizing-explained/">Position Sizing Explained</a> — Pip value is the foundation of position sizing. Master both.
+            </div>
+
+            <!-- SECTION 5 -->
+            <h2 id="pip-calculator">Pip Value Reference Table</h2>
+            
+            <table class="spreads-table">
+                <thead>
+                    <tr><th>Lot Type</th><th>Units</th><th>Pip Value (USD pairs)</th><th>Best For</th></tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Standard Lot (1.0) </td>
+                        <td>100,000</td>
+                        <td>$10 per pip</td>
+                        <td>Large accounts, professionals</td>
+                    </tr>
+                    <tr>
+                        <td>Mini Lot (0.1) </td>
+                        <td>10,000</td>
+                        <td>$1 per pip</td>
+                        <td>Intermediate traders</td>
+                    </tr>
+                    <tr>
+                        <td>Micro Lot (0.01)</td>
+                        <td>1,000</td>
+                        <td>$0.10 per pip</td>
+                        <td>Beginners, small accounts</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="warning-box">
+                <strong>⚠️ Important:</strong> Pip values vary slightly for pairs where USD is not the quote currency (like USD/JPY, USD/CAD). But for beginners trading EUR/USD or GBP/USD, use the $10/$1/$0.10 rule.
+            </div>
+
+            <!-- SECTION 6 -->
+            <h2 id="why-it-matters">Why Pips Matter for Risk Management</h2>
+            
+            <p>Understanding pips is essential for position sizing. Here's why:</p>
+            
+            <ul>
+                <li><strong>Stop loss distance is measured in pips</strong> — "I'll put my stop loss 20 pips below entry"</li>
+                <li><strong>Risk per trade determines position size</strong> — Risk $50 ÷ (20 pips × $10) = 0.25 lots</li>
+                <li><strong>Profit targets are measured in pips</strong> — "I'll take profit at +40 pips"</li>
+            </ul>
+            
+            <div class="info-box">
+                <strong>📌 Example:</strong> You have a $1,000 account. You risk 1% ($10). Your stop loss is 20 pips. Pip value = $0.10 per micro lot. Position size = $10 ÷ (20 × $0.10) = 5 micro lots (0.05).
+            </div>
+
+            <!-- INTERNAL LINK TO POST #5 -->
+            <div class="internal-link">
+                📖 <strong>Related Reading:</strong> <a href="/category/risk-management/risk-management-101/">Risk Management 101</a> — Apply pip values to your 1% risk rule.
+            </div>
+
+            <hr>
+
+            <!-- CONCLUSION -->
+            <h2>Pips Are Your Trading Language</h2>
+            <p>Once you understand pips, everything else becomes clearer. Stop losses, profit targets, position sizing, risk management — it all comes back to pips.</p>
+            
+            <p>I still think in pips. "I'll risk 20 pips to make 40." "My stop is 15 pips away." It's the simplest, most consistent way to measure the market.</p>
+            
+            <p><strong>Memorize the pip values for your lot sizes. Use them for every trade. And always calculate your pip risk before entering.</strong></p>
+
+            <!-- INTERNAL LINK TO POST #1 -->
+            <div class="internal-link">
+                📖 <strong>Related Reading:</strong> <a href="/category/getting-started/how-to-start-forex-trading/">How to Start Forex Trading</a> — Your complete roadmap. Apply your pip knowledge to real trades.
+            </div>
+
+        </div>
+
+        <!-- SOFT CTA -->
+        <div class="blog-cta">
+            <h3>📌 Ready to Start Your Trading Journey?</h3>
+            <p>I've documented my entire broker setup — tight spreads, instant withdrawals, and why I've stuck with Exness for years.</p>
+            <a href="https://structuretradelab.com/broker-setup/" class="btn">View My Broker Setup →</a>
+            <p class="disclosure-small">📌 I'm an Introducing Broker. I earn commission when you trade. No extra cost to you.</p>
+        </div>
+
+    </article>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-disclosure">
+                <strong>Disclosure:</strong> Structure Trade Lab is an independent educational website. As an Introducing Broker (IB), I may earn commissions when you trade through links on this site. This does not affect your trading conditions or costs.
+            </div>
+            <div class="footer-disclosure">
+                <strong>Risk Warning:</strong> Trading forex and CFDs carries a high level of risk. Past performance does not guarantee future results. Only trade with money you can afford to lose.
+            </div>
+            <p>© <span id="current-year"></span> Structure Trade Lab. All rights reserved.</p>
+            <p style="margin-top: 10px;">
+                <a href="https://structuretradelab.com">Home</a> | 
+                <a href="/">Blog</a> | 
+                <a href="https://tools.structuretradelab.com">Tools</a> |
+                <a href="https://structuretradelab.com/about">About</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Hamburger Menu & Year -->
+    <script src="https://structuretradelab.com/assets/js/common.js" defer></script>
+</body>
+</html>
