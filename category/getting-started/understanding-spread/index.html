@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Understanding spread in forex: fixed vs variable spreads explained. Learn what spreads are, how they affect your trading costs, and which account type is right for you.">
+    <meta name="keywords" content="forex spread explained, fixed vs variable spread, what is spread in forex, trading costs forex, spread trading">
+    <meta name="author" content="Structure Trade Lab">
+    <title>Understanding Spread in Forex: Fixed vs Variable Spreads Explained | Structure Trade Lab</title>
+
+    <script>
+        (function () {
+            const savedTheme = localStorage.getItem('theme');
+            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+                document.documentElement.classList.add('dark-mode');
+            }
+        })();
+    </script>
+    
+    <link rel="stylesheet" href="https://structuretradelab.com/assets/css/common.css">
+    <link rel="stylesheet" href="https://structuretradelab.com/assets/css/article.css">
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Understanding Spread in Forex: Fixed vs Variable Spreads Explained",
+        "description": "Understanding spread in forex: fixed vs variable spreads explained. Learn what spreads are, how they affect your trading costs, and which account type is right for you.",
+        "image": "https://blog.structuretradelab.com/category/getting-started/understanding-spread/spread-explained-featured.jpg",
+        "author": {
+            "@type": "Person",
+            "name": "Structure Trade Lab",
+            "url": "https://structuretradelab.com/about"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Structure Trade Lab"
+        },
+        "datePublished": "2026-05-16",
+        "dateModified": "2026-05-16",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://blog.structuretradelab.com/category/getting-started/understanding-spread/"
+        },
+        "keywords": "forex spread explained, fixed vs variable spread, what is spread in forex, trading costs forex"
+    }
+    </script>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="container header-flex">
+            <div class="logo">
+                <a href="https://structuretradelab.com">
+                    <h1>📊 Structure Trade Lab</h1>
+                    <p>Trade with Structure. Trade with a Plan.</p>
+                </a>
+            </div>
+            
+            <div style="display: flex; align-items: center; gap: 15px;">
+                <!-- Dark Mode Toggle Button -->
+                <button class="dark-mode-toggle" id="darkModeToggle" aria-label="Dark mode">
+                    <span class="toggle-icon">🌙</span>
+                    <span class="toggle-text">Dark</span>
+                </button>
+                
+                <!-- Hamburger Button -->
+                <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            
+            <nav id="mainNav">
+                <a href="https://structuretradelab.com">Home</a>
+                <a href="/">Blog</a>
+                <a href="https://tools.structuretradelab.com">Tools</a>
+                <a href="https://structuretradelab.com/about">About</a>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Overlay for mobile menu -->
+    <div class="menu-overlay" id="menuOverlay"></div>
+
+    <!-- ARTICLE -->
+    <article class="article-container">
+        <div class="article-header">
+            <div class="article-category"><a href="/category/getting-started/">🚀 Getting Started (Beginners)</a></div>
+            <h1 class="article-title">Understanding Spread in Forex: Fixed vs Variable Spreads Explained</h1>
+            <div class="article-meta">
+                <span>📅 Published: May 2026</span>
+                <span>📖 7 min read</span>
+                <span>🏷️ Category: Getting Started</span>
+            </div>
+        </div>
+        
+        <!-- FEATURED IMAGE -->
+        <div class="featured-image">
+            <img src="spread-explained-featured.jpg" 
+                 alt="Ask price on top bid price on bottom with vertical double-headed arrow showing spread" 
+                 loading="eager"
+                 width="800"
+                 height="450">
+        </div>
+        
+        <div class="article-content">
+
+            <p>Every time you enter a trade, you start at a small disadvantage. That disadvantage is called the <strong>spread</strong>. It's how brokers make money — and it's your primary trading cost.</p>
+
+            <p>When I first started, I didn't understand spreads. I wondered why I was losing money immediately after opening a trade. Then I learned: <strong>the spread is the difference between the buy price (ask) and the sell price (bid).</strong></p>
+
+            <p>In this guide, I'll explain what spreads are, the difference between fixed and variable spreads, and which one is better for beginners.</p>
+
+            <div class="info-box">
+                <strong>💡 Key Takeaway:</strong> Spreads are your trading cost. Lower spreads = lower costs. Major pairs like EUR/USD have the tightest spreads (often 0.0-0.5 pips).
+            </div>
+
+            <!-- TABLE OF CONTENTS -->
+            <div class="table-of-contents">
+                <h3>📑 What You'll Learn</h3>
+                <ul>
+                    <li><a href="#what-is-spread">What is Spread in Forex?</a></li>
+                    <li><a href="#fixed-spread">Fixed Spreads: Predictable but Wider</a></li>
+                    <li><a href="#variable-spread">Variable Spreads: Tight but Fluctuating</a></li>
+                    <li><a href="#which-is-better">Fixed vs Variable: Which is Better for Beginners?</a></li>
+                    <li><a href="#when-spreads-widen">When Do Spreads Widen?</a></li>
+                    <li><a href="#how-to-minimize">How to Minimize Spread Costs</a></li>
+                </ul>
+            </div>
+
+            <!-- INTERNAL LINK TO POST #2 -->
+            <div class="internal-link">
+                📖 <strong>Related Reading:</strong> <a href="/category/getting-started/what-is-forex-trading/">What is Forex Trading?</a> — Understand the market basics before learning about trading costs.
+            </div>
+
+            <!-- SECTION 1 -->
+            <h2 id="what-is-spread">What is Spread in Forex?</h2>
+            
+            <p>The <strong>spread</strong> is the difference between the <strong>ask price</strong> (what you pay to buy) and the <strong>bid price</strong> (what you receive when you sell).</p>
+            
+            <p><strong>Example:</strong> EUR/USD shows:</p>
+            <ul>
+                <li>Bid price (sell): 1.1050</li>
+                <li>Ask price (buy): 1.1052</li>
+                <li><strong>Spread = 2 pips</strong></li>
+            </ul>
+            
+            <p>If you buy at 1.1052, you immediately lose 2 pips because you'd only sell at 1.1050. The spread is the broker's fee for executing your trade.</p>
+            
+            <div class="info-box">
+                <strong>📊 Real Cost Example:</strong> If you trade 1 standard lot ($10 per pip) on EUR/USD with a 1 pip spread, you pay $10 in spread costs for that trade — win or lose.
+            </div>
+
+            <!-- INTERNAL LINK TO POST #15 -->
+            <div class="internal-link">
+                📖 <strong>Related Reading:</strong> <a href="/category/getting-started/what-is-a-pip/">What is a Pip in Forex?</a> — Spreads are measured in pips. Master pips first.
+            </div>
+
+            <!-- SECTION 2 -->
+            <h2 id="fixed-spread">Fixed Spreads: Predictable but Wider</h2>
+            
+            <p><strong>Fixed spreads</strong> stay the same regardless of market conditions. The broker promises a consistent spread, usually 1-3 pips on major pairs.</p>
+            
+            <p><strong>Pros of fixed spreads:</strong></p>
+            <ul>
+                <li>Predictable costs — you know your spread before every trade</li>
+                <li>No surprises during news events</li>
+                <li>Easier for beginners to calculate costs</li>
+            </ul>
+            
+            <p><strong>Cons of fixed spreads:</strong></p>
+            <ul>
+                <li>Usually wider than variable spreads during normal conditions</li>
+                <li>Brokers may refuse orders during high volatility (requotes)</li>
+                <li>Less common with top-tier brokers</li>
+            </ul>
+            
+            <div class="warning-box">
+                <strong>⚠️ Note:</strong> Fixed spread brokers often have "dealing desk" execution, meaning they may reject your trades during fast-moving markets.
+            </div>
+
+            <!-- SECTION 3 -->
+            <h2 id="variable-spread">Variable Spreads: Tight but Fluctuating</h2>
+            
+            <p><strong>Variable spreads</strong> (also called floating spreads) change based on market liquidity and volatility. During calm times, spreads can be extremely tight. During news events, spreads can widen significantly.</p>
+            
+            <p><strong>Pros of variable spreads:</strong></p>
+            <ul>
+                <li>Tightest spreads during normal conditions (0.0-0.5 pips on EUR/USD)</li>
+                <li>No dealing desk — direct market access</li>
+                <li>No requotes (trades execute instantly)</li>
+                <li>Preferred by scalpers and active traders</li>
+            </ul>
+            
+            <p><strong>Cons of variable spreads:</strong></p>
+            <ul>
+                <li>Can widen dramatically during news events (5-20+ pips)</li>
+                <li>Less predictable costs</li>
+            </ul>
+            
+            <div class="info-box">
+                <strong>📊 Typical Variable Spreads (EUR/USD):</strong><br>
+                • London/New York overlap: 0.0 — 0.3 pips<br>
+                • Asian session: 0.5 — 1.0 pips<br>
+                • During major news (NFP, FOMC): 5 — 20+ pips
+            </div>
+
+            <!-- INTERNAL LINK TO POST #8 -->
+            <div class="internal-link">
+                📖 <strong>Related Reading:</strong> <a href="/category/getting-started/forex-market-hours/">Forex Market Hours</a> — Spreads vary by session. Learn when spreads are tightest.
+            </div>
+
+            <!-- SECTION 4 -->
+            <h2 id="which-is-better">Fixed vs Variable: Which is Better for Beginners?</h2>
+            
+            <table class="spreads-table">
+                <thead>
+                    <tr><th>Factor</th><th>Fixed Spread</th><th>Variable Spread</th></tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Typical EUR/USD spread</strong></td>
+                        <td>1.5 — 3.0 pips</td>
+                        <td>0.0 — 0.5 pips (normal conditions)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>During news events</strong></td>
+                        <td>Stays fixed (but requotes possible)</td>
+                        <td>Can widen to 5-20+ pips</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Execution type</strong></td>
+                        <td>Dealing desk (DD)</td>
+                        <td>No dealing desk (NDD)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Best for</strong></td>
+                        <td>News traders, beginners who want predictability</td>
+                        <td>Scalpers, day traders, most active traders</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <div class="info-box">
+                <strong>📌 My Recommendation:</strong> Choose <strong>variable spreads</strong> from a reputable broker. The tighter spreads save you money, and no dealing desk execution is more reliable. Just avoid trading during major news events when spreads widen.
+            </div>
+
+            <!-- SECTION 5 -->
+            <h2 id="when-spreads-widen">When Do Spreads Widen?</h2>
+            
+            <p>Spread widening happens when liquidity decreases or volatility increases. Avoid trading during these times:</p>
+            
+            <ul>
+                <li><strong>Major news releases:</strong> NFP (Non-Farm Payroll), FOMC rate decisions, CPI data, ECB press conferences</li>
+                <li><strong>Session closes:</strong> Last hour of London session (11 AM — 12 PM EST), last hour of New York session (4 PM — 5 PM EST)</li>
+                <li><strong>Weekend open:</strong> Sunday 5 PM EST — markets are thin</li>
+                <li><strong>Bank holidays:</strong> When major financial centers are closed</li>
+            </ul>
+            
+            <div class="warning-box">
+                <strong>⚠️ Pro Tip:</strong> Check an economic calendar before trading. If a major news event is coming in 10 minutes, stop trading. Wait until 15-20 minutes after the release when spreads normalize.
+            </div>
+
+            <!-- INTERNAL LINK TO POST #14 -->
+            <div class="internal-link">
+                📖 <strong>Related Reading:</strong> <a href="/category/getting-started/how-to-choose-forex-broker/">How to Choose a Forex Broker</a> — Check spreads before choosing a broker. They vary significantly.
+            </div>
+
+            <!-- SECTION 6 -->
+            <h2 id="how-to-minimize">How to Minimize Spread Costs</h2>
+            
+            <p>Here's how to keep your trading costs low:</p>
+            
+            <ul>
+                <li><strong>Trade major pairs only (EUR/USD, GBP/USD, USD/JPY)</strong> — They have the tightest spreads</li>
+                <li><strong>Trade during London/New York overlap (8 AM — 12 PM EST)</strong> — Highest liquidity, tightest spreads</li>
+                <li><strong>Avoid trading 10 minutes before and after major news</strong> — Spreads widen dramatically</li>
+                <li><strong>Consider a Raw spread account</strong> — Ultra-tight spreads with small commission (often cheaper overall)</li>
+                <li><strong>Don't trade exotics</strong> — Spreads can be 50-100+ pips</li>
+            </ul>
+            
+            <div class="info-box">
+                <strong>📊 Cost Comparison (100 trades on EUR/USD):</strong><br>
+                • 1 pip spread × $10 per pip × 100 trades = $1,000 in spread costs<br>
+                • 0.5 pip spread × $10 × 100 trades = $500 in spread costs<br>
+                <strong>Tighter spreads save you real money.</strong>
+            </div>
+
+            <!-- INTERNAL LINK TO POST #5 -->
+            <div class="internal-link">
+                📖 <strong>Related Reading:</strong> <a href="/category/risk-management/risk-management-101/">Risk Management 101</a> — Spread costs affect your risk-reward ratio. Factor them into every trade.
+            </div>
+
+            <hr>
+
+            <!-- CONCLUSION -->
+            <h2>Spreads Matter More Than You Think</h2>
+            <p>Over hundreds of trades, spreads add up. A 0.5 pip difference might seem small, but over 1,000 trades, it's thousands of dollars.</p>
+            
+            <p>I only trade major pairs during peak hours with a variable spread broker. My average spread on EUR/USD is 0.1-0.3 pips. That keeps my costs low and my profits higher.</p>
+            
+            <p><strong>Choose a broker with tight variable spreads. Trade during peak hours. Avoid news events. Your account will thank you.</strong></p>
+
+            <!-- INTERNAL LINK TO POST #1 -->
+            <div class="internal-link">
+                📖 <strong>Related Reading:</strong> <a href="/category/getting-started/how-to-start-forex-trading/">How to Start Forex Trading</a> — Your complete roadmap. Apply spread knowledge from day one.
+            </div>
+
+        </div>
+
+        <!-- SOFT CTA -->
+        <div class="blog-cta">
+            <h3>📌 Ready to Start Your Trading Journey?</h3>
+            <p>I've documented my entire broker setup — tight spreads, instant withdrawals, and why I've stuck with Exness for years.</p>
+            <a href="https://structuretradelab.com/broker-setup/" class="btn">View My Broker Setup →</a>
+            <p class="disclosure-small">📌 I'm an Introducing Broker. I earn commission when you trade. No extra cost to you.</p>
+        </div>
+
+    </article>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-disclosure">
+                <strong>Disclosure:</strong> Structure Trade Lab is an independent educational website. As an Introducing Broker (IB), I may earn commissions when you trade through links on this site. This does not affect your trading conditions or costs.
+            </div>
+            <div class="footer-disclosure">
+                <strong>Risk Warning:</strong> Trading forex and CFDs carries a high level of risk. Past performance does not guarantee future results. Only trade with money you can afford to lose.
+            </div>
+            <p>© <span id="current-year"></span> Structure Trade Lab. All rights reserved.</p>
+            <p style="margin-top: 10px;">
+                <a href="https://structuretradelab.com">Home</a> | 
+                <a href="/">Blog</a> | 
+                <a href="https://tools.structuretradelab.com">Tools</a> |
+                <a href="https://structuretradelab.com/about">About</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Hamburger Menu & Year -->
+    <script src="https://structuretradelab.com/assets/js/common.js" defer></script>
+</body>
+</html>
