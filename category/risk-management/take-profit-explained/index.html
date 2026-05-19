@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Take profit explained: How to set profit targets. Learn what a take profit order is, how to set it, and common mistakes to avoid.">
+    <meta name="keywords" content="take profit explained, what is take profit, how to set take profit, forex take profit order, profit target">
+    <meta name="author" content="Structure Trade Lab">
+    <title>Take Profit Explained: How to Set Profit Targets | Structure Trade Lab</title>
+
+    <script>
+        (function () {
+            const savedTheme = localStorage.getItem('theme');
+            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+                document.documentElement.classList.add('dark-mode');
+            }
+        })();
+    </script>
+    
+    <link rel="stylesheet" href="https://structuretradelab.com/assets/css/common.css">
+    <link rel="stylesheet" href="https://structuretradelab.com/assets/css/article.css">
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Take Profit Explained: How to Set Profit Targets",
+        "description": "Take profit explained: How to set profit targets. Learn what a take profit order is, how to set it, and common mistakes to avoid.",
+        "image": "https://blog.structuretradelab.com/category/risk-management/take-profit-explained/take-profit-featured.jpg",
+        "author": {
+            "@type": "Person",
+            "name": "Structure Trade Lab",
+            "url": "https://structuretradelab.com/about"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Structure Trade Lab"
+        },
+        "datePublished": "2026-05-19",
+        "dateModified": "2026-05-19",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://blog.structuretradelab.com/category/risk-management/take-profit-explained/"
+        },
+        "keywords": "take profit explained, what is take profit, how to set take profit, forex take profit order"
+    }
+    </script>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="container header-flex">
+            <div class="logo">
+                <a href="https://structuretradelab.com">
+                    <h1>📊 Structure Trade Lab</h1>
+                    <p>Trade with Structure. Trade with a Plan.</p>
+                </a>
+            </div>
+            
+            <div style="display: flex; align-items: center; gap: 15px;">
+                <!-- Dark Mode Toggle Button -->
+                <button class="dark-mode-toggle" id="darkModeToggle" aria-label="Dark mode">
+                    <span class="toggle-icon">🌙</span>
+                    <span class="toggle-text">Dark</span>
+                </button>
+                
+                <!-- Hamburger Button -->
+                <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            
+            <nav id="mainNav">
+                <a href="https://structuretradelab.com">Home</a>
+                <a href="/">Blog</a>
+                <a href="https://tools.structuretradelab.com">Tools</a>
+                <a href="https://structuretradelab.com/about">About</a>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Overlay for mobile menu -->
+    <div class="menu-overlay" id="menuOverlay"></div>
+
+    <!-- ARTICLE -->
+    <article class="article-container">
+        <div class="article-header">
+            <div class="article-category"><a href="/category/risk-management/">🛡️ Risk Management</a></div>
+            <h1 class="article-title">Take Profit Explained: How to Set Profit Targets</h1>
+            <div class="article-meta">
+                <span>📅 Published: May 2026</span>
+                <span>📖 7 min read</span>
+                <span>🏷️ Category: Risk Management</span>
+            </div>
+        </div>
+        
+        <!-- FEATURED IMAGE -->
+        <div class="featured-image">
+            <img src="take-profit-featured.jpg" 
+                 alt="Take profit explained — chart showing profit target level with green target symbol" 
+                 loading="eager"
+                 width="800"
+                 height="450">
+        </div>
+        
+        <div class="article-content">
+
+            <p>You've entered a trade. You've set your stop loss. Now comes the next question: <strong>where do you take profit?</strong></p>
+
+            <p>Early in my trading, I had no answer to this question. I'd let trades run until they turned against me. I'd take profits too early and watch price go further without me. I had no plan.</p>
+
+            <p>A <strong>take profit</strong> order is your exit plan for winning trades. It automatically closes your trade when price reaches your profit target. Without it, you're leaving your profits to chance.</p>
+
+            <div class="info-box">
+                <strong>💡 Key Takeaway:</strong> Always set a take profit before entering a trade. "The trend is your friend" is dangerous advice without a profit target.
+            </div>
+
+            <!-- TABLE OF CONTENTS -->
+            <div class="table-of-contents">
+                <h3>📑 What You'll Learn</h3>
+                <ul>
+                    <li><a href="#what-is-take-profit">What is a Take Profit Order?</a></li>
+                    <li><a href="#why-essential">Why Take Profits Are Essential</a></li>
+                    <li><a href="#risk-reward">The Risk Reward Connection</a></li>
+                    <li><a href="#how-to-set">How to Set Take Profit Levels</a></li>
+                    <li><a href="#common-mistakes">Common Take Profit Mistakes</a></li>
+                    <li><a href="#partial-profits">Should You Take Partial Profits?</a></li>
+                </ul>
+            </div>
+
+            <!-- INTERNAL LINK TO POST #5 -->
+            <div class="internal-link">
+                📖 <strong>Related Reading:</strong> <a href="/category/risk-management/risk-management-101/">Risk Management 101</a> — Take profit and stop loss work together. Master both.
+            </div>
+
+            <!-- SECTION 1 -->
+            <h2 id="what-is-take-profit">What is a Take Profit Order?</h2>
+            
+            <p>A <strong>take profit</strong> (TP) is an order to automatically close a trade at a predetermined price when the trade becomes profitable.</p>
+            
+            <p><strong>Example:</strong> You buy EUR/USD at 1.1050. You set a take profit at 1.1080. If price rises to 1.1080, your trade closes automatically. Your profit is 30 pips.</p>
+            
+            <div class="info-box">
+                <strong>📊 Without a Take Profit:</strong> You buy at 1.1050. Price rises to 1.1080 (+30 pips), then falls back to 1.1050. You made nothing. A take profit locks in your gain.
+            </div>
+
+            <!-- SECTION 2 -->
+            <h2 id="why-essential">Why Take Profits Are Essential</h2>
+            
+            <ul>
+                <li><strong>They lock in profits:</strong> Markets reverse. A take profit ensures you exit while you're ahead.</li>
+                <li><strong>They remove emotion:</strong> No "should I hold longer?" decisions. The plan executes automatically.</li>
+                <li><strong>They enforce discipline:</strong> You decide your profit target before entering, not during the trade.</li>
+                <li><strong>They complete your risk-reward ratio:</strong> A stop loss without a take profit is incomplete.</li>
+                <li><strong>They let you walk away:</strong> Set your TP and SL, then step away from the screen.</li>
+            </ul>
+            
+            <div class="warning-box">
+                <strong>⚠️ The Hard Truth:</strong> Greed is why most traders give back profits. A take profit order protects you from yourself.
+            </div>
+
+            <!-- INTERNAL LINK TO POST #18 -->
+            <div class="internal-link">
+                📖 <strong>Related Reading:</strong> <a href="/category/risk-management/stop-loss-explained/">Stop Loss Explained</a> — Take profit and stop loss are two sides of the same coin.
+            </div>
+
+            <!-- SECTION 3 -->
+            <h2 id="risk-reward">The Risk Reward Connection</h2>
+            
+            <p>Your take profit determines your <strong>risk-reward ratio</strong> — how much you stand to gain versus how much you risk.</p>
+            
+            <p><strong>Formula:</strong> Risk Reward = (Take Profit Distance) ÷ (Stop Loss Distance)</p>
+            
+            <p><strong>Example:</strong> Stop loss at 20 pips, take profit at 40 pips → Risk Reward = 40 ÷ 20 = 2 (1:2 ratio).</p>
+
+            <table class="spreads-table">
+                <thead>
+                    <tr>
+                        <th>Risk Reward</th>
+                        <th>Win Rate Needed to Break Even</th>
+                        <th>Best For</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1:1</td>
+                        <td>50%</td>
+                        <td>Scalpers, very high win rate strategies</td>
+                    </tr>
+                    <tr>
+                        <td>1:2</td>
+                        <td>33.3%</td>
+                        <td>Recommended minimum for most traders</td>
+                    </tr>
+                    <tr>
+                        <td>1:3</td>
+                        <td>25%</td>
+                        <td>Swing traders, trend followers</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <div class="info-box">
+                <strong>📌 My Standard:</strong> I never take a trade with less than 1:2 risk reward. Most of my trades target 1:3. This means I can be wrong more than half the time and still be profitable.
+            </div>
+
+            <!-- INTERNAL LINK TO POST #20 (COMING SOON) -->
+            <div class="internal-link">
+                📖 <strong>Coming Soon:</strong> <a href="/category/risk-management/risk-reward-ratio/">Risk Reward Ratio: How to Calculate and Why 1:2 is Minimum</a> — A deeper dive into risk reward.
+            </div>
+
+            <!-- SECTION 4 -->
+            <h2 id="how-to-set">How to Set Take Profit Levels</h2>
+            
+            <h3>1. Fixed Pip Take Profit</h3>
+            <p>Set a fixed number of pips above your entry. Example: Buy at 1.1050, TP 30 pips at 1.1080.</p>
+            <p><strong>Pros:</strong> Simple, easy to calculate.<br>
+            <strong>Cons:</strong> Doesn't account for market structure.</p>
+            
+            <h3>2. Technical Take Profit</h3>
+            <p>Place your TP at key resistance levels (for long trades) or support levels (for short trades).</p>
+            <p><strong>Pros:</strong> Respects market structure. Price often reverses at these levels.<br>
+            <strong>Cons:</strong> Requires more analysis.</p>
+            
+            <h3>3. Risk Multiplier</h3>
+            <p>Set TP based on your stop loss distance. Example: SL = 20 pips, set TP = 40-60 pips (2x-3x risk).</p>
+            <p><strong>Pros:</strong> Maintains consistent risk reward.<br>
+            <strong>Cons:</strong> May not align with market structure.</p>
+            
+            <div class="info-box">
+                <strong>📌 Recommendation:</strong> As a beginner, start with risk multiplier (2x or 3x your stop loss). This keeps your risk reward consistent while you learn.
+            </div>
+
+            <!-- INTERNAL LINK TO POST #15 -->
+            <div class="internal-link">
+                📖 <strong>Related Reading:</strong> <a href="/category/getting-started/what-is-a-pip/">What is a Pip in Forex?</a> — Take profits are measured in pips. Master pips first.
+            </div>
+
+            <!-- SECTION 5 -->
+            <h2 id="common-mistakes">Common Take Profit Mistakes</h2>
+            
+            <ul>
+                <li><strong>No take profit at all:</strong> Leaving profits to chance. Markets reverse without warning.</li>
+                <li><strong>Moving take profit further away (greed):</strong> "It's going higher!" Then price reverses and you lose the profit you had.</li>
+                <li><strong>Take profit too close:</strong> Risking 20 pips to make 10 pips. Negative risk reward.</li>
+                <li><strong>Moving take profit closer (fear):</strong> Closing too early, leaving money on the table.</li>
+                <li><strong>No risk reward calculation:</strong> Taking trades without knowing your potential return.</li>
+            </ul>
+            
+            <div class="warning-box">
+                <strong>⚠️ The Golden Rule:</strong> Never move your take profit further away out of greed. You can move it closer to lock in profits. But moving it away is how profits turn into losses.
+            </div>
+
+            <!-- INTERNAL LINK TO POST #7 -->
+            <div class="internal-link">
+                📖 <strong>Related Reading:</strong> <a href="/category/trading-psychology/trading-psychology-basics/">Trading Psychology Basics</a> — Greed and fear drive take profit mistakes. Master your mindset.
+            </div>
+
+            <!-- SECTION 6 -->
+            <h2 id="partial-profits">Should You Take Partial Profits?</h2>
+            
+            <p><strong>Partial profit taking</strong> means closing part of your position at one level and letting the rest run.</p>
+            
+            <p><strong>Example:</strong> You buy 2 lots. You set TP1 at 20 pips (closes 1 lot). You set TP2 at 40 pips (closes 1 lot).</p>
+            
+            <p><strong>Pros:</strong> Locks in some profit while still allowing for larger moves.<br>
+            <strong>Cons:</strong> More complex, requires managing multiple orders.</p>
+            
+            <div class="info-box">
+                <strong>📌 Recommendation:</strong> As a beginner, use a single take profit. It's simpler and removes decision fatigue. Add partial profit taking after 6-12 months of experience.
+            </div>
+
+            <hr>
+
+            <!-- CONCLUSION -->
+            <h2>Know Your Exit Before You Enter</h2>
+            <p>Every trade needs three things: entry, stop loss, and take profit. Without all three, you don't have a trade — you have a gamble.</p>
+            
+            <p>I set my take profit before I enter every single trade. It's part of my trading plan. I know exactly how much I stand to gain before I risk a single dollar.</p>
+            
+            <p><strong>Set your take profit before every trade. Maintain a minimum 1:2 risk reward. Never move your take profit further away out of greed. Do this, and you'll turn probability in your favor.</strong></p>
+
+            <!-- INTERNAL LINK TO POST #1 -->
+            <div class="internal-link">
+                📖 <strong>Related Reading:</strong> <a href="/category/getting-started/how-to-start-forex-trading/">How to Start Forex Trading</a> — Your complete roadmap. Apply take profits from your very first trade.
+            </div>
+
+        </div>
+
+        <!-- SOFT CTA -->
+        <div class="blog-cta">
+            <h3>📌 Ready to Start Your Trading Journey?</h3>
+            <p>I've documented my entire broker setup — tight spreads, instant withdrawals, and why I've stuck with Exness for years.</p>
+            <a href="https://structuretradelab.com/broker-setup/" class="btn">View My Broker Setup →</a>
+            <p class="disclosure-small">📌 I'm an Introducing Broker. I earn commission when you trade. No extra cost to you.</p>
+        </div>
+
+    </article>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-disclosure">
+                <strong>Disclosure:</strong> Structure Trade Lab is an independent educational website. As an Introducing Broker (IB), I may earn commissions when you trade through links on this site. This does not affect your trading conditions or costs.
+            </div>
+            <div class="footer-disclosure">
+                <strong>Risk Warning:</strong> Trading forex and CFDs carries a high level of risk. Past performance does not guarantee future results. Only trade with money you can afford to lose.
+            </div>
+            <p>© <span id="current-year"></span> Structure Trade Lab. All rights reserved.</p>
+            <p style="margin-top: 10px;">
+                <a href="https://structuretradelab.com">Home</a> | 
+                <a href="/">Blog</a> | 
+                <a href="https://tools.structuretradelab.com">Tools</a> |
+                <a href="https://structuretradelab.com/about">About</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Hamburger Menu & Year -->
+    <script src="https://structuretradelab.com/assets/js/common.js" defer></script>
+</body>
+</html>
