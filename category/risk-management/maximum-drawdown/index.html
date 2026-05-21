@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Maximum drawdown explained: What it is, how to calculate it, and why it's the most important metric for protecting your trading capital.">
+    <meta name="keywords" content="maximum drawdown, what is maximum drawdown, drawdown forex, maximum drawdown explained, trading drawdown limits">
+    <meta name="author" content="Structure Trade Lab">
+    <title>Maximum Drawdown: What It Is and How to Control It | Structure Trade Lab</title>
+
+    <script>
+        (function () {
+            const savedTheme = localStorage.getItem('theme');
+            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+                document.documentElement.classList.add('dark-mode');
+            }
+        })();
+    </script>
+    
+    <link rel="stylesheet" href="https://structuretradelab.com/assets/css/common.css">
+    <link rel="stylesheet" href="https://structuretradelab.com/assets/css/article.css">
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Maximum Drawdown: What It Is and How to Control It",
+        "description": "Maximum drawdown explained: What it is, how to calculate it, and why it's the most important metric for protecting your trading capital.",
+        "image": "https://blog.structuretradelab.com/category/risk-management/maximum-drawdown/max-drawdown-featured.jpg",
+        "author": {
+            "@type": "Person",
+            "name": "Structure Trade Lab",
+            "url": "https://structuretradelab.com/about"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Structure Trade Lab"
+        },
+        "datePublished": "2026-05-21",
+        "dateModified": "2026-05-21",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://blog.structuretradelab.com/category/risk-management/maximum-drawdown/"
+        },
+        "keywords": "maximum drawdown, what is maximum drawdown, drawdown forex, maximum drawdown explained"
+    }
+    </script>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="container header-flex">
+            <div class="logo">
+                <a href="https://structuretradelab.com">
+                    <h1>📊 Structure Trade Lab</h1>
+                    <p>Trade with Structure. Trade with a Plan.</p>
+                </a>
+            </div>
+            
+            <div style="display: flex; align-items: center; gap: 15px;">
+                <!-- Dark Mode Toggle Button -->
+                <button class="dark-mode-toggle" id="darkModeToggle" aria-label="Dark mode">
+                    <span class="toggle-icon">🌙</span>
+                    <span class="toggle-text">Dark</span>
+                </button>
+                
+                <!-- Hamburger Button -->
+                <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            
+            <nav id="mainNav">
+                <a href="https://structuretradelab.com">Home</a>
+                <a href="/">Blog</a>
+                <a href="https://tools.structuretradelab.com">Tools</a>
+                <a href="https://structuretradelab.com/about">About</a>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Overlay for mobile menu -->
+    <div class="menu-overlay" id="menuOverlay"></div>
+
+    <!-- ARTICLE -->
+    <article class="article-container">
+        <div class="article-header">
+            <div class="article-category"><a href="/category/risk-management/">🛡️ Risk Management</a></div>
+            <h1 class="article-title">Maximum Drawdown: What It Is and How to Control It</h1>
+            <div class="article-meta">
+                <span>📅 Published: May 2026</span>
+                <span>📖 7 min read</span>
+                <span>🏷️ Category: Risk Management</span>
+            </div>
+        </div>
+        
+        <!-- FEATURED IMAGE -->
+        <div class="featured-image">
+            <img src="max-drawdown-featured.jpg" 
+                 alt="Maximum drawdown chart showing peak to trough decline with red downward arrow and recovery line" 
+                 loading="eager"
+                 width="800"
+                 height="450">
+        </div>
+        
+        <div class="article-content">
+
+            <p>Here's a number that every trader should know: their <strong>maximum drawdown</strong>. It's the single most important metric for understanding your risk tolerance and the health of your trading.</p>
+
+            <p>In my first year, my maximum drawdown was 60%. That meant my $5,000 account dropped to $2,000 at its lowest point. To recover, I needed a 150% gain — which took me months. Those were painful months.</p>
+
+            <p>In this guide, I'll explain exactly what maximum drawdown is, how to calculate it, and why keeping it small is the key to long-term survival.</p>
+
+            <div class="info-box">
+                <strong>💡 Key Takeaway:</strong> Your maximum drawdown determines how much pain you can endure and how quickly you can recover. Keep it below 20% at all costs.
+            </div>
+
+            <!-- TABLE OF CONTENTS -->
+            <div class="table-of-contents">
+                <h3>📑 What You'll Learn</h3>
+                <ul>
+                    <li><a href="#what-is-max-drawdown">What is Maximum Drawdown?</a></li>
+                    <li><a href="#how-to-calculate">How to Calculate Maximum Drawdown</a></li>
+                    <li><a href="#recovery-math">The Brutal Math of Recovery</a></li>
+                    <li><a href="#acceptable-levels">What is an Acceptable Maximum Drawdown?</a></li>
+                    <li><a href="#how-to-control">How to Control Maximum Drawdown</a></li>
+                    <li><a href="#drawdown-rules">My Drawdown Management Rules</a></li>
+                </ul>
+            </div>
+
+            <!-- INTERNAL LINK TO POST #21 -->
+            <div class="internal-link">
+                📖 <strong>Related Reading:</strong> <a href="/category/risk-management/understanding-drawdown/">Understanding Drawdown</a> — Start here to learn the basics of drawdown before diving into maximum drawdown.
+            </div>
+
+            <!-- SECTION 1 -->
+            <h2 id="what-is-max-drawdown">What is Maximum Drawdown?</h2>
+            
+            <p><strong>Maximum drawdown (MDD)</strong> is the largest peak-to-trough decline your account has ever experienced. It's the worst period in your trading history — the deepest hole you've ever dug yourself into.</p>
+            
+            <p><strong>Example:</strong> Over 12 months, your account had these peaks and troughs:</p>
+            <ul>
+                <li>Peak: $12,000 → Trough: $10,000 → Drawdown: 16.7%</li>
+                <li>Peak: $11,500 → Trough: $8,500 → Drawdown: 26.1%</li>
+                <li>Peak: $10,000 → Trough: $7,000 → Drawdown: 30% ← This is your maximum drawdown</li>
+            </ul>
+            
+            <div class="info-box">
+                <strong>📊 Important:</strong> Maximum drawdown is measured from the highest peak, not from your starting balance. If you grow your account first, then lose, your MDD is calculated from that higher peak.
+            </div>
+
+            <!-- INTERNAL LINK TO POST #18 -->
+            <div class="internal-link">
+                📖 <strong>Related Reading:</strong> <a href="/category/risk-management/stop-loss-explained/">Stop Loss Explained</a> — Proper stop loss placement is your first defense against deep drawdowns.
+            </div>
+
+            <!-- SECTION 2 -->
+            <h2 id="how-to-calculate">How to Calculate Maximum Drawdown</h2>
+            
+            <p><strong>Formula:</strong> Maximum Drawdown = (Peak Balance − Lowest Trough) ÷ Peak Balance × 100%</p>
+            
+            <h3>Example Calculation:</h3>
+            <p>Your account history:</p>
+            <ul>
+                <li>Start: $10,000</li>
+                <li>Grow to: $15,000 (peak #1)</li>
+                <li>Drop to: $11,000 (trough) → Drawdown = ($15,000 - $11,000) ÷ $15,000 = 26.7%</li>
+                <li>Grow to: $18,000 (peak #2 — new high)</li>
+                <li>Drop to: $13,000 (trough) → Drawdown = ($18,000 - $13,000) ÷ $18,000 = 27.8%</li>
+                <li>Grow to: $20,000 (peak #3)</li>
+                <li>Drop to: $14,000 (trough) → Drawdown = ($20,000 - $14,000) ÷ $20,000 = 30%</li>
+            </ul>
+            <p><strong>Your maximum drawdown = 30%</strong> (the largest drop from any peak)</p>
+
+            <div class="warning-box">
+                <strong>⚠️ Reality Check:</strong> Many traders don't track their maximum drawdown. That's like driving a car without a speedometer. You need this number to know if you're risking too much.
+            </div>
+
+            <!-- SECTION 3 -->
+            <h2 id="recovery-math">The Brutal Math of Recovery</h2>
+            
+            <p>Here's what every trader must understand: <strong>the deeper your drawdown, the harder it is to recover.</strong></p>
+
+            <table class="spreads-table">
+                <thead>
+                    <tr>
+                        <th>Drawdown %</th>
+                        <th>Gain Needed to Recover</th>
+                        <th>Difficulty</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>10%</td>
+                        <td>11.1%</td>
+                        <td>Easy</td>
+                    </tr>
+                    <tr>
+                        <td>20%</td>
+                        <td>25%</td>
+                        <td>Moderate</td>
+                    </tr>
+                    <tr>
+                        <td>30%</td>
+                        <td>42.9%</td>
+                        <td>Difficult</td>
+                    </tr>
+                    <tr>
+                        <td>40%</td>
+                        <td>66.7%</td>
+                        <td>Very difficult</td>
+                    </tr>
+                    <tr>
+                        <td>50%</td>
+                        <td>100%</td>
+                        <td>Extremely difficult</td>
+                    </tr>
+                    <tr>
+                        <td>75%</td>
+                        <td>300%</td>
+                        <td>Near impossible</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <div class="info-box">
+                <strong>📌 Key Insight:</strong> A 50% drawdown requires a 100% gain to recover. That's twice as hard. A 75% drawdown requires a 300% gain — which takes years, if ever. This is why keeping drawdown small is non-negotiable.
+            </div>
+
+            <!-- SECTION 4 -->
+            <h2 id="acceptable-levels">What is an Acceptable Maximum Drawdown?</h2>
+            
+            <p>There's no universal answer, but here are my guidelines based on account size and experience:</p>
+            
+            <table class="spreads-table">
+                <thead>
+                    <tr>
+                        <th>Account Size</th>
+                        <th>Acceptable Max Drawdown</th>
+                        <th>Action Required</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>$100 — $1,000</td>
+                        <td>15-20%</td>
+                        <td>Review risk management</td>
+                    </tr>
+                    <tr>
+                        <td>$1,000 — $5,000</td>
+                        <td>10-15%</td>
+                        <td>Reduce position sizes</td>
+                    </tr>
+                    <tr>
+                        <td>$5,000 — $20,000</td>
+                        <td>8-12%</td>
+                        <td>Stop trading, review everything</td>
+                    </tr>
+                    <tr>
+                        <td>$20,000+</td>
+                        <td>5-8%</td>
+                        <td>Professional level — no excuses</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <div class="warning-box">
+                <strong>⚠️ My Standard:</strong> I don't allow my account to go beyond 15% maximum drawdown. If I hit 10%, I reduce size by 50%. At 15%, I stop trading for a week to review my strategy.
+            </div>
+
+            <!-- SECTION 5 -->
+            <h2 id="how-to-control">How to Control Maximum Drawdown</h2>
+            
+            <h3>1. Reduce Position Sizes</h3>
+            <p>The most direct way to limit drawdown is to trade smaller. If you're in drawdown, reduce your position sizes by 50-75% until you recover.</p>
+            
+            <h3>2. Set Hard Stop Limits</h3>
+            <p>Decide in advance: "If I hit 10% drawdown, I stop trading for 3 days." Write it down. Follow it.</p>
+            
+            <h3>3. Track Your Drawdown Daily</h3>
+            <p>You can't control what you don't measure. Keep a spreadsheet or use your platform's reporting tools to track your MDD.</p>
+            
+            <h3>4. Review After Every Losing Streak</h3>
+            <p>After 3 consecutive losses, stop and review. Are you following your plan? Is the market conditions changed?</p>
+            
+            <h3>5. Use Consistent Risk Per Trade</h3>
+            <p>Risking 1% per trade keeps your drawdown predictable. Risking 5% makes deep drawdowns almost certain.</p>
+            
+            <div class="info-box">
+                <strong>📌 Pro Tip:</strong> Create a "drawdown action plan" before you need it. Mine says: "At 5% drawdown, review all trades. At 10%, reduce size by 50%. At 15%, stop trading for one week."
+            </div>
+
+            <!-- INTERNAL LINK TO POST #5 -->
+            <div class="internal-link">
+                📖 <strong>Related Reading:</strong> <a href="/category/risk-management/risk-management-101/">Risk Management 101</a> — The 1% rule is your best defense against deep drawdowns.
+            </div>
+
+            <!-- SECTION 6 -->
+            <h2 id="drawdown-rules">My Drawdown Management Rules</h2>
+            
+            <p>Here are my strict rules for managing maximum drawdown:</p>
+            
+            <ul>
+                <li><strong>5% drawdown:</strong> Review all recent trades. No changes yet, but stay alert.</li>
+                <li><strong>10% drawdown:</strong> Reduce position sizes by 50%. Stop trading if emotional.</li>
+                <li><strong>15% drawdown:</strong> Stop trading entirely. Review every trade from the last 2 weeks. Identify the problem.</li>
+                <li><strong>20% drawdown:</strong> Return to demo account. Don't trade live again until profitable on demo for 1 month.</li>
+            </ul>
+            
+            <div class="warning-box">
+                <strong>⚠️ The Bottom Line:</strong> Your maximum drawdown is a reflection of your risk management quality. Keep it below 20%. Track it daily. Have a plan for when it grows. Do this, and you'll survive long enough to become profitable.
+            </div>
+
+            <!-- INTERNAL LINK TO POST #20 -->
+            <div class="internal-link">
+                📖 <strong>Related Reading:</strong> <a href="/category/risk-management/risk-reward-ratio/">Risk Reward Ratio</a> — A good risk reward ratio helps you recover from drawdowns faster.
+            </div>
+
+            <hr>
+
+            <!-- CONCLUSION -->
+            <h2>Know Your Number</h2>
+            <p>Every trader experiences drawdowns. The ones who survive are the ones who keep them small and manageable. They know their maximum drawdown number. They track it. They have a plan.</p>
+            
+            <p><strong>Track your maximum drawdown. Keep it below 20%. Have a plan for when it grows. Do this, and you'll survive long enough to become profitable.</strong></p>
+
+            <!-- INTERNAL LINK TO POST #1 -->
+            <div class="internal-link">
+                📖 <strong>Related Reading:</strong> <a href="/category/getting-started/how-to-start-forex-trading/">How to Start Forex Trading</a> — Your complete roadmap. Apply drawdown tracking from day one.
+            </div>
+
+        </div>
+
+        <!-- SOFT CTA -->
+        <div class="blog-cta">
+            <h3>📌 Ready to Start Your Trading Journey?</h3>
+            <p>I've documented my entire broker setup — tight spreads, instant withdrawals, and why I've stuck with Exness for years.</p>
+            <a href="https://structuretradelab.com/broker-setup/" class="btn">View My Broker Setup →</a>
+            <p class="disclosure-small">📌 I'm an Introducing Broker. I earn commission when you trade. No extra cost to you.</p>
+        </div>
+
+    </article>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-disclosure">
+                <strong>Disclosure:</strong> Structure Trade Lab is an independent educational website. As an Introducing Broker (IB), I may earn commissions when you trade through links on this site. This does not affect your trading conditions or costs.
+            </div>
+            <div class="footer-disclosure">
+                <strong>Risk Warning:</strong> Trading forex and CFDs carries a high level of risk. Past performance does not guarantee future results. Only trade with money you can afford to lose.
+            </div>
+            <p>© <span id="current-year"></span> Structure Trade Lab. All rights reserved.</p>
+            <p style="margin-top: 10px;">
+                <a href="https://structuretradelab.com">Home</a> | 
+                <a href="/">Blog</a> | 
+                <a href="https://tools.structuretradelab.com">Tools</a> |
+                <a href="https://structuretradelab.com/about">About</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Hamburger Menu & Year -->
+    <script src="https://structuretradelab.com/assets/js/common.js" defer></script>
+</body>
+</html>
