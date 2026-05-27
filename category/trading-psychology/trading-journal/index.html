@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Trading journal guide: How to track and improve every trade. Learn what to log, why it matters, and get a free template to start journaling today.">
+    <meta name="keywords"
+        content="trading journal, forex journal, how to keep trading journal, trading journal template, track trades">
+    <meta name="author" content="Structure Trade Lab">
+    <title>Trading Journal: How to Track and Improve Every Trade | Structure Trade Lab</title>
+
+    <script>
+        (function () {
+            const savedTheme = localStorage.getItem('theme');
+            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+                document.documentElement.classList.add('dark-mode');
+            }
+        })();
+    </script>
+
+    <link rel="stylesheet" href="https://structuretradelab.com/assets/css/common.css">
+    <link rel="stylesheet" href="https://structuretradelab.com/assets/css/article.css">
+    <style>
+        #journal-temp {
+            background: #f0f4f8;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 20px 0;
+            overflow-x: auto;
+        }
+        #journal-table {
+            width: 100%;
+            font-size: 0.75rem;
+            border-collapse: collapse;
+        }
+        #journal-table th.journal-th-td,
+        #journal-table td.journal-th-td {
+            border: 1px solid #ccc;
+            padding: 8px;
+        }
+        html.dark-mode #journal-temp,
+        html.dark-mode #journal-table th,
+        html.dark-mode #journal-table td {
+            background: #16161f;
+        }
+    </style>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Trading Journal: How to Track and Improve Every Trade",
+        "description": "Trading journal guide: How to track and improve every trade. Learn what to log, why it matters, and get a free template to start journaling today.",
+        "image": "https://blog.structuretradelab.com/category/trading-psychology/trading-journal/journal-featured.jpg",
+        "author": {
+            "@type": "Person",
+            "name": "Structure Trade Lab",
+            "url": "https://structuretradelab.com/about"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Structure Trade Lab"
+        },
+        "datePublished": "2026-05-27",
+        "dateModified": "2026-05-27",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://blog.structuretradelab.com/category/trading-psychology/trading-journal/"
+        },
+        "keywords": "trading journal, forex journal, how to keep trading journal, trading journal template"
+    }
+    </script>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="container header-flex">
+            <div class="logo">
+                <a href="https://structuretradelab.com">
+                    <h1>📊 Structure Trade Lab</h1>
+                    <p>Trade with Structure. Trade with a Plan.</p>
+                </a>
+            </div>
+
+            <div style="display: flex; align-items: center; gap: 15px;">
+                <button class="dark-mode-toggle" id="darkModeToggle" aria-label="Dark mode">
+                    <span class="toggle-icon">🌙</span>
+                    <span class="toggle-text">Dark</span>
+                </button>
+                <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+
+            <nav id="mainNav">
+                <a href="https://structuretradelab.com">Home</a>
+                <a href="/">Blog</a>
+                <a href="https://tools.structuretradelab.com">Tools</a>
+                <a href="https://structuretradelab.com/about">About</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="menu-overlay" id="menuOverlay"></div>
+
+    <!-- ARTICLE -->
+    <article class="article-container">
+        <div class="article-header">
+            <div class="article-category"><a href="/category/trading-psychology/">🧠 Trading Psychology</a></div>
+            <h1 class="article-title">Trading Journal: How to Track and Improve Every Trade</h1>
+            <div class="article-meta">
+                <span>📅 Published: May 2026</span>
+                <span>📖 8 min read</span>
+                <span>🏷️ Category: Trading Psychology</span>
+            </div>
+        </div>
+
+        <!-- FEATURED IMAGE -->
+        <div class="featured-image">
+            <img src="journal-featured.jpg"
+            alt="Open leather notebook on a desk with handwritten trading journal columns — Date, Pair, Entry, Stop Loss, Take Profit, P/L, and Lesson Learned — next to a monitor showing a simple forex chart with teal trend line. Navy blue background with teal accents. Warm desk lamp lighting."
+                loading="eager" width="800" height="450">
+        </div>
+
+        <div class="article-content">
+
+            <p>If you asked me the single most important tool for improving as a trader, I wouldn't say a better
+                indicator. I wouldn't say a faster platform. I'd say a <strong>trading journal</strong>.</p>
+
+            <p>For my first year, I didn't journal. I thought I could remember my trades. I couldn't. I made the same
+                mistakes over and over — moving stop losses, taking low-quality setups, revenge trading. And I never
+                learned because I never tracked anything.</p>
+
+            <p>The moment I started journaling, everything changed. I saw my patterns. I knew exactly what I was doing
+                wrong. And I fixed it.</p>
+
+            <div class="info-box">
+                <strong>💡 Key Takeaway:</strong> You can't improve what you don't measure. A trading journal turns
+                vague feelings into actionable data.
+            </div>
+
+            <!-- TABLE OF CONTENTS -->
+            <div class="table-of-contents">
+                <h3>📑 What You'll Learn</h3>
+                <ul>
+                    <li><a href="#why-journal">Why You Need a Trading Journal</a></li>
+                    <li><a href="#what-to-log">What to Log in Your Trading Journal</a></li>
+                    <li><a href="#journal-template">Free Trading Journal Template</a></li>
+                    <li><a href="#how-to-analyze">How to Analyze Your Journal</a></li>
+                    <li><a href="#real-example">Real Example: What Good Journaling Looks Like</a></li>
+                    <li><a href="#how-to-start">How to Start Today</a></li>
+                </ul>
+            </div>
+
+            <!-- INTERNAL LINK TO POST #7 -->
+            <div class="internal-link">
+                📖 <strong>Related Reading:</strong> <a href="/category/trading-psychology/trading-psychology-basics/">Trading
+                    Psychology Basics</a> — Journaling is your most powerful psychological tool.
+            </div>
+
+            <!-- SECTION 1 -->
+            <h2 id="why-journal">Why You Need a Trading Journal</h2>
+
+            <ul>
+                <li><strong>Identifies patterns:</strong> You'll see exactly which setups work and which fail.</li>
+                <li><strong>Reveals emotional mistakes:</strong> "Moved stop loss out of fear" becomes visible when you
+                    write it down.</li>
+                <li><strong>Tracks progress:</strong> You can see your win rate, average risk reward, and drawdown over
+                    time.</li>
+                <li><strong>Builds discipline:</strong> Knowing you'll have to log a rule break makes you less likely to
+                    break it.</li>
+                <li><strong>Accelerates learning:</strong> One journaled trade teaches more than ten unjournaled trades.
+                </li>
+            </ul>
+
+            <div class="warning-box">
+                <strong>⚠️ The Hard Truth:</strong> If you're not journaling, you're not serious about improving. Every
+                professional trader I know keeps a detailed journal.
+            </div>
+
+            <!-- SECTION 2 -->
+            <h2 id="what-to-log">What to Log in Your Trading Journal</h2>
+
+            <p>Here's what I log for every trade. You can start with these fields and adjust as needed.</p>
+
+            <h3>Trade Information (The Data)</h3>
+            <ul>
+                <li><strong>Date and time:</strong> When you entered and exited</li>
+                <li><strong>Currency pair:</strong> EUR/USD, GBP/USD, etc.</li>
+                <li><strong>Direction:</strong> Long or short</li>
+                <li><strong>Entry price:</strong> Where you entered</li>
+                <li><strong>Stop loss price:</strong> Where your stop was placed</li>
+                <li><strong>Take profit price:</strong> Where your target was</li>
+                <li><strong>Position size (lots):</strong> How many lots you traded</li>
+                <li><strong>Risk amount ($):</strong> Your dollar risk</li>
+                <li><strong>Profit/loss ($ and pips):</strong> The outcome</li>
+                <li><strong>Risk reward ratio:</strong> Reward ÷ Risk</li>
+            </ul>
+
+            <h3>Trade Reasoning (The Why)</h3>
+            <ul>
+                <li><strong>Setup name:</strong> "Support bounce," "Moving average crossover," etc.</li>
+                <li><strong>Reason for trade:</strong> "Price bounced off 50 EMA" — not "felt right."</li>
+                <li><strong>Confluence factors:</strong> What other indicators or levels aligned?</li>
+            </ul>
+
+            <h3>Psychology (The Mindset)</h3>
+            <ul>
+                <li><strong>Emotional state before entry:</strong> Calm, anxious, overconfident?</li>
+                <li><strong>Emotional state during trade:</strong> Fearful, greedy, patient?</li>
+                <li><strong>Did you follow your plan?</strong> Yes or no. If no, what rule did you break?</li>
+                <li><strong>Lesson learned:</strong> What will you do differently next time?</li>
+            </ul>
+
+            <div class="info-box">
+                <strong>📌 Pro Tip:</strong> The psychology section is the most important. The numbers tell you what
+                happened. The psychology tells you why.
+            </div>
+
+            <!-- INTERNAL LINK TO POST #32 -->
+            <div class="internal-link">
+                📖 <strong>Related Reading:</strong> <a href="/category/trading-psychology/trading-discipline/">Trading
+                    Discipline: How to Stick to Your Trading Plan</a> — Journaling helps you track discipline
+                violations.
+            </div>
+
+            <!-- SECTION 3 -->
+            <h2 id="journal-template">Free Trading Journal Template</h2>
+
+            <p>You can use a simple spreadsheet (Excel or Google Sheets). Here's a template you can copy:</p>
+
+            <div id="journal-temp">
+                <table id="journal-table">
+                    <thead>
+                        <tr>
+                            <th class="journal-th-td">Date</th>
+                            <th class="journal-th-td">Pair</th>
+                            <th class="journal-th-td">Direction</th>
+                            <th class="journal-th-td">Entry</th>
+                            <th class="journal-th-td">SL</th>
+                            <th class="journal-th-td">TP</th>
+                            <th class="journal-th-td">Size</th>
+                            <th class="journal-th-td">P/L</th>
+                            <th class="journal-th-td">RR</th>
+                            <th class="journal-th-td">Setup</th>
+                            <th class="journal-th-td">Emotion</th>
+                            <th class="journal-th-td">Followed Plan?</th>
+                            <th class="journal-th-td">Lesson</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="journal-th-td">5/27/26</td>
+                            <td class="journal-th-td">EUR/USD</td>
+                            <td class="journal-th-td">Long</td>
+                            <td class="journal-th-td">1.1050</td>
+                            <td class="journal-th-td">1.1030</td>
+                            <td class="journal-th-td">1.1090</td>
+                            <td class="journal-th-td">0.1</td>
+                            <td class="journal-th-td">+$40</td>
+                            <td class="journal-th-td">1:2</td>
+                            <td class="journal-th-td">Support bounce</td>
+                            <td class="journal-th-td">Calm</td>
+                            <td class="journal-th-td">Yes</td>
+                            <td class="journal-th-td">Trust the setup</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="info-box">
+                <strong>📌 Get the Template:</strong> <a href="#">Click here to copy the Google Sheets template</a>
+                (coming soon). Or create your own with these columns.
+            </div>
+
+            <!-- SECTION 4 -->
+            <h2 id="how-to-analyze">How to Analyze Your Journal</h2>
+
+            <p>Journaling is useless if you don't review it. Set aside time every week to analyze.</p>
+
+            <h3>Weekly Review Questions</h3>
+            <ul>
+                <li><strong>What was my win rate this week?</strong> Is it in line with my strategy?</li>
+                <li><strong>What was my average risk reward?</strong> Am I maintaining 1:2 minimum?</li>
+                <li><strong>Which setups worked?</strong> Double down on what's working.</li>
+                <li><strong>Which setups failed?</strong> Consider removing or adjusting them.</li>
+                <li><strong>How many times did I break my rules?</strong> What triggered it?</li>
+                <li><strong>What was my emotional state before losing trades?</strong> Tired? Angry? Overconfident?</li>
+            </ul>
+
+            <div class="warning-box">
+                <strong>⚠️ The Key Insight:</strong> Patterns emerge when you look at 20-50 trades. One trade tells you
+                nothing. Fifty trades tell you everything.
+            </div>
+
+            <!-- INTERNAL LINK TO POST #20 -->
+            <div class="internal-link">
+                📖 <strong>Related Reading:</strong> <a href="/category/risk-management/risk-reward-ratio/">Risk Reward
+                    Ratio</a> — Track your average risk reward in your journal.
+            </div>
+
+            <!-- SECTION 5 -->
+            <h2 id="real-example">Real Example: What Good Journaling Looks Like</h2>
+
+            <p><strong>Bad journal entry (useless):</strong></p>
+            <div class="warning-box example">
+                "Lost $50 on EUR/USD. Bad trade."
+            </div>
+
+            <p><strong>Good journal entry (actionable):</strong></p>
+            <div class="info-box example">
+                <strong>Date:</strong> 5/27/26<br>
+                <strong>Pair:</strong> EUR/USD<br>
+                <strong>Setup:</strong> Breakout above resistance at 1.1050<br>
+                <strong>Entry:</strong> 1.1055 (chased — entered late)<br>
+                <strong>Stop loss:</strong> 1.1040 (15 pips)<br>
+                <strong>Take profit:</strong> 1.1080 (25 pips)<br>
+                <strong>Result:</strong> -15 pips, -$15 on micro lots<br>
+                <strong>Emotion:</strong> FOMO — saw price moving and jumped in without waiting for confirmation<br>
+                <strong>Followed plan?</strong> No — my plan says wait for retest of breakout. I entered on the
+                spike.<br>
+                <strong>Lesson:</strong> Wait for retest. FOMO trades almost always lose. Next time, set alert and wait.
+            </div>
+
+            <!-- SECTION 6 -->
+            <h2 id="how-to-start">How to Start Today</h2>
+
+            <ol>
+                <li><strong>Choose your tool:</strong> Google Sheets, Excel, Notion, or a dedicated journaling app.</li>
+                <li><strong>Create your template:</strong> Use the columns above or start with just 5: Date, Pair, P/L,
+                    Emotion, Lesson.</li>
+                <li><strong>Commit to one week:</strong> Journal every trade for 7 days. See how it feels.</li>
+                <li><strong>Schedule review time:</strong> Every Sunday, spend 15 minutes reviewing your week.</li>
+                <li><strong>Adjust as needed:</strong> Add columns that matter to you. Remove ones that don't.</li>
+            </ol>
+
+            <div class="info-box">
+                <strong>📌 Start Simple:</strong> Don't overcomplicate. Even a notebook with five columns is better than
+                nothing. Start with: Date, Trade (win/loss), Emotion, Did I follow my plan?, Lesson. Add more later.
+            </div>
+
+            <!-- INTERNAL LINK TO POST #1 -->
+            <div class="internal-link">
+                📖 <strong>Related Reading:</strong> <a href="/category/getting-started/how-to-start-forex-trading/">How
+                    to Start Forex Trading</a> — Your complete roadmap. Start journaling from day one.
+            </div>
+
+            <hr>
+
+            <!-- CONCLUSION -->
+            <h2>Journaling is the Fastest Path to Improvement</h2>
+            <p>You will not remember your trades. You will repeat your mistakes. And you will stay stuck until you start
+                tracking.</p>
+
+            <p><strong>Start today. Open a spreadsheet. Log your next trade. One entry. Then another. You'll be amazed
+                    what you learn about yourself.</strong></p>
+
+        </div>
+
+        <!-- SOFT CTA -->
+        <div class="blog-cta">
+            <h3>📌 Ready to Start Your Trading Journey?</h3>
+            <p>I've documented my entire broker setup — tight spreads, instant withdrawals, and why I've stuck with
+                Exness for years.</p>
+            <a href="https://structuretradelab.com/broker-setup/" class="btn">View My Broker Setup →</a>
+            <p class="disclosure-small">📌 I'm an Introducing Broker. I earn commission when you trade. No extra cost to
+                you.</p>
+        </div>
+
+    </article>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-disclosure">
+                <strong>Disclosure:</strong> Structure Trade Lab is an independent educational website. As an
+                Introducing Broker (IB), I may earn commissions when you trade through links on this site. This does not
+                affect your trading conditions or costs.
+            </div>
+            <div class="footer-disclosure">
+                <strong>Risk Warning:</strong> Trading forex and CFDs carries a high level of risk. Past performance
+                does not guarantee future results. Only trade with money you can afford to lose.
+            </div>
+            <p>© <span id="current-year"></span> Structure Trade Lab. All rights reserved.</p>
+            <p style="margin-top: 10px;">
+                <a href="https://structuretradelab.com">Home</a> |
+                <a href="/">Blog</a> |
+                <a href="https://tools.structuretradelab.com">Tools</a> |
+                <a href="https://structuretradelab.com/about">About</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Hamburger Menu & Year -->
+    <script src="https://structuretradelab.com/assets/js/common.js" defer></script>
+</body>
+
+</html>
