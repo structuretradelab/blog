@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Building a simple trading strategy step by step. Learn how to create a strategy with clear entry rules, stop losses, take profits, and backtesting.">
+    <meta name="keywords" content="how to build a trading strategy, simple forex strategy, trading strategy steps, forex strategy for beginners">
+    <meta name="author" content="Structure Trade Lab">
+    <title>Building a Simple Trading Strategy: Step by Step | Structure Trade Lab</title>
+
+    <script>
+        (function () {
+            const savedTheme = localStorage.getItem('theme');
+            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+                document.documentElement.classList.add('dark-mode');
+            }
+        })();
+    </script>
+    
+    <link rel="stylesheet" href="https://structuretradelab.com/assets/css/common.css">
+    <link rel="stylesheet" href="https://structuretradelab.com/assets/css/article.css">
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Building a Simple Trading Strategy: Step by Step",
+        "description": "Building a simple trading strategy step by step. Learn how to create a strategy with clear entry rules, stop losses, take profits, and backtesting.",
+        "image": "https://blog.structuretradelab.com/category/strategy-analysis/building-trading-strategy/strategy-building-featured.jpg",
+        "author": {
+            "@type": "Person",
+            "name": "Structure Trade Lab",
+            "url": "https://structuretradelab.com/about"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Structure Trade Lab"
+        },
+        "datePublished": "2026-05-27",
+        "dateModified": "2026-05-27",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://blog.structuretradelab.com/category/strategy-analysis/building-trading-strategy/"
+        },
+        "keywords": "how to build a trading strategy, simple forex strategy, trading strategy steps"
+    }
+    </script>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="container header-flex">
+            <div class="logo">
+                <a href="https://structuretradelab.com">
+                    <h1>📊 Structure Trade Lab</h1>
+                    <p>Trade with Structure. Trade with a Plan.</p>
+                </a>
+            </div>
+            
+            <div style="display: flex; align-items: center; gap: 15px;">
+                <button class="dark-mode-toggle" id="darkModeToggle" aria-label="Dark mode">
+                    <span class="toggle-icon">🌙</span>
+                    <span class="toggle-text">Dark</span>
+                </button>
+                <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            
+            <nav id="mainNav">
+                <a href="https://structuretradelab.com">Home</a>
+                <a href="/">Blog</a>
+                <a href="https://tools.structuretradelab.com">Tools</a>
+                <a href="https://structuretradelab.com/about">About</a>
+            </nav>
+        </div>
+    </header>
+    
+    <div class="menu-overlay" id="menuOverlay"></div>
+
+    <!-- ARTICLE -->
+    <article class="article-container">
+        <div class="article-header">
+            <div class="article-category"><a href="/category/strategy-analysis/">📈 Strategy & Analysis</a></div>
+            <h1 class="article-title">Building a Simple Trading Strategy: Step by Step</h1>
+            <div class="article-meta">
+                <span>📅 Published: May 2026</span>
+                <span>📖 8 min read</span>
+                <span>🏷️ Category: Strategy & Analysis</span>
+            </div>
+        </div>
+        
+        <!-- FEATURED IMAGE -->
+        <div class="featured-image">
+            <img src="strategy-building-featured.webp" 
+                 alt="Blueprint showing 5 steps to build a trading strategy — choose pair and timeframe, entry rules, stop loss, take profit with 1:2 ratio, and risk 1% per trade — next to a laptop with a clean forex chart" 
+                 loading="eager"
+                 width="800"
+                 height="450">
+        </div>
+        
+        <div class="article-content">
+
+            <p>"Just follow your strategy" is common advice. But what if you don't have a strategy? Or what if your "strategy" is just "buy low, sell high" with no clear rules?</p>
+
+            <p>In my first year, I didn't have a real strategy. I had vague ideas: "Support and resistance," "Follow the trend." But I couldn't tell you exactly when to enter or exit. My results were random because my process was random.</p>
+
+            <p>In this guide, I'll walk you through building a simple, rule-based trading strategy from scratch — one that you can actually follow.</p>
+
+            <div class="info-box">
+                <strong>💡 Key Takeaway:</strong> A strategy without rules is just wishful thinking. Every decision — entry, stop loss, take profit — must be predetermined.
+            </div>
+
+            <!-- TABLE OF CONTENTS -->
+            <div class="table-of-contents">
+                <h3>📑 What You'll Learn</h3>
+                <ul>
+                    <li><a href="#what-is-strategy">What Makes a Real Trading Strategy?</a></li>
+                    <li><a href="#step-1">Step 1: Choose Your Market and Timeframe</a></li>
+                    <li><a href="#step-2">Step 2: Define Your Entry Rules</a></li>
+                    <li><a href="#step-3">Step 3: Define Your Stop Loss Rules</a></li>
+                    <li><a href="#step-4">Step 4: Define Your Take Profit Rules</a></li>
+                    <li><a href="#step-5">Step 5: Define Your Risk Management Rules</a></li>
+                    <li><a href="#sample-strategy">Sample Strategy: Moving Average Crossover</a></li>
+                    <li><a href="#backtesting">How to Backtest Your Strategy</a></li>
+                </ul>
+            </div>
+
+            <!-- SECTION 1 -->
+            <h2 id="what-is-strategy">What Makes a Real Trading Strategy?</h2>
+            
+            <p>A real trading strategy leaves nothing to guess. Every decision is predetermined:</p>
+            
+            <ul>
+                <li><strong>When to enter:</strong> Specific conditions that must be met</li>
+                <li><strong>Where to place stop loss:</strong> Exact price or pip distance</li>
+                <li><strong>Where to place take profit:</strong> Exact price or pip distance</li>
+                <li><strong>How much to risk:</strong> Fixed percentage of account</li>
+                <li><strong>Which pairs to trade:</strong> Specific list, not "whatever moves"</li>
+                <li><strong>When NOT to trade:</strong> Avoid news, low volatility, etc.</li>
+            </ul>
+            
+            <div class="warning-box">
+                <strong>⚠️ The Test:</strong> If you handed your strategy to a stranger, could they execute it exactly as you would? If not, it's not a strategy — it's intuition.
+            </div>
+
+            <!-- SECTION 2 -->
+            <h2 id="step-1">Step 1: Choose Your Market and Timeframe</h2>
+            
+            <p><strong>Market:</strong> Start with one pair. EUR/USD is the best choice for beginners — tightest spreads, most liquid, most predictable.</p>
+            
+            <p><strong>Timeframe:</strong> Beginners should start with higher timeframes. I recommend the 4-hour (H4) or 1-hour (H1) chart. Higher timeframes have less noise and more reliable signals.</p>
+            
+            <div class="info-box">
+                <strong>📌 My Recommendation:</strong> Trade only EUR/USD on the 4-hour chart. That's it. One pair, one timeframe. Master this before adding complexity.
+            </div>
+
+            <!-- INTERNAL LINK TO POST #12 -->
+            <div class="internal-link">
+                📖 <strong>Related Reading:</strong> <a href="/category/getting-started/which-currency-pair-first/">Which Currency Pair Should You Trade First?</a> — Start with EUR/USD.
+            </div>
+
+            <!-- SECTION 3 -->
+            <h2 id="step-2">Step 2: Define Your Entry Rules</h2>
+            
+            <p>Your entry rules must be specific and objective. Here's a simple framework:</p>
+            
+            <h3>Trend Filter (Direction)</h3>
+            <ul>
+                <li>Uptrend: Price above 200 EMA, higher highs and higher lows</li>
+                <li>Downtrend: Price below 200 EMA, lower highs and lower lows</li>
+                <li>Only trade in the direction of the trend</li>
+            </ul>
+            
+            <h3>Entry Signal</h3>
+            <ul>
+                <li>Pullback to moving average (e.g., price pulls back to 50 EMA)</li>
+                <li>Bounce off support/resistance</li>
+                <li>Candlestick confirmation (pin bar, engulfing)</li>
+            </ul>
+            
+            <div class="info-box">
+                <strong>📌 Example Entry Rule:</strong> "On the 4-hour chart, buy when price pulls back to the 50 EMA and forms a bullish pin bar. Sell when price pulls back to the 50 EMA and forms a bearish pin bar."
+            </div>
+
+            <!-- SECTION 4 -->
+            <h2 id="step-3">Step 3: Define Your Stop Loss Rules</h2>
+            
+            <p>Your stop loss must be predetermined. Here are two methods:</p>
+            
+            <ul>
+                <li><strong>Fixed pip stop:</strong> 20-30 pips for EUR/USD on 4-hour chart</li>
+                <li><strong>Technical stop:</strong> Below the recent swing low (for long trades) or above recent swing high (for short trades)</li>
+            </ul>
+            
+            <div class="warning-box">
+                <strong>⚠️ Never move your stop loss further away.</strong> This rule is non-negotiable. Set it and forget it.
+            </div>
+
+            <!-- INTERNAL LINK TO POST #18 -->
+            <div class="internal-link">
+                📖 <strong>Related Reading:</strong> <a href="/category/risk-management/stop-loss-explained/">Stop Loss Explained</a> — Master stop loss placement.
+            </div>
+
+            <!-- SECTION 5 -->
+            <h2 id="step-4">Step 4: Define Your Take Profit Rules</h2>
+            
+            <p>Your take profit should give you at least a 1:2 risk-reward ratio. If your stop is 20 pips, your target should be at least 40 pips.</p>
+            
+            <ul>
+                <li><strong>Fixed pip target:</strong> 2x or 3x your stop loss distance</li>
+                <li><strong>Technical target:</strong> Previous high/low, resistance/support level</li>
+            </ul>
+            
+            <div class="info-box">
+                <strong>📌 My Standard:</strong> I use a 1:2 minimum. Risk 20 pips to make 40. This allows me to be wrong more than half the time and still be profitable.
+            </div>
+
+            <!-- INTERNAL LINK TO POST #20 -->
+            <div class="internal-link">
+                📖 <strong>Related Reading:</strong> <a href="/category/risk-management/risk-reward-ratio/">Risk Reward Ratio</a> — Why 1:2 is the minimum.
+            </div>
+
+            <!-- SECTION 6 -->
+            <h2 id="step-5">Step 5: Define Your Risk Management Rules</h2>
+            
+            <p>Without risk management, no strategy survives. Add these rules to your plan:</p>
+            
+            <ul>
+                <li><strong>Risk per trade:</strong> 1% of account maximum</li>
+                <li><strong>Daily loss limit:</strong> Stop trading after losing 3% in a day</li>
+                <li><strong>Weekly loss limit:</strong> Stop trading after losing 6% in a week</li>
+                <li><strong>Maximum trades per day:</strong> 3 trades maximum</li>
+            </ul>
+            
+            <div class="warning-box">
+                <strong>⚠️ Non-Negotiable:</strong> Risk 1% per trade. This is the golden rule. Break it and your strategy won't matter.
+            </div>
+
+            <!-- INTERNAL LINK TO POST #5 -->
+            <div class="internal-link">
+                📖 <strong>Related Reading:</strong> <a href="/category/risk-management/risk-management-101/">Risk Management 101</a> — The 1% rule is your survival guarantee.
+            </div>
+
+            <!-- SECTION 7 -->
+            <h2 id="sample-strategy">Sample Strategy: Moving Average Crossover</h2>
+            
+            <p>Here's a complete, simple strategy you can start testing today:</p>
+            
+            <h3>Setup</h3>
+            <ul>
+                <li>Pair: EUR/USD</li>
+                <li>Timeframe: 4-hour chart</li>
+                <li>Indicators: 50 EMA, 200 EMA</li>
+            </ul>
+            
+            <h3>Entry Rules (Long)</h3>
+            <ul>
+                <li>50 EMA crosses ABOVE 200 EMA (golden cross)</li>
+                <li>Price pulls back to touch the 50 EMA</li>
+                <li>Enter on the next candle close</li>
+            </ul>
+            
+            <h3>Entry Rules (Short)</h3>
+            <ul>
+                <li>50 EMA crosses BELOW 200 EMA (death cross)</li>
+                <li>Price pulls back to touch the 50 EMA</li>
+                <li>Enter on the next candle close</li>
+            </ul>
+            
+            <h3>Stop Loss</h3>
+            <ul>
+                <li>30 pips below entry (for long) or 30 pips above entry (for short)</li>
+            </ul>
+            
+            <h3>Take Profit</h3>
+            <ul>
+                <li>60 pips (1:2 risk-reward)</li>
+            </ul>
+            
+            <h3>Risk Management</h3>
+            <ul>
+                <li>Risk 1% of account per trade</li>
+                <li>Maximum 2 trades per day</li>
+                <li>Stop trading after 2 consecutive losses</li>
+            </ul>
+            
+            <div class="info-box">
+                <strong>📌 Important:</strong> This is a sample strategy to get you started. Test it on a demo account before using real money. Adjust as needed based on your testing.
+            </div>
+
+            <!-- SECTION 8 -->
+            <h2 id="backtesting">How to Backtest Your Strategy</h2>
+            
+            <p>Before risking real money, you must backtest — test your strategy on historical data.</p>
+            
+            <h3>Manual Backtesting (Simplest)</h3>
+            <ol>
+                <li>Open a demo account or use TradingView</li>
+                <li>Scroll back 3-6 months on your chart</li>
+                <li>Move forward candle by candle</li>
+                <li>Apply your entry rules at each candle</li>
+                <li>Record every trade in a spreadsheet</li>
+                <li>After 50-100 trades, calculate your win rate and average risk reward</li>
+            </ol>
+            
+            <h3>What to Look For</h3>
+            <ul>
+                <li><strong>Win rate:</strong> Is it above 40%? (With 1:2 risk reward, 40% is profitable)</li>
+                <li><strong>Maximum consecutive losses:</strong> Can you survive the worst losing streak?</li>
+                <li><strong>Average risk reward:</strong> Are you maintaining at least 1:2?</li>
+            </ul>
+            
+            <div class="warning-box">
+                <strong>⚠️ The Rule:</strong> Never trade a new strategy with real money until you've backtested at least 50-100 trades and been profitable on demo for 2-3 months.
+            </div>
+
+            <!-- INTERNAL LINK TO POST #4 -->
+            <div class="internal-link">
+                📖 <strong>Related Reading:</strong> <a href="/category/getting-started/demo-trading-explained/">Demo Trading Explained</a> — Test your strategy on a demo account before going live.
+            </div>
+
+            <hr>
+
+            <!-- CONCLUSION -->
+            <h2>A Simple Strategy You Can Follow is Better Than a Perfect One You Can't</h2>
+            <p>Don't overcomplicate. The sample strategy above has just a few rules. It's not perfect — but it's clear. And clear rules are easier to follow than complex systems.</p>
+            
+            <p><strong>Start with one pair, one timeframe, simple rules. Backtest on demo for 2-3 months. Prove profitability. Then scale slowly.</strong></p>
+
+            <!-- INTERNAL LINK TO POST #1 -->
+            <div class="internal-link">
+                📖 <strong>Related Reading:</strong> <a href="/category/getting-started/how-to-start-forex-trading/">How to Start Forex Trading</a> — Your complete roadmap. Build your strategy after mastering the basics.
+            </div>
+
+        </div>
+
+        <!-- SOFT CTA -->
+        <div class="blog-cta">
+            <h3>📌 Ready to Start Your Trading Journey?</h3>
+            <p>I've documented my entire broker setup — tight spreads, instant withdrawals, and why I've stuck with Exness for years.</p>
+            <a href="https://structuretradelab.com/broker-setup/" class="btn">View My Broker Setup →</a>
+            <p class="disclosure-small">📌 I'm an Introducing Broker. I earn commission when you trade. No extra cost to you.</p>
+        </div>
+
+    </article>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-disclosure">
+                <strong>Disclosure:</strong> Structure Trade Lab is an independent educational website. As an Introducing Broker (IB), I may earn commissions when you trade through links on this site. This does not affect your trading conditions or costs.
+            </div>
+            <div class="footer-disclosure">
+                <strong>Risk Warning:</strong> Trading forex and CFDs carries a high level of risk. Past performance does not guarantee future results. Only trade with money you can afford to lose.
+            </div>
+            <p>© <span id="current-year"></span> Structure Trade Lab. All rights reserved.</p>
+            <p style="margin-top: 10px;">
+                <a href="https://structuretradelab.com">Home</a> | 
+                <a href="/">Blog</a> | 
+                <a href="https://tools.structuretradelab.com">Tools</a> |
+                <a href="https://structuretradelab.com/about">About</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Hamburger Menu & Year -->
+    <script src="https://structuretradelab.com/assets/js/common.js" defer></script>
+</body>
+</html>
