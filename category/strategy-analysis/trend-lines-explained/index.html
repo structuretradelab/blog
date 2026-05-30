@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Trend lines explained: How to identify market direction. Learn to draw trend lines correctly, spot trend reversals, and trade with the trend.">
+    <meta name="keywords" content="trend lines explained, how to draw trend lines, forex trend lines, market direction, uptrend downtrend">
+    <meta name="author" content="Structure Trade Lab">
+    <title>Trend Lines Explained: How to Identify Market Direction | Structure Trade Lab</title>
+
+    <script>
+        (function () {
+            const savedTheme = localStorage.getItem('theme');
+            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+                document.documentElement.classList.add('dark-mode');
+            }
+        })();
+    </script>
+    
+    <link rel="stylesheet" href="https://structuretradelab.com/assets/css/common.css">
+    <link rel="stylesheet" href="https://structuretradelab.com/assets/css/article.css">
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Trend Lines Explained: How to Identify Market Direction",
+        "description": "Trend lines explained: How to identify market direction. Learn to draw trend lines correctly, spot trend reversals, and trade with the trend.",
+        "image": "https://blog.structuretradelab.com/category/strategy-analysis/trend-lines-explained/trend-lines-featured.jpg",
+        "author": {
+            "@type": "Person",
+            "name": "Structure Trade Lab",
+            "url": "https://structuretradelab.com/about"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Structure Trade Lab"
+        },
+        "datePublished": "2026-05-29",
+        "dateModified": "2026-05-29",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://blog.structuretradelab.com/category/strategy-analysis/trend-lines-explained/"
+        },
+        "keywords": "trend lines explained, how to draw trend lines, forex trend lines, market direction"
+    }
+    </script>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="container header-flex">
+            <div class="logo">
+                <a href="https://structuretradelab.com">
+                    <h1>📊 Structure Trade Lab</h1>
+                    <p>Trade with Structure. Trade with a Plan.</p>
+                </a>
+            </div>
+            
+            <div style="display: flex; align-items: center; gap: 15px;">
+                <button class="dark-mode-toggle" id="darkModeToggle" aria-label="Dark mode">
+                    <span class="toggle-icon">🌙</span>
+                    <span class="toggle-text">Dark</span>
+                </button>
+                <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            
+            <nav id="mainNav">
+                <a href="https://structuretradelab.com">Home</a>
+                <a href="/">Blog</a>
+                <a href="https://tools.structuretradelab.com">Tools</a>
+                <a href="https://structuretradelab.com/about">About</a>
+            </nav>
+        </div>
+    </header>
+    
+    <div class="menu-overlay" id="menuOverlay"></div>
+
+    <!-- ARTICLE -->
+    <article class="article-container">
+        <div class="article-header">
+            <div class="article-category"><a href="/category/strategy-analysis/">📈 Strategy & Analysis</a></div>
+            <h1 class="article-title">Trend Lines Explained: How to Identify Market Direction</h1>
+            <div class="article-meta">
+                <span>📅 Published: May 2026</span>
+                <span>📖 7 min read</span>
+                <span>🏷️ Category: Strategy & Analysis</span>
+            </div>
+        </div>
+        
+        <!-- FEATURED IMAGE -->
+        <div class="featured-image">
+            <img src="trend-lines-featured.webp" 
+                 alt="Forex chart with teal uptrend line below price and red downtrend line above price — trend lines explained" 
+                 loading="eager"
+                 width="800"
+                 height="450">
+        </div>
+        
+        <div class="article-content">
+
+            <p>"The trend is your friend." You've heard this phrase a hundred times. But what does it actually mean? And how do you identify the trend?</p>
+
+            <p>In my first year, I traded against the trend constantly. I'd see a price drop and think "It's cheap — I'll buy." Then it would drop further. I was fighting the market instead of following it.</p>
+
+            <p>In this guide, I'll show you exactly how to identify trends using trend lines, and how to trade with the trend — not against it.</p>
+
+            <div class="info-box">
+                <strong>💡 Key Takeaway:</strong> Trading with the trend doubles your probability of success. Fighting the trend is like swimming upstream — exhausting and usually unsuccessful.
+            </div>
+
+            <!-- TABLE OF CONTENTS -->
+            <div class="table-of-contents">
+                <h3>📑 What You'll Learn</h3>
+                <ul>
+                    <li><a href="#what-are-trends">What Are Trends (Uptrend, Downtrend, Sideways)?</a></li>
+                    <li><a href="#how-to-draw">How to Draw Trend Lines Correctly</a></li>
+                    <li><a href="#valid-trend-line">What Makes a Valid Trend Line?</a></li>
+                    <li><a href="#trend-reversal">How to Spot a Trend Reversal</a></li>
+                    <li><a href="#how-to-trade">How to Trade with Trend Lines</a></li>
+                    <li><a href="#common-mistakes">Common Trend Line Mistakes</a></li>
+                </ul>
+            </div>
+
+            <!-- INTERNAL LINK TO POST #36 -->
+            <div class="internal-link">
+                📖 <strong>Related Reading:</strong> <a href="/category/strategy-analysis/support-and-resistance/">Support and Resistance: The Foundation of Technical Analysis</a> — Trend lines are diagonal support/resistance. Master both.
+            </div>
+
+            <!-- SECTION 1 -->
+            <h2 id="what-are-trends">What Are Trends? (Uptrend, Downtrend, Sideways)</h2>
+            
+            <p>A <strong>trend</strong> is the general direction in which the market is moving. There are three types:</p>
+            
+            <h3>Uptrend (Bullish)</h3>
+            <ul>
+                <li>Each new high is HIGHER than the previous high</li>
+                <li>Each new low is HIGHER than the previous low</li>
+                <li>Trend line is drawn BELOW the price (connecting higher lows)</li>
+                <li>Best strategy: Buy on pullbacks to the trend line</li>
+            </ul>
+            
+            <h3>Downtrend (Bearish)</h3>
+            <ul>
+                <li>Each new low is LOWER than the previous low</li>
+                <li>Each new high is LOWER than the previous high</li>
+                <li>Trend line is drawn ABOVE the price (connecting lower highs)</li>
+                <li>Best strategy: Sell on pullbacks to the trend line</li>
+            </ul>
+            
+            <h3>Sideways (Ranging)</h3>
+            <ul>
+                <li>Price moves horizontally between support and resistance</li>
+                <li>No clear trend direction</li>
+                <li>Best strategy: Buy at support, sell at resistance (range trading)</li>
+                <li>Avoid trend-following strategies in ranging markets</li>
+            </ul>
+            
+            <div class="info-box">
+                <strong>📌 Pro Tip:</strong> Higher timeframes (daily, 4-hour) show the primary trend. Lower timeframes (1-hour, 15-min) show the secondary trend. Always align your trades with the higher timeframe trend.
+            </div>
+
+            <!-- SECTION 2 -->
+            <h2 id="how-to-draw">How to Draw Trend Lines Correctly</h2>
+
+            <!-- Additional image -->
+            <img src="how-to-draw-an-uptrend-line.webp" alt="Step by step: Drawing an uptrend line by connecting three higher lows with a teal diagonal line below price candles"
+            loading="lazy">
+           
+            
+            <h3>Uptrend Line</h3>
+            <ul>
+                <li>Connect two or more <strong>higher lows</strong></li>
+                <li>Line should run BELOW the price</li>
+                <li>Draw through the wicks (not the candle bodies)</li>
+                <li>More touches = stronger trend line</li>
+            </ul>
+            
+            <h3>Downtrend Line</h3>
+            <ul>
+                <li>Connect two or more <strong>lower highs</strong></li>
+                <li>Line should run ABOVE the price</li>
+                <li>Draw through the wicks (not the candle bodies)</li>
+                <li>More touches = stronger trend line</li>
+            </ul>
+            
+            <div class="warning-box">
+                <strong>⚠️ Critical Rule:</strong> Start with the highest possible timeframe first. Draw your trend lines on the daily chart, then 4-hour, then 1-hour. Higher timeframe trend lines are always more significant.
+            </div>
+
+            <!-- SECTION 3 -->
+            <h2 id="valid-trend-line">What Makes a Valid Trend Line?</h2>
+            
+            <table class="spreads-table">
+                <thead>
+                    <tr>
+                        <th>Factor</th>
+                        <th>Weak Trend Line</th>
+                        <th>Strong Trend Line</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Number of touches</td>
+                        <td>2 touches</td>
+                        <td>3+ touches</td>
+                    </tr>
+                    <tr>
+                        <td>Timeframe</td>
+                        <td>15-minute</td>
+                        <td>Daily or 4-hour</td>
+                    </tr>
+                    <tr>
+                        <td>Angle</td>
+                        <td>Too steep (exhaustion likely)</td>
+                        <td>45 degrees (sustainable)</td>
+                    </tr>
+                    <tr>
+                        <td>Breaks</td>
+                        <td>Often broken and re-drawn</td>
+                        <td>Respected for weeks/months</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <div class="info-box">
+                <strong>📌 The 3-Touch Rule:</strong> A trend line with 3+ touches is much more significant than one with only 2 touches. The more times price has respected the line, the stronger it is.
+            </div>
+
+            <!-- INTERNAL LINK TO POST #47 (COMING SOON - MULTIPLE TIME FRAME ANALYSIS) -->
+            <div class="internal-link">
+                📖 <strong>Coming Soon:</strong> <a href="/category/strategy-analysis/multiple-time-frame-analysis/">Multiple Time Frame Analysis: How to See the Big Picture</a> — Use higher timeframes to validate your trend lines.
+            </div>
+
+            <!-- SECTION 4 -->
+            <h2 id="trend-reversal">How to Spot a Trend Reversal</h2>
+
+
+            <!-- Additional images -->
+            <img src="trend-reversal-broken-trend-line.webp" alt="Trend reversal illustration: Price breaks down through teal uptrend line, then makes lower high and reverses downward" loading="lazy">
+           
+            
+            <p>No trend lasts forever. Here are signs a trend may be ending:</p>
+            
+            <ul>
+                <li><strong>Trend line break:</strong> Price closes below the uptrend line (or above downtrend line)</li>
+                <li><strong>Failed breakout:</strong> Price breaks the trend line but fails to continue</li>
+                <li><strong>Lower high in uptrend:</strong> Price makes a lower high (potential reversal down)</li>
+                <li><strong>Higher low in downtrend:</strong> Price makes a higher low (potential reversal up)</li>
+                <li><strong>Support/resistance confluence:</strong> Trend line break coincides with a major support/resistance level</li>
+            </ul>
+            
+            <div class="warning-box">
+                <strong>⚠️ Don't jump too early:</strong> A trend line break doesn't always mean reversal. Wait for confirmation — a close below the line plus a lower high (for uptrend) before assuming the trend is over.
+            </div>
+
+            <!-- SECTION 5 -->
+            <h2 id="how-to-trade">How to Trade with Trend Lines</h2>
+            
+            <h3>Strategy 1: Pullback to Trend Line (Highest Probability)</h3>
+            <p>In an uptrend, wait for price to pull back to the trend line, then buy. In a downtrend, wait for price to pull back to the trend line, then sell.</p>
+            <ul>
+                <li><strong>Entry:</strong> At the trend line on a pullback</li>
+                <li><strong>Stop loss:</strong> Below the trend line (for uptrend) or above (for downtrend)</li>
+                <li><strong>Take profit:</strong> Previous high (for uptrend) or previous low (for downtrend)</li>
+            </ul>
+            
+            <h3>Strategy 2: Trend Line Breakout</h3>
+            <p>When price breaks a trend line, it may signal a reversal or acceleration.</p>
+            <ul>
+                <li><strong>Entry:</strong> After price closes beyond the trend line (wait for retest)</li>
+                <li><strong>Stop loss:</strong> Beyond the opposite side of the trend line</li>
+                <li><strong>Take profit:</strong> Measured move or next support/resistance</li>
+            </ul>
+            
+            <div class="info-box">
+                <strong>📌 My Preference:</strong> I prefer pullback trades at the trend line. They offer better risk-reward and higher probability than chasing breakouts.
+            </div>
+
+            <!-- INTERNAL LINK TO POST #35 -->
+            <div class="internal-link">
+                📖 <strong>Related Reading:</strong> <a href="/category/strategy-analysis/building-trading-strategy/">Building a Simple Trading Strategy</a> — Add trend line rules to your trading strategy.
+            </div>
+
+            <!-- SECTION 6 -->
+            <h2 id="common-mistakes">Common Trend Line Mistakes</h2>
+            
+            <ul>
+                <li><strong>Drawing through candle bodies:</strong> Always draw through wicks. The wick shows where price was rejected.</li>
+                <li><strong>Forcing a trend line:</strong> Not every chart has a clear trend. If you're struggling to draw it, the market is ranging.</li>
+                <li><strong>Using too steep an angle:</strong> A 70-degree trend line will break quickly. 45 degrees is sustainable.</li>
+                <li><strong>Ignoring higher timeframes:</strong> A 1-hour uptrend might be a pullback within a daily downtrend.</li>
+                <li><strong>Trading every touch:</strong> Not every touch is an entry. Wait for confirmation (candlestick pattern, momentum).</li>
+            </ul>
+            
+            <div class="warning-box">
+                <strong>⚠️ The Biggest Mistake:</strong> Forcing a trend line when the market is ranging. In a sideways market, trend lines break constantly. Learn to identify ranging markets and switch to range trading strategies.
+            </div>
+
+            <hr>
+
+            <!-- CONCLUSION -->
+            <h2>Follow the Path of Least Resistance</h2>
+            <p>The market moves in trends. Your job is not to predict where price will go — it's to identify the current trend and follow it.</p>
+            
+            <p><strong>Identify the trend on daily and 4-hour charts. Draw your trend lines. Wait for pullbacks. Enter in the direction of the trend. Do this, and you'll stop fighting the market.</strong></p>
+
+            <!-- INTERNAL LINK TO POST #1 -->
+            <div class="internal-link">
+                📖 <strong>Related Reading:</strong> <a href="/category/getting-started/how-to-start-forex-trading/">How to Start Forex Trading</a> — Your complete roadmap. Learn to identify trends before placing your first trade.
+            </div>
+
+        </div>
+
+        <!-- SOFT CTA -->
+        <div class="blog-cta">
+            <h3>📌 Ready to Start Your Trading Journey?</h3>
+            <p>I've documented my entire broker setup — tight spreads, instant withdrawals, and why I've stuck with Exness for years.</p>
+            <a href="https://structuretradelab.com/broker-setup/" class="btn">View My Broker Setup →</a>
+            <p class="disclosure-small">📌 I'm an Introducing Broker. I earn commission when you trade. No extra cost to you.</p>
+        </div>
+
+    </article>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-disclosure">
+                <strong>Disclosure:</strong> Structure Trade Lab is an independent educational website. As an Introducing Broker (IB), I may earn commissions when you trade through links on this site. This does not affect your trading conditions or costs.
+            </div>
+            <div class="footer-disclosure">
+                <strong>Risk Warning:</strong> Trading forex and CFDs carries a high level of risk. Past performance does not guarantee future results. Only trade with money you can afford to lose.
+            </div>
+            <p>© <span id="current-year"></span> Structure Trade Lab. All rights reserved.</p>
+            <p style="margin-top: 10px;">
+                <a href="https://structuretradelab.com">Home</a> | 
+                <a href="/">Blog</a> | 
+                <a href="https://tools.structuretradelab.com">Tools</a> |
+                <a href="https://structuretradelab.com/about">About</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Hamburger Menu & Year -->
+    <script src="https://structuretradelab.com/assets/js/common.js" defer></script>
+</body>
+</html>
