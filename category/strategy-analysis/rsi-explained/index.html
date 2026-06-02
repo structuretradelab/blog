@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="RSI explained: How to use the Relative Strength Index for entry and exit. Learn to identify overbought and oversold conditions, divergences, and trend strength.">
+    <meta name="keywords" content="RSI explained, relative strength index, RSI indicator, overbought oversold, RSI divergence, forex RSI strategy">
+    <meta name="author" content="Structure Trade Lab">
+    <title>RSI Explained: How to Use the Relative Strength Index | Structure Trade Lab</title>
+
+    <script>
+        (function () {
+            const savedTheme = localStorage.getItem('theme');
+            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+                document.documentElement.classList.add('dark-mode');
+            }
+        })();
+    </script>
+    
+    <link rel="stylesheet" href="https://structuretradelab.com/assets/css/common.css">
+    <link rel="stylesheet" href="https://structuretradelab.com/assets/css/article.css">
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "RSI Explained: How to Use the Relative Strength Index",
+        "description": "RSI explained: How to use the Relative Strength Index for entry and exit. Learn to identify overbought and oversold conditions, divergences, and trend strength.",
+        "image": "https://blog.structuretradelab.com/category/strategy-analysis/rsi-explained/rsi-featured.webp",
+        "author": {
+            "@type": "Person",
+            "name": "Structure Trade Lab",
+            "url": "https://structuretradelab.com/about"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Structure Trade Lab"
+        },
+        "datePublished": "2026-06-01",
+        "dateModified": "2026-06-01",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://blog.structuretradelab.com/category/strategy-analysis/rsi-explained/"
+        },
+        "keywords": "RSI explained, relative strength index, RSI indicator, overbought oversold, RSI divergence"
+    }
+    </script>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="container header-flex">
+            <div class="logo">
+                <a href="https://structuretradelab.com">
+                    <h1>📊 Structure Trade Lab</h1>
+                    <p>Trade with Structure. Trade with a Plan.</p>
+                </a>
+            </div>
+            
+            <div style="display: flex; align-items: center; gap: 15px;">
+                <button class="dark-mode-toggle" id="darkModeToggle" aria-label="Dark mode">
+                    <span class="toggle-icon">🌙</span>
+                    <span class="toggle-text">Dark</span>
+                </button>
+                <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            
+            <nav id="mainNav">
+                <a href="https://structuretradelab.com">Home</a>
+                <a href="/">Blog</a>
+                <a href="https://tools.structuretradelab.com">Tools</a>
+                <a href="https://structuretradelab.com/about">About</a>
+            </nav>
+        </div>
+    </header>
+    
+    <div class="menu-overlay" id="menuOverlay"></div>
+
+    <!-- ARTICLE -->
+    <article class="article-container">
+        <div class="article-header">
+            <div class="article-category"><a href="/category/strategy-analysis/">📈 Strategy & Analysis</a></div>
+            <h1 class="article-title">RSI Explained: How to Use the Relative Strength Index</h1>
+            <div class="article-meta">
+                <span>📅 Published: June 2026</span>
+                <span>📖 8 min read</span>
+                <span>🏷️ Category: Strategy & Analysis</span>
+            </div>
+        </div>
+        
+        <!-- FEATURED IMAGE -->
+        <div class="featured-image">
+            <img src="rsi-featured.webp" 
+                 alt="Forex chart with RSI indicator below showing overbought level 70 and oversold level 30, with bearish divergence example where price makes higher high but RSI makes lower high" 
+                 loading="eager"
+                 width="800"
+                 height="450">
+        </div>
+        
+        <div class="article-content">
+
+            <p>When I first discovered the Relative Strength Index (RSI), I thought it was magic. RSI below 30 meant "oversold — buy!" RSI above 70 meant "overbought — sell!" I made trades based solely on these levels. And I lost money.</p>
+
+            <p>RSI is not a magic buy/sell signal. It's a momentum indicator that tells you whether a pair is overextended. Used correctly, it's powerful. Used blindly, it's destructive.</p>
+
+            <p>In this guide, I'll explain what RSI actually measures, how to use it correctly, and the most profitable way to trade with it.</p>
+
+            <div class="info-box">
+                <strong>💡 Key Takeaway:</strong> RSI below 30 does NOT mean "buy." In a strong downtrend, RSI can stay below 30 for weeks. Always use RSI as confirmation, not as your primary signal.
+            </div>
+
+            <!-- TABLE OF CONTENTS -->
+            <div class="table-of-contents">
+                <h3>📑 What You'll Learn</h3>
+                <ul>
+                    <li><a href="#what-is-rsi">What is RSI?</a></li>
+                    <li><a href="#overbought-oversold">Overbought and Oversold Levels</a></li>
+                    <li><a href="#rsi-divergence">RSI Divergence: The Most Powerful Signal</a></li>
+                    <li><a href="#how-to-trade">How to Trade with RSI</a></li>
+                    <li><a href="#rsi-settings">Best RSI Settings for Forex</a></li>
+                    <li><a href="#common-mistakes">Common RSI Mistakes</a></li>
+                </ul>
+            </div>
+
+            <!-- INTERNAL LINK TO POST #40 -->
+            <div class="internal-link">
+                📖 <strong>Related Reading:</strong> <a href="/category/strategy-analysis/moving-averages-explained/">Moving Averages Explained</a> — Combine RSI with moving averages for stronger signals.
+            </div>
+
+            <!-- SECTION 1 -->
+            <h2 id="what-is-rsi">What is RSI?</h2>
+            
+            <p>The <strong>Relative Strength Index (RSI)</strong> is a momentum oscillator that measures the speed and change of price movements. It ranges from 0 to 100.</p>
+            
+            <p><strong>What RSI tells you:</strong></p>
+            <ul>
+                <li><strong>Above 70:</strong> Potentially overbought — price has risen too fast</li>
+                <li><strong>Below 30:</strong> Potentially oversold — price has fallen too fast</li>
+                <li><strong>50:</strong> Neutral — equal buying and selling pressure</li>
+                <li><strong>Trending up:</strong> RSI tends to stay above 50</li>
+                <li><strong>Trending down:</strong> RSI tends to stay below 50</li>
+            </ul>
+            
+            <div class="info-box">
+                <strong>📊 RSI Formula (Simplified):</strong> RSI = 100 − (100 ÷ (1 + RS)), where RS = Average Gain ÷ Average Loss over 14 periods.
+            </div>
+
+            <!-- SECTION 2 -->
+            <h2 id="overbought-oversold">Overbought and Oversold Levels</h2>
+            
+            <p><strong>Standard levels:</strong> 70 (overbought), 30 (oversold). But these levels are not absolute.</p>
+            
+            <h3>In a Strong Uptrend</h3>
+            <p>RSI often reaches 80-85 before pulling back. RSI may stay above 50 for weeks. Buying at 70 in an uptrend might be catching a strong move, not a reversal.</p>
+            
+            <h3>In a Strong Downtrend</h3>
+            <p>RSI often reaches 15-20 before bouncing. RSI may stay below 50 for weeks. Buying at 30 in a downtrend might be catching a falling knife.</p>
+            
+            <div class="warning-box">
+                <strong>⚠️ Critical Rule:</strong> Don't trade against the trend just because RSI is overbought or oversold. In a strong trend, the market can stay overbought/oversold for a long time.
+            </div>
+
+            <!-- INTERNAL LINK TO POST #37 -->
+            <div class="internal-link">
+                📖 <strong>Related Reading:</strong> <a href="/category/strategy-analysis/trend-lines-explained/">Trend Lines Explained</a> — Always identify the trend before using RSI.
+            </div>
+
+            <!-- SECTION 3 -->
+            <h2 id="rsi-divergence">RSI Divergence: The Most Powerful Signal</h2>
+            
+            <p><strong>Divergence</strong> happens when price makes a new high/low, but RSI does not confirm it. This is one of the most reliable signals in technical analysis.</p>
+            
+            <h3>Bearish Divergence (Price makes higher high, RSI makes lower high)</h3>
+            <p><strong>What it means:</strong> Momentum is slowing even though price is still rising. A reversal may be coming.</p>
+            <p><strong>How to trade:</strong> Look for short entries after divergence is confirmed (RSI turns down from lower high).</p>
+            
+            <h3>Bullish Divergence (Price makes lower low, RSI makes higher low)</h3>
+            <p><strong>What it means:</strong> Selling momentum is slowing even though price is still falling. A reversal may be coming.</p>
+            <p><strong>How to trade:</strong> Look for long entries after divergence is confirmed (RSI turns up from higher low).</p>
+            
+            <div class="info-box">
+                <strong>📌 Pro Tip:</strong> Divergence on higher timeframes (4-hour, daily) is much more reliable than on lower timeframes. A daily divergence can signal a major trend change.
+            </div>
+
+            <!-- SECTION 4 -->
+            <h2 id="how-to-trade">How to Trade with RSI</h2>
+            
+            <h3>Strategy 1: RSI + Support/Resistance (Highest Probability)</h3>
+            <p>Wait for price to reach a key support or resistance level. Then check RSI for confirmation.</p>
+            <ul>
+                <li><strong>At support:</strong> Look for RSI below 30 (oversold) or bullish divergence</li>
+                <li><strong>At resistance:</strong> Look for RSI above 70 (overbought) or bearish divergence</li>
+            </ul>
+            
+            <h3>Strategy 2: RSI + Moving Average Pullback</h3>
+            <p>In an uptrend (price above 200 MA), wait for price to pull back to the 50 MA. Check RSI — if it's near 30-40, it's a potential entry.</p>
+            
+            <h3>Strategy 3: Trendline Break + RSI Confirmation</h3>
+            <p>When price breaks a trend line, check RSI to confirm momentum is shifting. RSI should cross above 50 (for uptrend) or below 50 (for downtrend).</p>
+            
+            <div class="warning-box">
+                <strong>⚠️ My Rule:</strong> I never take a trade based on RSI alone. I always combine it with support/resistance, trend lines, or candlestick patterns. RSI is confirmation, not a signal.
+            </div>
+
+            <!-- INTERNAL LINK TO POST #36 -->
+            <div class="internal-link">
+                📖 <strong>Related Reading:</strong> <a href="/category/strategy-analysis/support-and-resistance/">Support and Resistance</a> — RSI works best at key support and resistance levels.
+            </div>
+
+            <!-- SECTION 5 -->
+            <h2 id="rsi-settings">Best RSI Settings for Forex</h2>
+            
+            <table class="spreads-table">
+                <thead>
+                    <tr>
+                        <th>Timeframe</th>
+                        <th>RSI Period</th>
+                        <th>Overbought/Oversold Levels</th>
+                        <th>Best Use</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Daily/4-hour</td>
+                        <td>14</td>
+                        <td>70/30</td>
+                        <td>Trend identification, major divergences</td>
+                    </tr>
+                    <tr>
+                        <td>1-hour</td>
+                        <td>14</td>
+                        <td>70/30 (or 80/20)</td>
+                        <td>Entry timing, pullback confirmation</td>
+                    </tr>
+                    <tr>
+                        <td>15-minute</td>
+                        <td>9</td>
+                        <td>80/20</td>
+                        <td>Scalping (not recommended for beginners)</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <div class="info-box">
+                <strong>📌 My Settings:</strong> I use RSI 14 on the 4-hour and daily charts. I use 70/30 levels. I look for divergence on these timeframes. That's it. Keep it simple.
+            </div>
+
+            <!-- SECTION 6 -->
+            <h2 id="common-mistakes">Common RSI Mistakes</h2>
+            
+            <ul>
+                <li><strong>Buying at 30 in a downtrend:</strong> RSI can stay below 30 for weeks. You'll catch falling knives.</li>
+                <li><strong>Selling at 70 in an uptrend:</strong> RSI can stay above 70 for weeks. You'll miss huge moves.</li>
+                <li><strong>Ignoring the trend:</strong> RSI works best when aligned with the trend, not against it.</li>
+                <li><strong>Using too low timeframe:</strong> RSI on 1-minute charts is mostly noise.</li>
+                <li><strong>Forcing divergences:</strong> Not every minor pullback is a divergence. Wait for clear signals.</li>
+            </ul>
+            
+            <div class="warning-box">
+                <strong>⚠️ The #1 RSI Mistake:</strong> Using RSI as a standalone buy/sell signal. RSI is a confirmation tool. Always combine it with price action — support/resistance, trend lines, or candlestick patterns.
+            </div>
+
+            <!-- INTERNAL LINK TO POST #38 -->
+            <div class="internal-link">
+                📖 <strong>Related Reading:</strong> <a href="/category/strategy-analysis/candlestick-patterns/">Candlestick Patterns</a> — Use candlestick patterns as confirmation when RSI signals a potential reversal.
+            </div>
+
+            <hr>
+
+            <!-- CONCLUSION -->
+            <h2>RSI is a Tool, Not a Crystal Ball</h2>
+            <p>RSI won't tell you exactly when to buy or sell. But it will tell you when momentum is slowing, when price is overextended, and when a reversal might be coming.</p>
+            
+            <p><strong>Add RSI to your charts. Use it at key support/resistance. Look for divergence on higher timeframes. But always remember: price action comes first. RSI is just confirmation.</strong></p>
+
+            <!-- INTERNAL LINK TO POST #1 -->
+            <div class="internal-link">
+                📖 <strong>Related Reading:</strong> <a href="/category/getting-started/how-to-start-forex-trading/">How to Start Forex Trading</a> — Your complete roadmap. Add RSI after mastering support/resistance.
+            </div>
+
+        </div>
+
+        <!-- SOFT CTA -->
+        <div class="blog-cta">
+            <h3>📌 Ready to Start Your Trading Journey?</h3>
+            <p>I've documented my entire broker setup — tight spreads, instant withdrawals, and why I've stuck with Exness for years.</p>
+            <a href="https://structuretradelab.com/broker-setup/" class="btn">View My Broker Setup →</a>
+            <p class="disclosure-small">📌 I'm an Introducing Broker. I earn commission when you trade. No extra cost to you.</p>
+        </div>
+
+    </article>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-disclosure">
+                <strong>Disclosure:</strong> Structure Trade Lab is an independent educational website. As an Introducing Broker (IB), I may earn commissions when you trade through links on this site. This does not affect your trading conditions or costs.
+            </div>
+            <div class="footer-disclosure">
+                <strong>Risk Warning:</strong> Trading forex and CFDs carries a high level of risk. Past performance does not guarantee future results. Only trade with money you can afford to lose.
+            </div>
+            <p>© <span id="current-year"></span> Structure Trade Lab. All rights reserved.</p>
+            <p style="margin-top: 10px;">
+                <a href="https://structuretradelab.com">Home</a> | 
+                <a href="/">Blog</a> | 
+                <a href="https://tools.structuretradelab.com">Tools</a> |
+                <a href="https://structuretradelab.com/about">About</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Hamburger Menu & Year -->
+    <script src="https://structuretradelab.com/assets/js/common.js" defer></script>
+</body>
+</html>
