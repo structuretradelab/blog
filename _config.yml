@@ -1,3 +1,7 @@
 # For blog.structuretradelab.com
 baseurl: ""
 url: "https://blog.structuretradelab.com"
+
+title: "Structure Trade Lab"
+description: "Practical forex trading guides for beginners. Learn to trade with structure, discipline, and a plan."
+keywords: [trading, finance, market structure]

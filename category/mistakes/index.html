@@ -1,10 +1,14 @@
+---
+---
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Avoid the biggest forex trading mistakes beginners make. Learn from real losses and protect your account from common pitfalls.">
+    <meta name="description"
+        content="Avoid the biggest forex trading mistakes beginners make. Learn from real losses and protect your account from common pitfalls.">
     <title>Common Mistakes — What to Avoid in Forex | Structure Trade Lab</title>
 
     <script>
@@ -16,7 +20,7 @@
             }
         })();
     </script>
-    
+
     <link rel="stylesheet" href="https://structuretradelab.com/assets/css/common.css">
     <link rel="stylesheet" href="https://structuretradelab.com/assets/css/each-category.css">
 
@@ -34,46 +38,14 @@
             }
         }
     </script>
-    
+
 </head>
+
 <body>
 
     <!-- HEADER -->
-    <header>
-        <div class="container header-flex">
-            <div class="logo">
-                <a href="https://structuretradelab.com">
-                    <h1>📊 Structure Trade Lab</h1>
-                    <p>Trade with Structure. Trade with a Plan.</p>
-                </a>
-            </div>
-            
-            <div style="display: flex; align-items: center; gap: 15px;">
-                <!-- Dark Mode Toggle Button -->
-                 <button class="dark-mode-toggle" id="darkModeToggle" aria-label="Dark mode">
-                    <span class="toggle-icon">🌙</span>
-                    <span class="toggle-text">Dark</span>
-                </button>
-                
-                <!-- Hamburger Button -->
-                 <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-            </div>
-            
-            <nav id="mainNav">
-                <a href="https://structuretradelab.com">Home</a>
-                <a href="/">Blog</a>
-                <a href="https://tools.structuretradelab.com">Tools</a>
-                <a href="https://structuretradelab.com/about">About</a>
-            </nav>
-        </div>
-    </header>
-    
-    <!-- Overlay for mobile menu -->
-     <div class="menu-overlay" id="menuOverlay"></div>
+    {% include header.html %}
+
 
     <!-- CATEGORY HEADER -->
     <div class="page-header">
@@ -86,21 +58,49 @@
     <!-- POSTS LIST -->
     <div class="category-posts-container">
         <div class="category-posts-list">
-            
+
             <!-- Published Post #49 -->
             <article class="category-post-item">
                 <div class="category-post-meta">
                     <span class="post-date">📅 June 2026</span>
                     <span class="post-read-time">📖 10 min read</span>
                 </div>
-                <h2><a href="/category/mistakes/common-forex-mistakes/">10 Most Common Forex Trading Mistakes Beginners Make (And How to Avoid Them)</a></h2>
-                <p>I've made every mistake on this list. Learn from my losses — trading without a plan, using too much leverage, revenge trading, and more.</p>
+                <h2><a href="/category/mistakes/common-forex-mistakes/">10 Most Common Forex Trading Mistakes Beginners
+                        Make (And How to Avoid Them)</a></h2>
+                <p>I've made every mistake on this list. Learn from my losses — trading without a plan, using too much
+                    leverage, revenge trading, and more.</p>
                 <a href="/category/mistakes/common-forex-mistakes/" class="read-more">Read full guide →</a>
             </article>
-            
+
+
+            <article class="category-post-item">
+                <div class="category-post-meta">
+                    <span class="post-date">📅 June 2026</span>
+                    <span class="post-read-time">📖 8 min read</span>
+                </div>
+                <h2><a href="/category/mistakes/no-trading-plan/">No Trading Plan? You've Already Lost</a></h2>
+                <p>Trading without a plan is gambling. Learn why you need a written plan, what to include, and how to
+                    stick to it.</p>
+                <a href="/category/mistakes/no-trading-plan/" class="read-more">Read full guide →</a>
+            </article>
+
+
+            <article class="category-post-item">
+                <div class="category-post-meta">
+                    <span class="post-date">📅 June 2026</span>
+                    <span class="post-read-time">📖 8 min read</span>
+                </div>
+                <h2><a href="/category/mistakes/following-social-media-gurus/">Following Social Media Gurus: Why 99% Are
+                        Faking It</a></h2>
+                <p>Learn to spot fake traders, avoid expensive courses, and protect your money. Real traders don't need
+                    to sell you a $997 course.</p>
+                <a href="/category/mistakes/following-social-media-gurus/" class="read-more">Read full guide →</a>
+            </article>
+
+
 
         </div>
-        
+
         <!-- Sidebar / Categories Navigation -->
         <aside class="category-sidebar">
             <div class="sidebar-widget">
@@ -116,11 +116,12 @@
                     <li><a href="/category/tools-resources/">🔧 Tools & Resources</a></li>
                 </ul>
             </div>
-            
+
             <div class="sidebar-widget">
                 <h3>⭐ Essential Reading</h3>
                 <ul class="sidebar-essentials-list">
-                    <li><a href="/category/getting-started/how-to-start-forex-trading/">How to Start Forex Trading</a></li>
+                    <li><a href="/category/getting-started/how-to-start-forex-trading/">How to Start Forex Trading</a>
+                    </li>
                     <li><a href="/category/leverage-margin/what-is-leverage-in-forex/">What is Leverage?</a></li>
                     <li><a href="/category/risk-management/risk-management-101/">Risk Management 101</a></li>
                 </ul>
@@ -129,28 +130,11 @@
     </div>
 
     <!-- FOOTER -->
-    <footer>
-        <div class="container">
-            <div class="footer-disclosure">
-                <strong>Disclosure:</strong> Structure Trade Lab is an independent educational website. As an
-                Introducing Broker (IB), I may earn commissions when you trade through links on this site. This does not
-                affect your trading conditions or costs.
-            </div>
-            <div class="footer-disclosure">
-                <strong>Risk Warning:</strong> Trading forex and CFDs carries a high level of risk. Past performance
-                does not guarantee future results. Only trade with money you can afford to lose.
-            </div>
-            <p>© <span id="current-year"></span> Structure Trade Lab. All rights reserved.</p>
-            <p style="margin-top: 10px;">
-                <a href="https://structuretradelab.com">Home</a> |
-                <a href="/">Blog</a> |
-                <a href="https://tools.structuretradelab.com">Tools</a> |
-                <a href="https://structuretradelab.com/about">About</a>
-            </p>
-        </div>
-    </footer>
+     {% include footer.html %}
+
 
     <!-- JavaScript for Hamburger Menu & Year -->
     <script src="https://structuretradelab.com/assets/js/common.js" defer></script>
 </body>
+
 </html>

@@ -1,0 +1,94 @@
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Meta defaults -->
+{% if page.description %}
+    <meta name="description" content="{{ page.description }}">
+{% else %}
+    <meta name="description" content="{{ site.description }}">
+{% endif %}
+
+{% if page.keywords %}
+    <meta name="keywords" content="{{ page.keywords }}">
+{% endif %}
+
+<meta name="author" content="{{ site.title }}">
+
+<title>
+    {% if page.title %}
+        {{ page.title }} | {{ site.title }}
+    {% else %}
+        {{ site.title }}
+    {% endif %}
+</title>
+
+<!-- Canonical URL -->
+<link rel="canonical" href="{{ page.url | absolute_url }}">
+
+<!-- Open Graph -->
+<meta property="og:title" content="{{ page.title | default: site.title }}">
+<meta property="og:description" content="{{ page.description | default: site.description }}">
+<meta property="og:url" content="{{ page.url | absolute_url }}">
+<meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
+
+{% if page.image %}
+    <meta property="og:image" content="{{ page.image | absolute_url }}">
+{% endif %}
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@structuretradelab">  <!-- Your Twitter handle -->
+<meta name="twitter:title" content="{{ page.title | default: site.title }}">
+<meta name="twitter:description" content="{{ page.description | default: site.description }}">
+{% if page.image %}
+<meta name="twitter:image" content="{{ page.image | absolute_url }}">
+{% endif %}
+
+
+<!-- JSON-LD - Always output -->
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "{{ page.title | escape }}",
+    "description": "{{ page.description | escape }}",
+    {% if page.image %}
+    "image": "{{ page.image | absolute_url }}",
+    {% endif %}
+    "author": {
+        "@type": "Person",
+        "name": "{{ site.title }}",
+        "url": "https://structuretradelab.com/about"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "{{ site.title }}",
+        "url": "{{ site.url }}"
+    },
+    "datePublished": "{{ page.date | date: '%Y-%m-%d' }}",
+    "dateModified": "{{ page.last_modified_at | default: page.date | date: '%Y-%m-%d' }}",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "{{ page.url | absolute_url }}"
+    },
+    "keywords": "{{ page.keywords }}"
+}
+</script>
+
+
+<!-- Dark mode script -->
+<script>
+    (function () {
+        const savedTheme = localStorage.getItem('theme');
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+            document.documentElement.classList.add('dark-mode');
+        }
+    })();
+</script>
+
+<!-- CSS -->
+<link rel="stylesheet" href="https://structuretradelab.com/assets/css/common.css">
+<link rel="stylesheet" href="https://structuretradelab.com/assets/css/article.css">
+
