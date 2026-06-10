@@ -458,5 +458,14 @@
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
+
+     <!-- Tools & Resources Posts -->                                                                                    <!-- Tools & Resources Posts -->
+
+     <url>
+        <loc>https://blog.structuretradelab.com/category/tools-resources/free-position-size-calculator/</loc>
+        <lastmod>2026-06-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
     
 </urlset>
