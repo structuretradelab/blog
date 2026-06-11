@@ -10,14 +10,14 @@
         <div class="article-header">
             <div class="article-category">
                 <a href="/category/{{ page.category | default: 'getting-started' }}">
-                    {{ page.category-label | default: "🚀 getting-started" }}
+                    {{ page.category-icon | default: "🚀" }} {{ page.category-label | default: "🚀 getting-started" }}
                 </a>
             </div>
             <h1 class="article-title">{{ page.title }}</h1>
             <div class="article-meta">
                 <span>📅 Published: {{ page.date | date: "%B %Y" }}</span>
                 <span>📖 {{ page.read-time | default: "8" }} min read</span>
-                <span>🏷️ Category: {{ page.category-label | default: "Common Mistakes" }}</span>
+                <span>🏷️ Category: {{ page.category-label | default: "getting-started" }}</span>
             </div>
         </div>
         
