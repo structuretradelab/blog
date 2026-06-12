@@ -1,348 +1,239 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+---
+layout: article
+title: "How to Identify Market Trends (Uptrend, Downtrend, Sideways)"
+description: "How to identify market trends: Uptrend, downtrend, and sideways. Learn to spot trend direction, strength,
+and when to trade or stay out."
+keywords: "how to identify market trends, uptrend downtrend sideways, forex trend identification, trend trading, market
+direction"
+date: 2026-06-05
+image: /category/strategy-analysis/how-to-identify-market-trends/trend-identification-featured.webp
+image-alt: "Three charts comparing uptrend (higher highs, higher lows), downtrend (lower highs, lower lows), and
+sideways (support and resistance) — how to identify market trends"
+category: strategy-analysis
+category-icon: 📈
+category-label: "Strategy & Analysis"
+read-time: 8
+---
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="How to identify market trends: Uptrend, downtrend, and sideways. Learn to spot trend direction, strength, and when to trade or stay out.">
-    <meta name="keywords" content="how to identify market trends, uptrend downtrend sideways, forex trend identification, trend trading, market direction">
-    <meta name="author" content="Structure Trade Lab">
-    <title>How to Identify Market Trends (Uptrend, Downtrend, Sideways) | Structure Trade Lab</title>
+<p>"The trend is your friend" — you've heard this phrase countless times. But how do you actually identify the trend?
+    And what do you do when there's no clear trend at all?</p>
 
-    <script>
-        (function () {
-            const savedTheme = localStorage.getItem('theme');
-            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-            if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
-                document.documentElement.classList.add('dark-mode');
-            }
-        })();
-    </script>
-    
-    <link rel="stylesheet" href="https://structuretradelab.com/assets/css/common.css">
-    <link rel="stylesheet" href="https://structuretradelab.com/assets/css/article.css">
-    
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": "How to Identify Market Trends (Uptrend, Downtrend, Sideways)",
-        "description": "How to identify market trends: Uptrend, downtrend, and sideways. Learn to spot trend direction, strength, and when to trade or stay out.",
-        "image": "https://blog.structuretradelab.com/category/strategy-analysis/how-to-identify-market-trends/trend-identification-featured.webp",
-        "author": {
-            "@type": "Person",
-            "name": "Structure Trade Lab",
-            "url": "https://structuretradelab.com/about"
-        },
-        "publisher": {
-            "@type": "Organization",
-            "name": "Structure Trade Lab"
-        },
-        "datePublished": "2026-06-05",
-        "dateModified": "2026-06-05",
-        "mainEntityOfPage": {
-            "@type": "WebPage",
-            "@id": "https://blog.structuretradelab.com/category/strategy-analysis/how-to-identify-market-trends/"
-        },
-        "keywords": "how to identify market trends, uptrend downtrend sideways, forex trend identification, trend trading"
-    }
-    </script>
-</head>
-<body>
+<p>In my first year, I traded against the trend constantly. I'd see a price drop and think "It's cheap — I'll buy." Then
+    it would drop further. I was fighting the market instead of following it.</p>
 
-    <!-- HEADER -->
-    <header>
-        <div class="container header-flex">
-            <div class="logo">
-                <a href="https://structuretradelab.com">
-                    <h1>📊 Structure Trade Lab</h1>
-                    <p>Trade with Structure. Trade with a Plan.</p>
-                </a>
-            </div>
-            
-            <div style="display: flex; align-items: center; gap: 15px;">
-                <button class="dark-mode-toggle" id="darkModeToggle" aria-label="Dark mode">
-                    <span class="toggle-icon">🌙</span>
-                    <span class="toggle-text">Dark</span>
-                </button>
-                <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-            </div>
-            
-            <nav id="mainNav">
-                <a href="https://structuretradelab.com">Home</a>
-                <a href="/">Blog</a>
-                <a href="https://tools.structuretradelab.com">Tools</a>
-                <a href="https://structuretradelab.com/about">About</a>
-            </nav>
-        </div>
-    </header>
-    
-    <div class="menu-overlay" id="menuOverlay"></div>
+<p>In this guide, I'll show you exactly how to identify market trends — uptrend, downtrend, and sideways — and what to
+    do in each condition.</p>
 
-    <!-- ARTICLE -->
-    <article class="article-container">
-        <div class="article-header">
-            <div class="article-category"><a href="/category/strategy-analysis/">📈 Strategy & Analysis</a></div>
-            <h1 class="article-title">How to Identify Market Trends (Uptrend, Downtrend, Sideways)</h1>
-            <div class="article-meta">
-                <span>📅 Published: June 2026</span>
-                <span>📖 8 min read</span>
-                <span>🏷️ Category: Strategy & Analysis</span>
-            </div>
-        </div>
-        
-        <!-- FEATURED IMAGE -->
-        <div class="featured-image">
-            <img src="trend-identification-featured.webp" 
-                 alt="Three charts comparing uptrend (higher highs, higher lows), downtrend (lower highs, lower lows), and sideways (support and resistance) — how to identify market trends" 
-                 loading="eager"
-                 width="800"
-                 height="450">
-        </div>
-        
-        <div class="article-content">
+<div class="info-box">
+    <strong>💡 Key Takeaway:</strong> Trading with the trend doubles your probability of success. Trading against the
+    trend is like swimming upstream — exhausting and usually unsuccessful.
+</div>
 
-            <p>"The trend is your friend" — you've heard this phrase countless times. But how do you actually identify the trend? And what do you do when there's no clear trend at all?</p>
+<!-- TABLE OF CONTENTS -->
+<div class="table-of-contents">
+    <h3>📑 What You'll Learn</h3>
+    <ul>
+        <li><a href="#what-is-a-trend">What is a Market Trend?</a></li>
+        <li><a href="#uptrend">How to Identify an Uptrend (Bullish)</a></li>
+        <li><a href="#downtrend">How to Identify a Downtrend (Bearish)</a></li>
+        <li><a href="#sideways">How to Identify a Sideways Market (Ranging)</a></li>
+        <li><a href="#trend-strength">How to Measure Trend Strength</a></li>
+        <li><a href="#how-to-trade">How to Trade Each Market Condition</a></li>
+    </ul>
+</div>
 
-            <p>In my first year, I traded against the trend constantly. I'd see a price drop and think "It's cheap — I'll buy." Then it would drop further. I was fighting the market instead of following it.</p>
+<!-- INTERNAL LINK TO POST #37 -->
+<div class="internal-link">
+    📖 <strong>Related Reading:</strong> <a href="/category/strategy-analysis/trend-lines-explained/">Trend Lines
+        Explained</a> — Learn to draw trend lines, another way to identify trends.
+</div>
 
-            <p>In this guide, I'll show you exactly how to identify market trends — uptrend, downtrend, and sideways — and what to do in each condition.</p>
+<!-- SECTION 1 -->
+<h2 id="what-is-a-trend">What is a Market Trend?</h2>
 
-            <div class="info-box">
-                <strong>💡 Key Takeaway:</strong> Trading with the trend doubles your probability of success. Trading against the trend is like swimming upstream — exhausting and usually unsuccessful.
-            </div>
+<p>A <strong>trend</strong> is the general direction in which the market is moving. There are three types:</p>
 
-            <!-- TABLE OF CONTENTS -->
-            <div class="table-of-contents">
-                <h3>📑 What You'll Learn</h3>
-                <ul>
-                    <li><a href="#what-is-a-trend">What is a Market Trend?</a></li>
-                    <li><a href="#uptrend">How to Identify an Uptrend (Bullish)</a></li>
-                    <li><a href="#downtrend">How to Identify a Downtrend (Bearish)</a></li>
-                    <li><a href="#sideways">How to Identify a Sideways Market (Ranging)</a></li>
-                    <li><a href="#trend-strength">How to Measure Trend Strength</a></li>
-                    <li><a href="#how-to-trade">How to Trade Each Market Condition</a></li>
-                </ul>
-            </div>
+<ul>
+    <li><strong>Uptrend (Bullish):</strong> Prices are moving UP over time</li>
+    <li><strong>Downtrend (Bearish):</strong> Prices are moving DOWN over time</li>
+    <li><strong>Sideways (Ranging):</strong> Prices are moving HORIZONTALLY</li>
+</ul>
 
-            <!-- INTERNAL LINK TO POST #37 -->
-            <div class="internal-link">
-                📖 <strong>Related Reading:</strong> <a href="/category/strategy-analysis/trend-lines-explained/">Trend Lines Explained</a> — Learn to draw trend lines, another way to identify trends.
-            </div>
+<div class="info-box">
+    <strong>📌 The Key Insight:</strong> Trends exist on every timeframe. The daily trend is more important than the
+    1-hour trend. Always start with higher timeframes.
+</div>
 
-            <!-- SECTION 1 -->
-            <h2 id="what-is-a-trend">What is a Market Trend?</h2>
-            
-            <p>A <strong>trend</strong> is the general direction in which the market is moving. There are three types:</p>
-            
-            <ul>
-                <li><strong>Uptrend (Bullish):</strong> Prices are moving UP over time</li>
-                <li><strong>Downtrend (Bearish):</strong> Prices are moving DOWN over time</li>
-                <li><strong>Sideways (Ranging):</strong> Prices are moving HORIZONTALLY</li>
-            </ul>
-            
-            <div class="info-box">
-                <strong>📌 The Key Insight:</strong> Trends exist on every timeframe. The daily trend is more important than the 1-hour trend. Always start with higher timeframes.
-            </div>
+<!-- SECTION 2 -->
+<h2 id="uptrend">How to Identify an Uptrend (Bullish)</h2>
 
-            <!-- SECTION 2 -->
-            <h2 id="uptrend">How to Identify an Uptrend (Bullish)</h2>
-            
-            <p>An uptrend is defined by:</p>
-            <ul>
-                <li><strong>Higher highs:</strong> Each new peak is higher than the previous peak</li>
-                <li><strong>Higher lows:</strong> Each new trough is higher than the previous trough</li>
-                <li>Price stays above key moving averages (e.g., 200 MA)</li>
-                <li>More bullish candles (green) than bearish</li>
-            </ul>
-            
-            <div class="info-box">
-                <strong>📊 Example:</strong> EUR/USD makes a high of 1.1050, pulls back to 1.1000, then makes a new high of 1.1100. That's higher high + higher low → uptrend.
-            </div>
-            
-            <h3>How to Trade an Uptrend</h3>
-            <ul>
-                <li>Only take LONG trades (buy)</li>
-                <li>Buy on pullbacks to support or moving averages</li>
-                <li>Avoid short trades — they fight the trend</li>
-            </ul>
+<p>An uptrend is defined by:</p>
+<ul>
+    <li><strong>Higher highs:</strong> Each new peak is higher than the previous peak</li>
+    <li><strong>Higher lows:</strong> Each new trough is higher than the previous trough</li>
+    <li>Price stays above key moving averages (e.g., 200 MA)</li>
+    <li>More bullish candles (green) than bearish</li>
+</ul>
 
-            <!-- SECTION 3 -->
-            <h2 id="downtrend">How to Identify a Downtrend (Bearish)</h2>
-            
-            <p>A downtrend is defined by:</p>
-            <ul>
-                <li><strong>Lower highs:</strong> Each new peak is lower than the previous peak</li>
-                <li><strong>Lower lows:</strong> Each new trough is lower than the previous trough</li>
-                <li>Price stays below key moving averages (e.g., 200 MA)</li>
-                <li>More bearish candles (red) than bullish</li>
-            </ul>
-            
-            <div class="info-box">
-                <strong>📊 Example:</strong> GBP/USD makes a low of 1.2500, rallies to 1.2550, then makes a new low of 1.2450. That's lower high + lower low → downtrend.
-            </div>
-            
-            <h3>How to Trade a Downtrend</h3>
-            <ul>
-                <li>Only take SHORT trades (sell)</li>
-                <li>Sell on pullbacks to resistance or moving averages</li>
-                <li>Avoid long trades — they fight the trend</li>
-            </ul>
+<div class="info-box">
+    <strong>📊 Example:</strong> EUR/USD makes a high of 1.1050, pulls back to 1.1000, then makes a new high of 1.1100.
+    That's higher high + higher low → uptrend.
+</div>
 
-            <!-- INTERNAL LINK TO POST #40 -->
-            <div class="internal-link">
-                📖 <strong>Related Reading:</strong> <a href="/category/strategy-analysis/moving-averages-explained/">Moving Averages Explained</a> — Use moving averages to confirm trend direction.
-            </div>
+<h3>How to Trade an Uptrend</h3>
+<ul>
+    <li>Only take LONG trades (buy)</li>
+    <li>Buy on pullbacks to support or moving averages</li>
+    <li>Avoid short trades — they fight the trend</li>
+</ul>
 
-            <!-- SECTION 4 -->
-            <h2 id="sideways">How to Identify a Sideways Market (Ranging)</h2>
-            
-            <p>A sideways (ranging) market is defined by:</p>
-            <ul>
-                <li><strong>Equal highs:</strong> Peaks are at roughly the same level</li>
-                <li><strong>Equal lows:</strong> Troughs are at roughly the same level</li>
-                <li>Price bounces between horizontal support and resistance</li>
-                <li>Moving averages are flat (not sloping up or down)</li>
-                <li>Both bullish and bearish candles appear regularly</li>
-            </ul>
-            
-            <div class="warning-box">
-                <strong>⚠️ The Danger Zone:</strong> Ranging markets kill trend-following strategies. Moving averages give false signals. Trend lines break constantly. This is where beginners lose money.
-            </div>
-            
-            <h3>How to Trade a Sideways Market</h3>
-            <ul>
-                <li><strong>Buy at support:</strong> When price reaches the lower boundary</li>
-                <li><strong>Sell at resistance:</strong> When price reaches the upper boundary</li>
-                <li><strong>Or don't trade at all:</strong> Sometimes the best trade is no trade</li>
-            </ul>
+<!-- SECTION 3 -->
+<h2 id="downtrend">How to Identify a Downtrend (Bearish)</h2>
 
-            <!-- INTERNAL LINK TO POST #36 -->
-            <div class="internal-link">
-                📖 <strong>Related Reading:</strong> <a href="/category/strategy-analysis/support-and-resistance/">Support and Resistance</a> — In ranging markets, support and resistance are your best tools.
-            </div>
+<p>A downtrend is defined by:</p>
+<ul>
+    <li><strong>Lower highs:</strong> Each new peak is lower than the previous peak</li>
+    <li><strong>Lower lows:</strong> Each new trough is lower than the previous trough</li>
+    <li>Price stays below key moving averages (e.g., 200 MA)</li>
+    <li>More bearish candles (red) than bullish</li>
+</ul>
 
-            <!-- SECTION 5 -->
-            <h2 id="trend-strength">How to Measure Trend Strength</h2>
-            
-            <p>Not all trends are equal. Here's how to tell if a trend is strong or weak:</p>
-            
-            <table class="spreads-table">
-                <thead>
-                    <tr>
-                        <th>Indicator</th>
-                        <th>Strong Trend</th>
-                        <th>Weak Trend</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>Angle</strong></td>
-                        <td>45 degrees (sustainable)</td>
-                        <td>Flat or too steep (likely to reverse)</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Pullbacks</strong></td>
-                        <td>Shallow (20-30% of trend move)</td>
-                        <td>Deep (70%+ of trend move)</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Moving averages</strong></td>
-                        <td>Price stays above 50 MA (uptrend) or below (downtrend)</td>
-                        <td>Price chops around moving averages</td>
-                    </tr>
-                </tbody>
-            </table>
-            
-            <div class="info-box">
-                <strong>📌 Pro Tip:</strong> Strong trends are the easiest to trade. They have shallow pullbacks and clear direction. Weak trends are choppy — often better to avoid.
-            </div>
+<div class="info-box">
+    <strong>📊 Example:</strong> GBP/USD makes a low of 1.2500, rallies to 1.2550, then makes a new low of 1.2450.
+    That's lower high + lower low → downtrend.
+</div>
 
-            <!-- SECTION 6 -->
-            <h2 id="how-to-trade">How to Trade Each Market Condition</h2>
-            
-            <h3>Uptrend Strategy</h3>
-            <ul>
-                <li><strong>Direction:</strong> Only long</li>
-                <li><strong>Entry:</strong> Buy on pullbacks to support or 50 MA</li>
-                <li><strong>Stop loss:</strong> Below the recent swing low</li>
-                <li><strong>Target:</strong> Previous high or measured move</li>
-            </ul>
-            
-            <h3>Downtrend Strategy</h3>
-            <ul>
-                <li><strong>Direction:</strong> Only short</li>
-                <li><strong>Entry:</strong> Sell on pullbacks to resistance or 50 MA</li>
-                <li><strong>Stop loss:</strong> Above the recent swing high</li>
-                <li><strong>Target:</strong> Previous low or measured move</li>
-            </ul>
-            
-            <h3>Sideways Strategy</h3>
-            <ul>
-                <li><strong>Direction:</strong> Long at support, short at resistance</li>
-                <li><strong>Entry:</strong> When price reaches boundary with confirmation</li>
-                <li><strong>Stop loss:</strong> Beyond the boundary (5-10 pips)</li>
-                <li><strong>Target:</strong> The opposite boundary</li>
-            </ul>
-            
-            <div class="warning-box">
-                <strong>⚠️ My Rule:</strong> I only trade trending markets. If the daily chart is sideways (flat moving averages, equal highs/lows), I don't trade. I wait for a breakout or come back another day.
-            </div>
+<h3>How to Trade a Downtrend</h3>
+<ul>
+    <li>Only take SHORT trades (sell)</li>
+    <li>Sell on pullbacks to resistance or moving averages</li>
+    <li>Avoid long trades — they fight the trend</li>
+</ul>
 
-            <!-- INTERNAL LINK TO POST #37 -->
-            <div class="internal-link">
-                📖 <strong>Related Reading:</strong> <a href="/category/strategy-analysis/trend-lines-explained/">Trend Lines Explained</a> — Use trend lines to confirm the trend direction.
-            </div>
+<!-- INTERNAL LINK TO POST #40 -->
+<div class="internal-link">
+    📖 <strong>Related Reading:</strong> <a href="/category/strategy-analysis/moving-averages-explained/">Moving
+        Averages Explained</a> — Use moving averages to confirm trend direction.
+</div>
 
-            <hr>
+<!-- SECTION 4 -->
+<h2 id="sideways">How to Identify a Sideways Market (Ranging)</h2>
 
-            <!-- CONCLUSION -->
-            <h2>Follow the Path of Least Resistance</h2>
-            <p>The market moves in trends. Your job is not to predict where price will go — it's to identify the current trend and follow it.</p>
-            
-            <p><strong>Start with the daily chart. Identify the trend. Is it up, down, or sideways? If trending, trade in that direction. If sideways, trade support/resistance or don't trade at all. That's how you stop fighting the market.</strong></p>
+<p>A sideways (ranging) market is defined by:</p>
+<ul>
+    <li><strong>Equal highs:</strong> Peaks are at roughly the same level</li>
+    <li><strong>Equal lows:</strong> Troughs are at roughly the same level</li>
+    <li>Price bounces between horizontal support and resistance</li>
+    <li>Moving averages are flat (not sloping up or down)</li>
+    <li>Both bullish and bearish candles appear regularly</li>
+</ul>
 
-            <!-- INTERNAL LINK TO POST #1 -->
-            <div class="internal-link">
-                📖 <strong>Related Reading:</strong> <a href="/category/getting-started/how-to-start-forex-trading/">How to Start Forex Trading</a> — Your complete roadmap. Learn to identify trends before placing your first trade.
-            </div>
+<div class="warning-box">
+    <strong>⚠️ The Danger Zone:</strong> Ranging markets kill trend-following strategies. Moving averages give false
+    signals. Trend lines break constantly. This is where beginners lose money.
+</div>
 
-        </div>
+<h3>How to Trade a Sideways Market</h3>
+<ul>
+    <li><strong>Buy at support:</strong> When price reaches the lower boundary</li>
+    <li><strong>Sell at resistance:</strong> When price reaches the upper boundary</li>
+    <li><strong>Or don't trade at all:</strong> Sometimes the best trade is no trade</li>
+</ul>
 
-        <!-- SOFT CTA -->
-        <div class="blog-cta">
-            <h3>📌 Ready to Start Your Trading Journey?</h3>
-            <p>I've documented my entire broker setup — tight spreads, instant withdrawals, and why I've stuck with Exness for years.</p>
-            <a href="https://structuretradelab.com/broker-setup/" class="btn">View My Broker Setup →</a>
-            <p class="disclosure-small">📌 I'm an Introducing Broker. I earn commission when you trade. No extra cost to you.</p>
-        </div>
+<!-- INTERNAL LINK TO POST #36 -->
+<div class="internal-link">
+    📖 <strong>Related Reading:</strong> <a href="/category/strategy-analysis/support-and-resistance/">Support and
+        Resistance</a> — In ranging markets, support and resistance are your best tools.
+</div>
 
-    </article>
+<!-- SECTION 5 -->
+<h2 id="trend-strength">How to Measure Trend Strength</h2>
 
-    <!-- FOOTER -->
-    <footer>
-        <div class="container">
-            <div class="footer-disclosure">
-                <strong>Disclosure:</strong> Structure Trade Lab is an independent educational website. As an Introducing Broker (IB), I may earn commissions when you trade through links on this site. This does not affect your trading conditions or costs.
-            </div>
-            <div class="footer-disclosure">
-                <strong>Risk Warning:</strong> Trading forex and CFDs carries a high level of risk. Past performance does not guarantee future results. Only trade with money you can afford to lose.
-            </div>
-            <p>© <span id="current-year"></span> Structure Trade Lab. All rights reserved.</p>
-            <p style="margin-top: 10px;">
-                <a href="https://structuretradelab.com">Home</a> | 
-                <a href="/">Blog</a> | 
-                <a href="https://tools.structuretradelab.com">Tools</a> |
-                <a href="https://structuretradelab.com/about">About</a>
-            </p>
-        </div>
-    </footer>
+<p>Not all trends are equal. Here's how to tell if a trend is strong or weak:</p>
 
-    <!-- JavaScript for Hamburger Menu & Year -->
-    <script src="https://structuretradelab.com/assets/js/common.js" defer></script>
-</body>
-</html>
+<table class="spreads-table">
+    <thead>
+        <tr>
+            <th>Indicator</th>
+            <th>Strong Trend</th>
+            <th>Weak Trend</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Angle</strong></td>
+            <td>45 degrees (sustainable)</td>
+            <td>Flat or too steep (likely to reverse)</td>
+        </tr>
+        <tr>
+            <td><strong>Pullbacks</strong></td>
+            <td>Shallow (20-30% of trend move)</td>
+            <td>Deep (70%+ of trend move)</td>
+        </tr>
+        <tr>
+            <td><strong>Moving averages</strong></td>
+            <td>Price stays above 50 MA (uptrend) or below (downtrend)</td>
+            <td>Price chops around moving averages</td>
+        </tr>
+    </tbody>
+</table>
+
+<div class="info-box">
+    <strong>📌 Pro Tip:</strong> Strong trends are the easiest to trade. They have shallow pullbacks and clear
+    direction. Weak trends are choppy — often better to avoid.
+</div>
+
+<!-- SECTION 6 -->
+<h2 id="how-to-trade">How to Trade Each Market Condition</h2>
+
+<h3>Uptrend Strategy</h3>
+<ul>
+    <li><strong>Direction:</strong> Only long</li>
+    <li><strong>Entry:</strong> Buy on pullbacks to support or 50 MA</li>
+    <li><strong>Stop loss:</strong> Below the recent swing low</li>
+    <li><strong>Target:</strong> Previous high or measured move</li>
+</ul>
+
+<h3>Downtrend Strategy</h3>
+<ul>
+    <li><strong>Direction:</strong> Only short</li>
+    <li><strong>Entry:</strong> Sell on pullbacks to resistance or 50 MA</li>
+    <li><strong>Stop loss:</strong> Above the recent swing high</li>
+    <li><strong>Target:</strong> Previous low or measured move</li>
+</ul>
+
+<h3>Sideways Strategy</h3>
+<ul>
+    <li><strong>Direction:</strong> Long at support, short at resistance</li>
+    <li><strong>Entry:</strong> When price reaches boundary with confirmation</li>
+    <li><strong>Stop loss:</strong> Beyond the boundary (5-10 pips)</li>
+    <li><strong>Target:</strong> The opposite boundary</li>
+</ul>
+
+<div class="warning-box">
+    <strong>⚠️ My Rule:</strong> I only trade trending markets. If the daily chart is sideways (flat moving averages,
+    equal highs/lows), I don't trade. I wait for a breakout or come back another day.
+</div>
+
+<!-- INTERNAL LINK TO POST #37 -->
+<div class="internal-link">
+    📖 <strong>Related Reading:</strong> <a href="/category/strategy-analysis/trend-lines-explained/">Trend Lines
+        Explained</a> — Use trend lines to confirm the trend direction.
+</div>
+
+<hr>
+
+<!-- CONCLUSION -->
+<h2>Follow the Path of Least Resistance</h2>
+<p>The market moves in trends. Your job is not to predict where price will go — it's to identify the current trend and
+    follow it.</p>
+
+<p><strong>Start with the daily chart. Identify the trend. Is it up, down, or sideways? If trending, trade in that
+        direction. If sideways, trade support/resistance or don't trade at all. That's how you stop fighting the
+        market.</strong></p>
+
+<!-- INTERNAL LINK TO POST #1 -->
+<div class="internal-link">
+    📖 <strong>Related Reading:</strong> <a href="/category/getting-started/how-to-start-forex-trading/">How to Start
+        Forex Trading</a> — Your complete roadmap. Learn to identify trends before placing your first trade.
+</div>

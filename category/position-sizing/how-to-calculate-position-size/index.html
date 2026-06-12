@@ -1,292 +1,188 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+---
+layout: article
+title: "How to Calculate Position Size (Step by Step with Examples)"
+description: "How to calculate position size in forex step by step with real examples. Learn the formula, avoid common
+mistakes, and protect your account with proper sizing."
+keywords: "how to calculate position size, position size formula, forex position sizing, risk based position sizing, lot
+size calculation"
+date: 2026-05-23
+image: /category/position-sizing/how-to-calculate-position-size/position-size-formula-featured.webp
+image-alt: "Position size formula written on notebook showing account balance times risk percentage divided by stop loss
+pips equals lot size"
+category: position-sizing
+category-icon: 📐
+category-label: "Position Sizing"
+read-time: 8
+---
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="How to calculate position size in forex step by step with real examples. Learn the formula, avoid common mistakes, and protect your account with proper sizing.">
-    <meta name="keywords" content="how to calculate position size, position size formula, forex position sizing, risk based position sizing, lot size calculation">
-    <meta name="author" content="Structure Trade Lab">
-    <title>How to Calculate Position Size (Step by Step with Examples) | Structure Trade Lab</title>
+<p>You know the 1% rule. You understand lot sizes. Now comes the most important skill: <strong>actually calculating your
+        position size before every trade.</strong></p>
 
-    <script>
-        (function () {
-            const savedTheme = localStorage.getItem('theme');
-            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-            if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
-                document.documentElement.classList.add('dark-mode');
-            }
-        })();
-    </script>
-    
-    <link rel="stylesheet" href="https://structuretradelab.com/assets/css/common.css">
-    <link rel="stylesheet" href="https://structuretradelab.com/assets/css/article.css">
-    
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": "How to Calculate Position Size (Step by Step with Examples)",
-        "description": "How to calculate position size in forex step by step with real examples. Learn the formula, avoid common mistakes, and protect your account with proper sizing.",
-        "image": "https://blog.structuretradelab.com/category/position-sizing/how-to-calculate-position-size/position-size-formula-featured.webp",
-        "author": {
-            "@type": "Person",
-            "name": "Structure Trade Lab",
-            "url": "https://structuretradelab.com/about"
-        },
-        "publisher": {
-            "@type": "Organization",
-            "name": "Structure Trade Lab"
-        },
-        "datePublished": "2026-05-23",
-        "dateModified": "2026-05-23",
-        "mainEntityOfPage": {
-            "@type": "WebPage",
-            "@id": "https://blog.structuretradelab.com/category/position-sizing/how-to-calculate-position-size/"
-        },
-        "keywords": "how to calculate position size, position size formula, forex position sizing, risk based position sizing"
-    }
-    </script>
-</head>
-<body>
+<p>In my first year, I skipped this step. I guessed. Sometimes I traded too big — and lost more than I intended.
+    Sometimes I traded too small — and my winners barely moved the needle. Guessing doesn't work.</p>
 
-    <!-- HEADER -->
-    <header>
-        <div class="container header-flex">
-            <div class="logo">
-                <a href="https://structuretradelab.com">
-                    <h1>📊 Structure Trade Lab</h1>
-                    <p>Trade with Structure. Trade with a Plan.</p>
-                </a>
-            </div>
-            
-            <div style="display: flex; align-items: center; gap: 15px;">
-                <button class="dark-mode-toggle" id="darkModeToggle" aria-label="Dark mode">
-                    <span class="toggle-icon">🌙</span>
-                    <span class="toggle-text">Dark</span>
-                </button>
-                <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-            </div>
-            
-            <nav id="mainNav">
-                <a href="https://structuretradelab.com">Home</a>
-                <a href="/">Blog</a>
-                <a href="https://tools.structuretradelab.com">Tools</a>
-                <a href="https://structuretradelab.com/about">About</a>
-            </nav>
-        </div>
-    </header>
-    
-    <div class="menu-overlay" id="menuOverlay"></div>
+<p>In this guide, I'll walk you through the position size formula step by step, with real examples for different account
+    sizes and stop losses.</p>
 
-    <!-- ARTICLE -->
-    <article class="article-container">
-        <div class="article-header">
-            <div class="article-category"><a href="/category/position-sizing/">📐 Position Sizing</a></div>
-            <h1 class="article-title">How to Calculate Position Size (Step by Step with Examples)</h1>
-            <div class="article-meta">
-                <span>📅 Published: May 2026</span>
-                <span>📖 8 min read</span>
-                <span>🏷️ Category: Position Sizing</span>
-            </div>
-        </div>
-        
-        <!-- FEATURED IMAGE -->
-        <div class="featured-image">
-            <img src="position-size-formula-featured.webp" 
-                 alt="Position size formula written on notebook showing account balance times risk percentage divided by stop loss pips equals lot size" 
-                 loading="eager"
-                 width="800"
-                 height="450">
-        </div>
-        
-        <div class="article-content">
+<div class="info-box">
+    <strong>💡 Key Takeaway:</strong> Position size = (Account Balance × Risk %) ÷ (Stop Loss in Pips × Pip Value per
+    Lot). Memorize this formula. Use it before every trade.
+</div>
 
-            <p>You know the 1% rule. You understand lot sizes. Now comes the most important skill: <strong>actually calculating your position size before every trade.</strong></p>
+<!-- TABLE OF CONTENTS -->
+<div class="table-of-contents">
+    <h3>📑 What You'll Learn</h3>
+    <ul>
+        <li><a href="#the-formula">The Position Size Formula</a></li>
+        <li><a href="#step-by-step">Step by Step Calculation</a></li>
+        <li><a href="#example-1">Example 1: Small Account ($500)</a></li>
+        <li><a href="#example-2">Example 2: Medium Account ($5,000)</a></li>
+        <li><a href="#example-3">Example 3: Large Account ($10,000)</a></li>
+        <li><a href="#common-mistakes">Common Calculation Mistakes</a></li>
+    </ul>
+</div>
 
-            <p>In my first year, I skipped this step. I guessed. Sometimes I traded too big — and lost more than I intended. Sometimes I traded too small — and my winners barely moved the needle. Guessing doesn't work.</p>
+<!-- INTERNAL LINK TO POST #6 -->
+<div class="internal-link">
+    📖 <strong>Related Reading:</strong> <a href="/category/position-sizing/position-sizing-explained/">Position Sizing
+        Explained</a> — Master the theory behind the formula.
+</div>
 
-            <p>In this guide, I'll walk you through the position size formula step by step, with real examples for different account sizes and stop losses.</p>
+<!-- SECTION 1 -->
+<h2 id="the-formula">The Position Size Formula</h2>
 
-            <div class="info-box">
-                <strong>💡 Key Takeaway:</strong> Position size = (Account Balance × Risk %) ÷ (Stop Loss in Pips × Pip Value per Lot). Memorize this formula. Use it before every trade.
-            </div>
+<p>Here's the formula that every professional trader uses:</p>
 
-            <!-- TABLE OF CONTENTS -->
-            <div class="table-of-contents">
-                <h3>📑 What You'll Learn</h3>
-                <ul>
-                    <li><a href="#the-formula">The Position Size Formula</a></li>
-                    <li><a href="#step-by-step">Step by Step Calculation</a></li>
-                    <li><a href="#example-1">Example 1: Small Account ($500)</a></li>
-                    <li><a href="#example-2">Example 2: Medium Account ($5,000)</a></li>
-                    <li><a href="#example-3">Example 3: Large Account ($10,000)</a></li>
-                    <li><a href="#common-mistakes">Common Calculation Mistakes</a></li>
-                </ul>
-            </div>
+<div class="info-box plain align-center" style="margin: 20px 0;">
+    <p style="font-size: 1.2rem; font-weight: bold; margin-bottom: 5px;">Position Size (lots) = Risk Amount ÷ (Stop Loss
+        in Pips × Pip Value per Lot)</p>
+    <p style="font-size: 0.85rem; margin-top: 5px;">Where Risk Amount = Account Balance × Risk %</p>
+</div>
 
-            <!-- INTERNAL LINK TO POST #6 -->
-            <div class="internal-link">
-                📖 <strong>Related Reading:</strong> <a href="/category/position-sizing/position-sizing-explained/">Position Sizing Explained</a> — Master the theory behind the formula.
-            </div>
+<p>Let's break down each part:</p>
 
-            <!-- SECTION 1 -->
-            <h2 id="the-formula">The Position Size Formula</h2>
-            
-            <p>Here's the formula that every professional trader uses:</p>
+<ul>
+    <li><strong>Account Balance:</strong> Your total account equity in USD</li>
+    <li><strong>Risk %:</strong> The percentage you're willing to lose (1% is standard)</li>
+    <li><strong>Risk Amount:</strong> The actual dollar amount you risk ($10,000 × 1% = $100)</li>
+    <li><strong>Stop Loss in Pips:</strong> The distance from entry to stop loss (e.g., 20 pips)</li>
+    <li><strong>Pip Value per Lot:</strong> For USD pairs, standard lot = $10, mini lot = $1, micro lot = $0.10</li>
+</ul>
 
-            <div class="info-box plain align-center" style= "margin: 20px 0;">
-                <p style="font-size: 1.2rem; font-weight: bold; margin-bottom: 5px;">Position Size (lots) = Risk Amount ÷ (Stop Loss in Pips × Pip Value per Lot)</p>
-                <p style="font-size: 0.85rem; margin-top: 5px;">Where Risk Amount = Account Balance × Risk %</p>
-            </div>
-            
-            <p>Let's break down each part:</p>
-            
-            <ul>
-                <li><strong>Account Balance:</strong> Your total account equity in USD</li>
-                <li><strong>Risk %:</strong> The percentage you're willing to lose (1% is standard)</li>
-                <li><strong>Risk Amount:</strong> The actual dollar amount you risk ($10,000 × 1% = $100)</li>
-                <li><strong>Stop Loss in Pips:</strong> The distance from entry to stop loss (e.g., 20 pips)</li>
-                <li><strong>Pip Value per Lot:</strong> For USD pairs, standard lot = $10, mini lot = $1, micro lot = $0.10</li>
-            </ul>
+<!-- INTERNAL LINK TO POST #15 -->
+<div class="internal-link">
+    📖 <strong>Related Reading:</strong> <a href="/category/getting-started/what-is-a-pip/">What is a Pip in Forex?</a>
+    — Understand pip values before calculating position size.
+</div>
 
-            <!-- INTERNAL LINK TO POST #15 -->
-            <div class="internal-link">
-                📖 <strong>Related Reading:</strong> <a href="/category/getting-started/what-is-a-pip/">What is a Pip in Forex?</a> — Understand pip values before calculating position size.
-            </div>
+<!-- SECTION 2 -->
+<h2 id="step-by-step">Step by Step Calculation</h2>
 
-            <!-- SECTION 2 -->
-            <h2 id="step-by-step">Step by Step Calculation</h2>
-            
-            <ol>
-                <li><strong>Calculate your risk amount:</strong> Account Balance × Risk %</li>
-                <li><strong>Calculate your stop loss in dollars:</strong> Stop Loss in Pips × Pip Value per Lot</li>
-                <li><strong>Divide risk amount by stop loss value:</strong> Risk Amount ÷ Stop Loss Value = Position Size in lots</li>
-            </ol>
-            
-            <p><strong>Quick example:</strong> $10,000 account, 1% risk ($100), 20 pip stop loss on EUR/USD (pip value $10/lot).</p>
-            <p>$100 ÷ (20 × $10) = $100 ÷ $200 = <strong>0.5 lots</strong></p>
+<ol>
+    <li><strong>Calculate your risk amount:</strong> Account Balance × Risk %</li>
+    <li><strong>Calculate your stop loss in dollars:</strong> Stop Loss in Pips × Pip Value per Lot</li>
+    <li><strong>Divide risk amount by stop loss value:</strong> Risk Amount ÷ Stop Loss Value = Position Size in lots
+    </li>
+</ol>
 
-            <!-- SECTION 3 -->
-            <h2 id="example-1">Example 1: Small Account ($500)</h2>
-            
-            <p><strong>Scenario:</strong> You have a $500 account. You want to trade EUR/USD with a 20 pip stop loss. You risk 1% per trade.</p>
-            
-            <ul>
-                <li>Risk amount = $500 × 1% = <strong>$5</strong></li>
-                <li>Stop loss value = 20 pips × $10 per lot = <strong>$200 per lot</strong></li>
-                <li>Position size = $5 ÷ $200 = <strong>0.025 lots</strong></li>
-            </ul>
-            
-            <div class="info-box">
-                <strong>📊 Result:</strong> Trade 0.025 lots = 2.5 micro lots (0.02 or 0.03 depending on broker rounding). Each pip is worth $0.25.
-            </div>
+<p><strong>Quick example:</strong> $10,000 account, 1% risk ($100), 20 pip stop loss on EUR/USD (pip value $10/lot).</p>
+<p>$100 ÷ (20 × $10) = $100 ÷ $200 = <strong>0.5 lots</strong></p>
 
-            <!-- SECTION 4 -->
-            <h2 id="example-2">Example 2: Medium Account ($5,000)</h2>
-            
-            <p><strong>Scenario:</strong> You have a $5,000 account. You want to trade GBP/USD with a 30 pip stop loss. You risk 1% per trade.</p>
-            
-            <ul>
-                <li>Risk amount = $5,000 × 1% = <strong>$50</strong></li>
-                <li>Stop loss value = 30 pips × $10 per lot = <strong>$300 per lot</strong></li>
-                <li>Position size = $50 ÷ $300 = <strong>0.167 lots</strong></li>
-            </ul>
-            
-            <div class="info-box">
-                <strong>📊 Result:</strong> Trade 0.17 lots (round up to nearest mini lot) = 1.7 mini lots or 17 micro lots. Each pip is worth $1.70.
-            </div>
+<!-- SECTION 3 -->
+<h2 id="example-1">Example 1: Small Account ($500)</h2>
 
-            <!-- INTERNAL LINK TO POST #26 -->
-            <div class="internal-link">
-                📖 <strong>Related Reading:</strong> <a href="/category/position-sizing/lot-sizes-explained/">Lot Sizes in Forex</a> — Understand standard, mini, and micro lots before calculating.
-            </div>
+<p><strong>Scenario:</strong> You have a $500 account. You want to trade EUR/USD with a 20 pip stop loss. You risk 1%
+    per trade.</p>
 
-            <!-- SECTION 5 -->
-            <h2 id="example-3">Example 3: Large Account ($10,000)</h2>
-            
-            <p><strong>Scenario:</strong> You have a $10,000 account. You want to trade USD/JPY with a 25 pip stop loss. You risk 1% per trade. USD/JPY is currently 150.50.</p>
-            
-            <ul>
-                <li>Risk amount = $10,000 × 1% = <strong>$100</strong></li>
-                <li>Pip value for USD/JPY = 0.01 ÷ 150.50 × 100,000 = <strong>$6.64 per lot</strong></li>
-                <li>Stop loss value = 25 pips × $6.64 = <strong>$166 per lot</strong></li>
-                <li>Position size = $100 ÷ $166 = <strong>0.60 lots</strong></li>
-            </ul>
-            
-            <div class="info-box">
-                <strong>📊 Result:</strong> Trade 0.60 lots = 6 mini lots or 60 micro lots. Each pip is worth $4.
-            </div>
+<ul>
+    <li>Risk amount = $500 × 1% = <strong>$5</strong></li>
+    <li>Stop loss value = 20 pips × $10 per lot = <strong>$200 per lot</strong></li>
+    <li>Position size = $5 ÷ $200 = <strong>0.025 lots</strong></li>
+</ul>
 
-            <!-- SECTION 6 -->
-            <h2 id="common-mistakes">Common Calculation Mistakes</h2>
-            
-            <ul>
-                <li><strong>Forgetting pip value differences:</strong> JPY pairs have different pip values. Always check before calculating.</li>
-                <li><strong>Using wrong lot size in formula:</strong> Pip value for standard lot is $10, for mini lot it's $1, for micro lot it's $0.10.</li>
-                <li><strong>Not rounding down:</strong> Always round down to the nearest micro lot (0.01). Better to risk slightly less.</li>
-                <li><strong>Manual calculation errors:</strong> Stress and hurry lead to mistakes. Use a calculator.</li>
-                <li><strong>Ignoring account currency:</strong> This formula assumes USD account. If your account is in EUR/GBP, you need additional conversion.</li>
-            </ul>
-            
-            <div class="warning-box">
-                <strong>⚠️ My Recommendation:</strong> Don't do manual math. Use the <a href="/category/position-sizing/position-size-calculator/">Position Size Calculator</a>. It takes 10 seconds and eliminates errors.
-            </div>
+<div class="info-box">
+    <strong>📊 Result:</strong> Trade 0.025 lots = 2.5 micro lots (0.02 or 0.03 depending on broker rounding). Each pip
+    is worth $0.25.
+</div>
 
-            <!-- INTERNAL LINK TO POST #5 -->
-            <div class="internal-link">
-                📖 <strong>Related Reading:</strong> <a href="/category/risk-management/risk-management-101/">Risk Management 101</a> — Position sizing is useless without the 1% rule. Master both.
-            </div>
+<!-- SECTION 4 -->
+<h2 id="example-2">Example 2: Medium Account ($5,000)</h2>
 
-            <hr>
+<p><strong>Scenario:</strong> You have a $5,000 account. You want to trade GBP/USD with a 30 pip stop loss. You risk 1%
+    per trade.</p>
 
-            <!-- CONCLUSION -->
-            <h2>Calculate Before Every Trade</h2>
-            <p>Position sizing is not optional. It's the difference between surviving a losing streak and blowing your account.</p>
-            
-            <p><strong>Use the formula. Round down. Risk 1%. Do this, and you'll survive long enough to become profitable.</strong></p>
+<ul>
+    <li>Risk amount = $5,000 × 1% = <strong>$50</strong></li>
+    <li>Stop loss value = 30 pips × $10 per lot = <strong>$300 per lot</strong></li>
+    <li>Position size = $50 ÷ $300 = <strong>0.167 lots</strong></li>
+</ul>
 
-            <!-- INTERNAL LINK TO POST #25 -->
-            <div class="internal-link">
-                📖 <strong>Related Reading:</strong> <a href="/category/position-sizing/position-size-calculator/">Position Size Calculator</a> — Use the free tool to calculate instantly. No manual math needed.
-            </div>
+<div class="info-box">
+    <strong>📊 Result:</strong> Trade 0.17 lots (round up to nearest mini lot) = 1.7 mini lots or 17 micro lots. Each
+    pip is worth $1.70.
+</div>
 
-        </div>
+<!-- INTERNAL LINK TO POST #26 -->
+<div class="internal-link">
+    📖 <strong>Related Reading:</strong> <a href="/category/position-sizing/lot-sizes-explained/">Lot Sizes in Forex</a>
+    — Understand standard, mini, and micro lots before calculating.
+</div>
 
-        <!-- SOFT CTA -->
-        <div class="blog-cta">
-            <h3>📌 Ready to Start Your Trading Journey?</h3>
-            <p>I've documented my entire broker setup — tight spreads, instant withdrawals, and why I've stuck with Exness for years.</p>
-            <a href="https://structuretradelab.com/broker-setup/" class="btn">View My Broker Setup →</a>
-            <p class="disclosure-small">📌 I'm an Introducing Broker. I earn commission when you trade. No extra cost to you.</p>
-        </div>
+<!-- SECTION 5 -->
+<h2 id="example-3">Example 3: Large Account ($10,000)</h2>
 
-    </article>
+<p><strong>Scenario:</strong> You have a $10,000 account. You want to trade USD/JPY with a 25 pip stop loss. You risk 1%
+    per trade. USD/JPY is currently 150.50.</p>
 
-    <!-- FOOTER -->
-    <footer>
-        <div class="container">
-            <div class="footer-disclosure">
-                <strong>Disclosure:</strong> Structure Trade Lab is an independent educational website. As an Introducing Broker (IB), I may earn commissions when you trade through links on this site. This does not affect your trading conditions or costs.
-            </div>
-            <div class="footer-disclosure">
-                <strong>Risk Warning:</strong> Trading forex and CFDs carries a high level of risk. Past performance does not guarantee future results. Only trade with money you can afford to lose.
-            </div>
-            <p>© <span id="current-year"></span> Structure Trade Lab. All rights reserved.</p>
-            <p style="margin-top: 10px;">
-                <a href="https://structuretradelab.com">Home</a> | 
-                <a href="/">Blog</a> | 
-                <a href="https://tools.structuretradelab.com">Tools</a> |
-                <a href="https://structuretradelab.com/about">About</a>
-            </p>
-        </div>
-    </footer>
+<ul>
+    <li>Risk amount = $10,000 × 1% = <strong>$100</strong></li>
+    <li>Pip value for USD/JPY = 0.01 ÷ 150.50 × 100,000 = <strong>$6.64 per lot</strong></li>
+    <li>Stop loss value = 25 pips × $6.64 = <strong>$166 per lot</strong></li>
+    <li>Position size = $100 ÷ $166 = <strong>0.60 lots</strong></li>
+</ul>
 
-    <!-- JavaScript for Hamburger Menu & Year -->
-    <script src="https://structuretradelab.com/assets/js/common.js" defer></script>
-</body>
-</html>
+<div class="info-box">
+    <strong>📊 Result:</strong> Trade 0.60 lots = 6 mini lots or 60 micro lots. Each pip is worth $4.
+</div>
+
+<!-- SECTION 6 -->
+<h2 id="common-mistakes">Common Calculation Mistakes</h2>
+
+<ul>
+    <li><strong>Forgetting pip value differences:</strong> JPY pairs have different pip values. Always check before
+        calculating.</li>
+    <li><strong>Using wrong lot size in formula:</strong> Pip value for standard lot is $10, for mini lot it's $1, for
+        micro lot it's $0.10.</li>
+    <li><strong>Not rounding down:</strong> Always round down to the nearest micro lot (0.01). Better to risk slightly
+        less.</li>
+    <li><strong>Manual calculation errors:</strong> Stress and hurry lead to mistakes. Use a calculator.</li>
+    <li><strong>Ignoring account currency:</strong> This formula assumes USD account. If your account is in EUR/GBP, you
+        need additional conversion.</li>
+</ul>
+
+<div class="warning-box">
+    <strong>⚠️ My Recommendation:</strong> Don't do manual math. Use the <a
+        href="/category/position-sizing/position-size-calculator/">Position Size Calculator</a>. It takes 10 seconds and
+    eliminates errors.
+</div>
+
+<!-- INTERNAL LINK TO POST #5 -->
+<div class="internal-link">
+    📖 <strong>Related Reading:</strong> <a href="/category/risk-management/risk-management-101/">Risk Management
+        101</a> — Position sizing is useless without the 1% rule. Master both.
+</div>
+
+<hr>
+
+<!-- CONCLUSION -->
+<h2>Calculate Before Every Trade</h2>
+<p>Position sizing is not optional. It's the difference between surviving a losing streak and blowing your account.</p>
+
+<p><strong>Use the formula. Round down. Risk 1%. Do this, and you'll survive long enough to become profitable.</strong>
+</p>
+
+<!-- INTERNAL LINK TO POST #25 -->
+<div class="internal-link">
+    📖 <strong>Related Reading:</strong> <a href="/category/position-sizing/position-size-calculator/">Position Size
+        Calculator</a> — Use the free tool to calculate instantly. No manual math needed.
+</div>

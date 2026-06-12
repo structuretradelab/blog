@@ -1,297 +1,189 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+---
+layout: article
+title: "Position Size Calculator: How to Use It (Free Tool Included)"
+description: "Position size calculator: Learn how to use it correctly. Calculate the exact lot size for every trade
+based on your risk. Free calculator included."
+keywords: "position size calculator, forex position size calculator, lot size calculator, risk management calculator,
+free position size calculator"
+date: 2026-05-22
+image: /category/position-sizing/position-size-calculator/position-calculator-featured.webp
+image-alt: "Position size calculator on trading desk showing account balance, risk percentage, stop loss pips, and
+calculated lot size"
+category: position-sizing
+category-icon: 📐
+category-label: "Position Sizing"
+read-time: 7
+---
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Position size calculator: Learn how to use it correctly. Calculate the exact lot size for every trade based on your risk. Free calculator included.">
-    <meta name="keywords" content="position size calculator, forex position size calculator, lot size calculator, risk management calculator, free position size calculator">
-    <meta name="author" content="Structure Trade Lab">
-    <title>Position Size Calculator: How to Use It (Free Tool Included) | Structure Trade Lab</title>
+<p>You understand the 1% rule. You know your stop loss distance. Now comes the math: <strong>how many lots do you
+        actually trade?</strong></p>
 
-    <script>
-        (function () {
-            const savedTheme = localStorage.getItem('theme');
-            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-            if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
-                document.documentElement.classList.add('dark-mode');
-            }
-        })();
-    </script>
-    
-    <link rel="stylesheet" href="https://structuretradelab.com/assets/css/common.css">
-    <link rel="stylesheet" href="https://structuretradelab.com/assets/css/article.css">
-    
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": "Position Size Calculator: How to Use It (Free Tool Included)",
-        "description": "Position size calculator: Learn how to use it correctly. Calculate the exact lot size for every trade based on your risk. Free calculator included.",
-        "image": "https://blog.structuretradelab.com/category/position-sizing/position-size-calculator/position-calculator-featured.webp",
-        "author": {
-            "@type": "Person",
-            "name": "Structure Trade Lab",
-            "url": "https://structuretradelab.com/about"
-        },
-        "publisher": {
-            "@type": "Organization",
-            "name": "Structure Trade Lab"
-        },
-        "datePublished": "2026-05-22",
-        "dateModified": "2026-05-22",
-        "mainEntityOfPage": {
-            "@type": "WebPage",
-            "@id": "https://blog.structuretradelab.com/category/position-sizing/position-size-calculator/"
-        },
-        "keywords": "position size calculator, forex position size calculator, lot size calculator, free position size calculator"
-    }
-    </script>
-</head>
-<body>
+<p>I used to do this calculation on paper before every trade. It took time, and I made mistakes. Then I started using a
+    position size calculator — and never looked back.</p>
 
-    <!-- HEADER -->
-    <header>
-        <div class="container header-flex">
-            <div class="logo">
-                <a href="https://structuretradelab.com">
-                    <h1>📊 Structure Trade Lab</h1>
-                    <p>Trade with Structure. Trade with a Plan.</p>
-                </a>
-            </div>
-            
-            <div style="display: flex; align-items: center; gap: 15px;">
-                <!-- Dark Mode Toggle Button -->
-                <button class="dark-mode-toggle" id="darkModeToggle" aria-label="Dark mode">
-                    <span class="toggle-icon">🌙</span>
-                    <span class="toggle-text">Dark</span>
-                </button>
-                
-                <!-- Hamburger Button -->
-                <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-            </div>
-            
-            <nav id="mainNav">
-                <a href="https://structuretradelab.com">Home</a>
-                <a href="/">Blog</a>
-                <a href="https://tools.structuretradelab.com">Tools</a>
-                <a href="https://structuretradelab.com/about">About</a>
-            </nav>
-        </div>
-    </header>
-    
-    <!-- Overlay for mobile menu -->
-    <div class="menu-overlay" id="menuOverlay"></div>
+<p>In this guide, I'll show you exactly how to use a position size calculator, and I'll point you to the free tool I
+    built for this site.</p>
 
-    <!-- ARTICLE -->
-    <article class="article-container">
-        <div class="article-header">
-            <div class="article-category"><a href="/category/position-sizing/">📐 Position Sizing</a></div>
-            <h1 class="article-title">Position Size Calculator: How to Use It (Free Tool Included)</h1>
-            <div class="article-meta">
-                <span>📅 Published: May 2026</span>
-                <span>📖 7 min read</span>
-                <span>🏷️ Category: Position Sizing</span>
-            </div>
-        </div>
-        
-        <!-- FEATURED IMAGE -->
-        <div class="featured-image">
-            <img src="position-calculator-featured.webp" 
-                 alt="Position size calculator on trading desk showing account balance, risk percentage, stop loss pips, and calculated lot size" 
-                 loading="eager"
-                 width="800"
-                 height="450">
-        </div>
-        
-        <div class="article-content">
+<div class="info-box">
+    <strong>💡 Key Takeaway:</strong> A position size calculator takes 10 seconds to use and removes all guesswork.
+    Never trade without knowing your exact position size.
+</div>
 
-            <p>You understand the 1% rule. You know your stop loss distance. Now comes the math: <strong>how many lots do you actually trade?</strong></p>
+<!-- TABLE OF CONTENTS -->
+<div class="table-of-contents">
+    <h3>📑 What You'll Learn</h3>
+    <ul>
+        <li><a href="#why-calculator">Why You Need a Position Size Calculator</a></li>
+        <li><a href="#how-it-works">How a Position Size Calculator Works</a></li>
+        <li><a href="#manual-calculation">Manual Calculation vs Calculator</a></li>
+        <li><a href="#free-calculator">Free Position Size Calculator</a></li>
+        <li><a href="#how-to-use">How to Use the Calculator (Step by Step)</a></li>
+        <li><a href="#examples">Real Trading Examples</a></li>
+    </ul>
+</div>
 
-            <p>I used to do this calculation on paper before every trade. It took time, and I made mistakes. Then I started using a position size calculator — and never looked back.</p>
+<!-- INTERNAL LINK TO POST #6 -->
+<div class="internal-link">
+    📖 <strong>Related Reading:</strong> <a href="/category/position-sizing/position-sizing-explained/">Position Sizing
+        Explained</a> — Master the theory before using the calculator.
+</div>
 
-            <p>In this guide, I'll show you exactly how to use a position size calculator, and I'll point you to the free tool I built for this site.</p>
+<!-- SECTION 1 -->
+<h2 id="why-calculator">Why You Need a Position Size Calculator</h2>
 
-            <div class="info-box">
-                <strong>💡 Key Takeaway:</strong> A position size calculator takes 10 seconds to use and removes all guesswork. Never trade without knowing your exact position size.
-            </div>
+<ul>
+    <li><strong>It's fast:</strong> 10 seconds instead of 2 minutes of manual math</li>
+    <li><strong>It's accurate:</strong> No calculation errors that could cost you money</li>
+    <li><strong>It's consistent:</strong> The same formula every time, no exceptions</li>
+    <li><strong>It removes emotion:</strong> You enter the numbers, the calculator gives the answer</li>
+    <li><strong>It works for any pair:</strong> Automatically adjusts for different pip values</li>
+</ul>
 
-            <!-- TABLE OF CONTENTS -->
-            <div class="table-of-contents">
-                <h3>📑 What You'll Learn</h3>
-                <ul>
-                    <li><a href="#why-calculator">Why You Need a Position Size Calculator</a></li>
-                    <li><a href="#how-it-works">How a Position Size Calculator Works</a></li>
-                    <li><a href="#manual-calculation">Manual Calculation vs Calculator</a></li>
-                    <li><a href="#free-calculator">Free Position Size Calculator</a></li>
-                    <li><a href="#how-to-use">How to Use the Calculator (Step by Step)</a></li>
-                    <li><a href="#examples">Real Trading Examples</a></li>
-                </ul>
-            </div>
+<div class="info-box">
+    <strong>📌 Reality Check:</strong> Every professional trader uses a position size calculator or built-in platform
+    tool. Manual calculation is error-prone and wastes time.
+</div>
 
-            <!-- INTERNAL LINK TO POST #6 -->
-            <div class="internal-link">
-                📖 <strong>Related Reading:</strong> <a href="/category/position-sizing/position-sizing-explained/">Position Sizing Explained</a> — Master the theory before using the calculator.
-            </div>
+<!-- SECTION 2 -->
+<h2 id="how-it-works">How a Position Size Calculator Works</h2>
 
-            <!-- SECTION 1 -->
-            <h2 id="why-calculator">Why You Need a Position Size Calculator</h2>
-            
-            <ul>
-                <li><strong>It's fast:</strong> 10 seconds instead of 2 minutes of manual math</li>
-                <li><strong>It's accurate:</strong> No calculation errors that could cost you money</li>
-                <li><strong>It's consistent:</strong> The same formula every time, no exceptions</li>
-                <li><strong>It removes emotion:</strong> You enter the numbers, the calculator gives the answer</li>
-                <li><strong>It works for any pair:</strong> Automatically adjusts for different pip values</li>
-            </ul>
-            
-            <div class="info-box">
-                <strong>📌 Reality Check:</strong> Every professional trader uses a position size calculator or built-in platform tool. Manual calculation is error-prone and wastes time.
-            </div>
+<p>A position size calculator asks for three inputs:</p>
 
-            <!-- SECTION 2 -->
-            <h2 id="how-it-works">How a Position Size Calculator Works</h2>
-            
-            <p>A position size calculator asks for three inputs:</p>
-            
-            <ul>
-                <li><strong>Account balance:</strong> How much money is in your trading account</li>
-                <li><strong>Risk percentage:</strong> How much of your account you're willing to lose (usually 1%)</li>
-                <li><strong>Stop loss in pips:</strong> How far your stop loss is from your entry</li>
-            </ul>
-            
-            <p>Then it calculates the exact position size (in lots) that keeps your risk at exactly that percentage.</p>
-            
-            <div class="info-box">
-                <strong>📊 The Formula the Calculator Uses:</strong><br>
-                Risk Amount = Account Balance × Risk %<br>
-                Position Size = Risk Amount ÷ (Stop Loss in Pips × Pip Value per Lot)
-            </div>
+<ul>
+    <li><strong>Account balance:</strong> How much money is in your trading account</li>
+    <li><strong>Risk percentage:</strong> How much of your account you're willing to lose (usually 1%)</li>
+    <li><strong>Stop loss in pips:</strong> How far your stop loss is from your entry</li>
+</ul>
 
-            <!-- INTERNAL LINK TO POST #15 -->
-            <div class="internal-link">
-                📖 <strong>Related Reading:</strong> <a href="/category/getting-started/what-is-a-pip/">What is a Pip in Forex?</a> — Understanding pip value is essential for position sizing.
-            </div>
+<p>Then it calculates the exact position size (in lots) that keeps your risk at exactly that percentage.</p>
 
-            <!-- SECTION 3 -->
-            <h2 id="manual-calculation">Manual Calculation vs Calculator</h2>
-            
-            <h3>Manual Calculation (2-3 minutes):</h3>
-            <p>$10,000 account × 1% = $100 risk<br>
-            $100 ÷ (20 pips × $10 per pip) = 0.5 lots</p>
-            
-            <h3>Using a Calculator (10 seconds):</h3>
-            <p>Enter 10000 → Enter 1 → Enter 20 → Click Calculate → 0.5 lots</p>
-            
-            <div class="warning-box">
-                <strong>⚠️ The Risk of Manual Math:</strong> When you're stressed or in a hurry, you make mistakes. A $10,000 account with a 200-pip stop instead of 20 would risk 10x too much. One error can blow your account.
-            </div>
+<div class="info-box">
+    <strong>📊 The Formula the Calculator Uses:</strong><br>
+    Risk Amount = Account Balance × Risk %<br>
+    Position Size = Risk Amount ÷ (Stop Loss in Pips × Pip Value per Lot)
+</div>
 
-            <!-- SECTION 4 -->
-            <h2 id="free-calculator">Free Position Size Calculator</h2>
-            
-            <p>I've built a free position size calculator for you. You can find it here:</p>
-            
-            <div style="background: #0a2540; border-radius: 16px; padding: 30px; margin: 30px 0; text-align: center;">
-                <h3 style="color: white; margin-top: 0;">📐 Free Position Size Calculator</h3>
-                <p style="color: #cce4f0; margin-bottom: 20px;">Calculate your exact lot size in seconds. Enter your account balance, risk percentage, and stop loss.</p>
-                <a href="https://tools.structuretradelab.com/position-size-calculator/" target="_blank" style="display: inline-block; background: #00b4d8; color: #0a2540; padding: 14px 32px; text-decoration: none; font-weight: bold; border-radius: 50px;">Open Calculator →</a>
-                <p style="color: #a0c4e2; font-size: 0.7rem; margin-top: 15px;">Opens in new tab. Bookmark it for every trading session.</p>
-            </div>
-            
-            <div class="info-box">
-                <strong>📌 Pro Tip:</strong> Bookmark the calculator page. Use it before every single trade — it takes 10 seconds.
-            </div>
+<!-- INTERNAL LINK TO POST #15 -->
+<div class="internal-link">
+    📖 <strong>Related Reading:</strong> <a href="/category/getting-started/what-is-a-pip/">What is a Pip in Forex?</a>
+    — Understanding pip value is essential for position sizing.
+</div>
 
-            <!-- SECTION 5 -->
-            <h2 id="how-to-use">How to Use the Calculator (Step by Step)</h2>
-            
-            <ol>
-                <li><strong>Go to the calculator:</strong> <a href="https://tools.structuretradelab.com/position-size-calculator/" target="_blank">tools.structuretradelab.com/position-size-calculator/</a></li>
-                <li><strong>Enter your account balance:</strong> For example, $10,000</li>
-                <li><strong>Enter your risk percentage:</strong> 1% is standard</li>
-                <li><strong>Enter your stop loss in pips:</strong> For example, 20 pips</li>
-                <li><strong>Select your currency pair:</strong> This adjusts the pip value automatically</li>
-                <li><strong>Click Calculate:</strong> The calculator tells you exactly how many lots to trade</li>
-            </ol>
-            
-            <div class="info-box">
-                <strong>📌 Pro Tip:</strong> Always round down your position size to the nearest micro lot (0.01). It's better to risk slightly less than slightly more.
-            </div>
+<!-- SECTION 3 -->
+<h2 id="manual-calculation">Manual Calculation vs Calculator</h2>
 
-            <!-- SECTION 6 -->
-            <h2 id="examples">Real Trading Examples</h2>
-            
-            <h3>Example 1: Small Account</h3>
-            <p>Balance: $500 | Risk: 1% ($5) | Stop: 20 pips | Pair: EUR/USD<br>
-            <strong>Result: 0.025 lots (2.5 micro lots)</strong></p>
-            
-            <h3>Example 2: Medium Account</h3>
-            <p>Balance: $5,000 | Risk: 1% ($50) | Stop: 30 pips | Pair: GBP/USD<br>
-            <strong>Result: 0.17 lots (1.7 mini lots or 17 micro lots)</strong></p>
-            
-            <h3>Example 3: Tight Stop</h3>
-            <p>Balance: $10,000 | Risk: 1% ($100) | Stop: 10 pips | Pair: EUR/USD<br>
-            <strong>Result: 1.0 standard lots</strong></p>
-            
-            <div class="warning-box">
-                <strong>⚠️ Important:</strong> Always round down your position size to the nearest micro lot (0.01). It's better to risk slightly less than slightly more.
-            </div>
+<h3>Manual Calculation (2-3 minutes):</h3>
+<p>$10,000 account × 1% = $100 risk<br>
+    $100 ÷ (20 pips × $10 per pip) = 0.5 lots</p>
 
-            <!-- INTERNAL LINK TO POST #5 -->
-            <div class="internal-link">
-                📖 <strong>Related Reading:</strong> <a href="/category/risk-management/risk-management-101/">Risk Management 101</a> — The 1% rule works with the calculator. Use them together.
-            </div>
+<h3>Using a Calculator (10 seconds):</h3>
+<p>Enter 10000 → Enter 1 → Enter 20 → Click Calculate → 0.5 lots</p>
 
-            <hr>
+<div class="warning-box">
+    <strong>⚠️ The Risk of Manual Math:</strong> When you're stressed or in a hurry, you make mistakes. A $10,000
+    account with a 200-pip stop instead of 20 would risk 10x too much. One error can blow your account.
+</div>
 
-            <!-- CONCLUSION -->
-            <h2>Stop Guessing, Start Calculating</h2>
-            <p>Guessing your position size is gambling. Calculating it is trading. The calculator takes 10 seconds and removes all guesswork.</p>
-            
-            <p><strong>Use the free calculator at <a href="https://tools.structuretradelab.com/position-size-calculator/" target="_blank">tools.structuretradelab.com/position-size-calculator/</a> before your next trade. Enter your numbers. Trade the exact lot size. Never guess again.</strong></p>
+<!-- SECTION 4 -->
+<h2 id="free-calculator">Free Position Size Calculator</h2>
 
-            <!-- INTERNAL LINK TO POST #1 -->
-            <div class="internal-link">
-                📖 <strong>Related Reading:</strong> <a href="/category/getting-started/how-to-start-forex-trading/">How to Start Forex Trading</a> — Your complete roadmap. Apply position sizing from day one.
-            </div>
+<p>I've built a free position size calculator for you. You can find it here:</p>
 
-        </div>
+<div style="background: #0a2540; border-radius: 16px; padding: 30px; margin: 30px 0; text-align: center;">
+    <h3 style="color: white; margin-top: 0;">📐 Free Position Size Calculator</h3>
+    <p style="color: #cce4f0; margin-bottom: 20px;">Calculate your exact lot size in seconds. Enter your account
+        balance, risk percentage, and stop loss.</p>
+    <a href="https://tools.structuretradelab.com/position-size-calculator/" target="_blank"
+        style="display: inline-block; background: #00b4d8; color: #0a2540; padding: 14px 32px; text-decoration: none; font-weight: bold; border-radius: 50px;">Open
+        Calculator →</a>
+    <p style="color: #a0c4e2; font-size: 0.7rem; margin-top: 15px;">Opens in new tab. Bookmark it for every trading
+        session.</p>
+</div>
 
-        <!-- SOFT CTA -->
-        <div class="blog-cta">
-            <h3>📌 Ready to Start Your Trading Journey?</h3>
-            <p>I've documented my entire broker setup — tight spreads, instant withdrawals, and why I've stuck with Exness for years.</p>
-            <a href="https://structuretradelab.com/broker-setup/" class="btn">View My Broker Setup →</a>
-            <p class="disclosure-small">📌 I'm an Introducing Broker. I earn commission when you trade. No extra cost to you.</p>
-        </div>
+<div class="info-box">
+    <strong>📌 Pro Tip:</strong> Bookmark the calculator page. Use it before every single trade — it takes 10 seconds.
+</div>
 
-    </article>
+<!-- SECTION 5 -->
+<h2 id="how-to-use">How to Use the Calculator (Step by Step)</h2>
 
-    <!-- FOOTER -->
-    <footer>
-        <div class="container">
-            <div class="footer-disclosure">
-                <strong>Disclosure:</strong> Structure Trade Lab is an independent educational website. As an Introducing Broker (IB), I may earn commissions when you trade through links on this site. This does not affect your trading conditions or costs.
-            </div>
-            <div class="footer-disclosure">
-                <strong>Risk Warning:</strong> Trading forex and CFDs carries a high level of risk. Past performance does not guarantee future results. Only trade with money you can afford to lose.
-            </div>
-            <p>© <span id="current-year"></span> Structure Trade Lab. All rights reserved.</p>
-            <p style="margin-top: 10px;">
-                <a href="https://structuretradelab.com">Home</a> | 
-                <a href="/">Blog</a> | 
-                <a href="https://tools.structuretradelab.com">Tools</a> |
-                <a href="https://structuretradelab.com/about">About</a>
-            </p>
-        </div>
-    </footer>
+<ol>
+    <li><strong>Go to the calculator:</strong> <a href="https://tools.structuretradelab.com/position-size-calculator/"
+            target="_blank">tools.structuretradelab.com/position-size-calculator/</a></li>
+    <li><strong>Enter your account balance:</strong> For example, $10,000</li>
+    <li><strong>Enter your risk percentage:</strong> 1% is standard</li>
+    <li><strong>Enter your stop loss in pips:</strong> For example, 20 pips</li>
+    <li><strong>Select your currency pair:</strong> This adjusts the pip value automatically</li>
+    <li><strong>Click Calculate:</strong> The calculator tells you exactly how many lots to trade</li>
+</ol>
 
-    <!-- JavaScript for Hamburger Menu & Year -->
-    <script src="https://structuretradelab.com/assets/js/common.js" defer></script>
-</body>
-</html>
+<div class="info-box">
+    <strong>📌 Pro Tip:</strong> Always round down your position size to the nearest micro lot (0.01). It's better to
+    risk slightly less than slightly more.
+</div>
+
+<!-- SECTION 6 -->
+<h2 id="examples">Real Trading Examples</h2>
+
+<h3>Example 1: Small Account</h3>
+<p>Balance: $500 | Risk: 1% ($5) | Stop: 20 pips | Pair: EUR/USD<br>
+    <strong>Result: 0.025 lots (2.5 micro lots)</strong>
+</p>
+
+<h3>Example 2: Medium Account</h3>
+<p>Balance: $5,000 | Risk: 1% ($50) | Stop: 30 pips | Pair: GBP/USD<br>
+    <strong>Result: 0.17 lots (1.7 mini lots or 17 micro lots)</strong>
+</p>
+
+<h3>Example 3: Tight Stop</h3>
+<p>Balance: $10,000 | Risk: 1% ($100) | Stop: 10 pips | Pair: EUR/USD<br>
+    <strong>Result: 1.0 standard lots</strong>
+</p>
+
+<div class="warning-box">
+    <strong>⚠️ Important:</strong> Always round down your position size to the nearest micro lot (0.01). It's better to
+    risk slightly less than slightly more.
+</div>
+
+<!-- INTERNAL LINK TO POST #5 -->
+<div class="internal-link">
+    📖 <strong>Related Reading:</strong> <a href="/category/risk-management/risk-management-101/">Risk Management
+        101</a> — The 1% rule works with the calculator. Use them together.
+</div>
+
+<hr>
+
+<!-- CONCLUSION -->
+<h2>Stop Guessing, Start Calculating</h2>
+<p>Guessing your position size is gambling. Calculating it is trading. The calculator takes 10 seconds and removes all
+    guesswork.</p>
+
+<p><strong>Use the free calculator at <a href="https://tools.structuretradelab.com/position-size-calculator/"
+            target="_blank">tools.structuretradelab.com/position-size-calculator/</a> before your next trade. Enter your
+        numbers. Trade the exact lot size. Never guess again.</strong></p>
+
+<!-- INTERNAL LINK TO POST #1 -->
+<div class="internal-link">
+    📖 <strong>Related Reading:</strong> <a href="/category/getting-started/how-to-start-forex-trading/">How to Start
+        Forex Trading</a> — Your complete roadmap. Apply position sizing from day one.
+</div>

@@ -1,334 +1,243 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+---
+layout: article
+title: "Chart Patterns: Head and Shoulders, Double Tops, and More"
+description: "Chart patterns explained: Head and shoulders, double tops, double bottoms, and triangles. Learn to
+identify trend reversals and continuations."
+keywords: "chart patterns, head and shoulders pattern, double top, double bottom, triangle pattern, forex chart
+patterns"
+date: 2026-05-30
+image: /category/strategy-analysis/chart-patterns/chart-patterns-featured.webp
+image-alt: "Reference chart of 9 chart patterns: head and shoulders, double top, ascending triangle, inverse head and
+shoulders, double bottom, descending triangle, bull flag, bear flag, and symmetrical triangle on navy background"
+category: strategy-analysis
+category-icon: 📈
+category-label: "Strategy & Analysis"
+read-time: 9
+---
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Chart patterns explained: Head and shoulders, double tops, double bottoms, and triangles. Learn to identify trend reversals and continuations.">
-    <meta name="keywords" content="chart patterns, head and shoulders pattern, double top, double bottom, triangle pattern, forex chart patterns">
-    <meta name="author" content="Structure Trade Lab">
-    <title>Chart Patterns: Head and Shoulders, Double Tops, and More | Structure Trade Lab</title>
+<p>You've learned support and resistance. You understand trend lines. Now it's time to recognize the shapes the market
+    makes as it moves — <strong>chart patterns</strong>.</p>
 
-    <script>
-        (function () {
-            const savedTheme = localStorage.getItem('theme');
-            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-            if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
-                document.documentElement.classList.add('dark-mode');
-            }
-        })();
-    </script>
-    
-    <link rel="stylesheet" href="https://structuretradelab.com/assets/css/common.css">
-    <link rel="stylesheet" href="https://structuretradelab.com/assets/css/article.css">
-    
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": "Chart Patterns: Head and Shoulders, Double Tops, and More",
-        "description": "Chart patterns explained: Head and shoulders, double tops, double bottoms, and triangles. Learn to identify trend reversals and continuations.",
-        "image": "https://blog.structuretradelab.com/category/strategy-analysis/chart-patterns/chart-patterns-featured.webp",
-        "author": {
-            "@type": "Person",
-            "name": "Structure Trade Lab",
-            "url": "https://structuretradelab.com/about"
-        },
-        "publisher": {
-            "@type": "Organization",
-            "name": "Structure Trade Lab"
-        },
-        "datePublished": "2026-05-30",
-        "dateModified": "2026-05-30",
-        "mainEntityOfPage": {
-            "@type": "WebPage",
-            "@id": "https://blog.structuretradelab.com/category/strategy-analysis/chart-patterns/"
-        },
-        "keywords": "chart patterns, head and shoulders pattern, double top, double bottom, triangle pattern"
-    }
-    </script>
-</head>
-<body>
+<p>In my first year, I saw these patterns but didn't know how to trade them. A head and shoulders looked like random
+    peaks. A double top looked like price stalling. I didn't realize they were signals of reversal.</p>
 
-    <!-- HEADER -->
-    <header>
-        <div class="container header-flex">
-            <div class="logo">
-                <a href="https://structuretradelab.com">
-                    <h1>📊 Structure Trade Lab</h1>
-                    <p>Trade with Structure. Trade with a Plan.</p>
-                </a>
-            </div>
-            
-            <div style="display: flex; align-items: center; gap: 15px;">
-                <button class="dark-mode-toggle" id="darkModeToggle" aria-label="Dark mode">
-                    <span class="toggle-icon">🌙</span>
-                    <span class="toggle-text">Dark</span>
-                </button>
-                <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-            </div>
-            
-            <nav id="mainNav">
-                <a href="https://structuretradelab.com">Home</a>
-                <a href="/">Blog</a>
-                <a href="https://tools.structuretradelab.com">Tools</a>
-                <a href="https://structuretradelab.com/about">About</a>
-            </nav>
-        </div>
-    </header>
-    
-    <div class="menu-overlay" id="menuOverlay"></div>
+<p>In this guide, I'll show you the most reliable chart patterns and how to trade them.</p>
 
-    <!-- ARTICLE -->
-    <article class="article-container">
-        <div class="article-header">
-            <div class="article-category"><a href="/category/strategy-analysis/">📈 Strategy & Analysis</a></div>
-            <h1 class="article-title">Chart Patterns: Head and Shoulders, Double Tops, and More</h1>
-            <div class="article-meta">
-                <span>📅 Published: May 2026</span>
-                <span>📖 9 min read</span>
-                <span>🏷️ Category: Strategy & Analysis</span>
-            </div>
-        </div>
-        
-        <!-- FEATURED IMAGE -->
-        <div class="featured-image">
-            <img src="chart-patterns-featured.webp" 
-                 alt="Reference chart of 9 chart patterns: head and shoulders, double top, ascending triangle, inverse head and shoulders, double bottom, descending triangle, bull flag, bear flag, and symmetrical triangle on navy background" 
-                 loading="eager"
-                 width="800"
-                 height="450">
-        </div>
-        
-        <div class="article-content">
+<div class="info-box">
+    <strong>💡 Key Takeaway:</strong> Chart patterns work because they represent human psychology — fear, greed, and
+    indecision. Once you see them, you can't unsee them.
+</div>
 
-            <p>You've learned support and resistance. You understand trend lines. Now it's time to recognize the shapes the market makes as it moves — <strong>chart patterns</strong>.</p>
+<!-- TABLE OF CONTENTS -->
+<div class="table-of-contents">
+    <h3>📑 What You'll Learn</h3>
+    <ul>
+        <li><a href="#why-patterns-work">Why Chart Patterns Work</a></li>
+        <li><a href="#head-and-shoulders">Head and Shoulders (Reversal)</a></li>
+        <li><a href="#double-top-bottom">Double Tops and Double Bottoms</a></li>
+        <li><a href="#triangles">Triangles (Ascending, Descending, Symmetrical)</a></li>
+        <li><a href="#flags-pennants">Flags and Pennants (Continuation)</a></li>
+        <li><a href="#how-to-trade">How to Trade Chart Patterns</a></li>
+    </ul>
+</div>
 
-            <p>In my first year, I saw these patterns but didn't know how to trade them. A head and shoulders looked like random peaks. A double top looked like price stalling. I didn't realize they were signals of reversal.</p>
+<!-- INTERNAL LINK TO POST #36 -->
+<div class="internal-link">
+    📖 <strong>Related Reading:</strong> <a href="/category/strategy-analysis/support-and-resistance/">Support and
+        Resistance</a> — Chart patterns are built on support and resistance levels.
+</div>
 
-            <p>In this guide, I'll show you the most reliable chart patterns and how to trade them.</p>
+<!-- SECTION 1 -->
+<h2 id="why-patterns-work">Why Chart Patterns Work</h2>
 
-            <div class="info-box">
-                <strong>💡 Key Takeaway:</strong> Chart patterns work because they represent human psychology — fear, greed, and indecision. Once you see them, you can't unsee them.
-            </div>
+<p>Chart patterns work because they reflect the psychology of market participants:</p>
 
-            <!-- TABLE OF CONTENTS -->
-            <div class="table-of-contents">
-                <h3>📑 What You'll Learn</h3>
-                <ul>
-                    <li><a href="#why-patterns-work">Why Chart Patterns Work</a></li>
-                    <li><a href="#head-and-shoulders">Head and Shoulders (Reversal)</a></li>
-                    <li><a href="#double-top-bottom">Double Tops and Double Bottoms</a></li>
-                    <li><a href="#triangles">Triangles (Ascending, Descending, Symmetrical)</a></li>
-                    <li><a href="#flags-pennants">Flags and Pennants (Continuation)</a></li>
-                    <li><a href="#how-to-trade">How to Trade Chart Patterns</a></li>
-                </ul>
-            </div>
+<ul>
+    <li><strong>Fear and greed:</strong> Patterns show when buyers or sellers are exhausted</li>
+    <li><strong>Memory:</strong> Traders remember past price levels and act accordingly</li>
+    <li><strong>Self-fulfilling prophecy:</strong> Enough traders see the pattern and trade it, making it work</li>
+    <li><strong>Institutional activity:</strong> Large players leave footprints in the chart</li>
+</ul>
 
-            <!-- INTERNAL LINK TO POST #36 -->
-            <div class="internal-link">
-                📖 <strong>Related Reading:</strong> <a href="/category/strategy-analysis/support-and-resistance/">Support and Resistance</a> — Chart patterns are built on support and resistance levels.
-            </div>
+<div class="info-box">
+    <strong>📌 Pro Tip:</strong> Higher timeframe patterns (4-hour, daily) are much more reliable than lower timeframe
+    patterns.
+</div>
 
-            <!-- SECTION 1 -->
-            <h2 id="why-patterns-work">Why Chart Patterns Work</h2>
-            
-            <p>Chart patterns work because they reflect the psychology of market participants:</p>
-            
-            <ul>
-                <li><strong>Fear and greed:</strong> Patterns show when buyers or sellers are exhausted</li>
-                <li><strong>Memory:</strong> Traders remember past price levels and act accordingly</li>
-                <li><strong>Self-fulfilling prophecy:</strong> Enough traders see the pattern and trade it, making it work</li>
-                <li><strong>Institutional activity:</strong> Large players leave footprints in the chart</li>
-            </ul>
-            
-            <div class="info-box">
-                <strong>📌 Pro Tip:</strong> Higher timeframe patterns (4-hour, daily) are much more reliable than lower timeframe patterns.
-            </div>
+<!-- SECTION 2 -->
+<h2 id="head-and-shoulders">Head and Shoulders (Reversal)</h2>
 
-            <!-- SECTION 2 -->
-            <h2 id="head-and-shoulders">Head and Shoulders (Reversal)</h2>
-            
-            <p>The <strong>head and shoulders</strong> is one of the most reliable reversal patterns. It signals the end of an uptrend and a move to the downside.</p>
-            
-            <h3>What it looks like (Top):</h3>
-            <ul>
-                <li><strong>Left shoulder:</strong> Price rises to a peak, then falls</li>
-                <li><strong>Head:</strong> Price rises higher than the left shoulder, then falls back to the same level (neckline)</li>
-                <li><strong>Right shoulder:</strong> Price rises to a level below the head, then falls</li>
-                <li><strong>Neckline:</strong> The support level connecting the lows between shoulders</li>
-            </ul>
-            
-            <h3>How to trade:</h3>
-            <ul>
-                <li><strong>Entry:</strong> When price breaks below the neckline</li>
-                <li><strong>Stop loss:</strong> Above the right shoulder (or above neckline for aggressive entry)</li>
-                <li><strong>Target:</strong> Measured move = distance from head to neckline, projected down from the break</li>
-            </ul>
-            
-            <h3>Inverse Head and Shoulders (Bottom)</h3>
-            <p>The same pattern inverted — signals the end of a downtrend and a move to the upside. Trade the breakout above the neckline.</p>
-            
-            <div class="warning-box">
-                <strong>⚠️ Don't enter before the break:</strong> Wait for price to close below the neckline (for top) or above the neckline (for bottom). Premature entries often fail.
-            </div>
+<p>The <strong>head and shoulders</strong> is one of the most reliable reversal patterns. It signals the end of an
+    uptrend and a move to the downside.</p>
 
-            <!-- SECTION 3 -->
-            <h2 id="double-top-bottom">Double Tops and Double Bottoms</h2>
-            
-            <p><strong>Double top</strong> signals a reversal from uptrend to downtrend. <strong>Double bottom</strong> signals a reversal from downtrend to uptrend.</p>
-            
-            <h3>What it looks like:</h3>
-            <ul>
-                <li><strong>Double top:</strong> Price rises to a resistance level, falls, rises again to the same level, then falls</li>
-                <li><strong>Double bottom:</strong> Price falls to a support level, rises, falls again to the same level, then rises</li>
-            </ul>
-            
-            <h3>How to trade:</h3>
-            <ul>
-                <li><strong>Entry (double top):</strong> When price breaks below the low between the two tops</li>
-                <li><strong>Entry (double bottom):</strong> When price breaks above the high between the two bottoms</li>
-                <li><strong>Stop loss:</strong> Beyond the opposite side of the pattern</li>
-                <li><strong>Target:</strong> Measured move = distance from tops to neckline, projected from break</li>
-            </ul>
-            
-            <div class="info-box">
-                <strong>📌 Validity:</strong> The two tops/bottoms should be roughly the same level. The time between them should be at least 2-3 weeks (on daily chart) or 10-15 candles (on lower timeframes).
-            </div>
+<h3>What it looks like (Top):</h3>
+<ul>
+    <li><strong>Left shoulder:</strong> Price rises to a peak, then falls</li>
+    <li><strong>Head:</strong> Price rises higher than the left shoulder, then falls back to the same level (neckline)
+    </li>
+    <li><strong>Right shoulder:</strong> Price rises to a level below the head, then falls</li>
+    <li><strong>Neckline:</strong> The support level connecting the lows between shoulders</li>
+</ul>
 
-            <!-- INTERNAL LINK TO POST #37 -->
-            <div class="internal-link">
-                📖 <strong>Related Reading:</strong> <a href="/category/strategy-analysis/trend-lines-explained/">Trend Lines Explained</a> — Double tops/bottoms often form at trend line breaks.
-            </div>
+<h3>How to trade:</h3>
+<ul>
+    <li><strong>Entry:</strong> When price breaks below the neckline</li>
+    <li><strong>Stop loss:</strong> Above the right shoulder (or above neckline for aggressive entry)</li>
+    <li><strong>Target:</strong> Measured move = distance from head to neckline, projected down from the break</li>
+</ul>
 
-            <!-- SECTION 4 -->
-            <h2 id="triangles">Triangles (Ascending, Descending, Symmetrical)</h2>
-            
-            <h3>Ascending Triangle (Bullish Continuation)</h3>
-            <p><strong>What it looks like:</strong> A flat resistance line (horizontal top) and rising support line (higher lows). Price compresses between them.</p>
-            <p><strong>What it means:</strong> Buyers are getting stronger. Each low is higher than the last. Expect a breakout to the upside.</p>
-            <p><strong>How to trade:</strong> Buy when price breaks above the horizontal resistance. Stop loss below the last swing low.</p>
-            
-            <h3>Descending Triangle (Bearish Continuation)</h3>
-            <p><strong>What it looks like:</strong> A flat support line (horizontal bottom) and falling resistance line (lower highs). Price compresses between them.</p>
-            <p><strong>What it means:</strong> Sellers are getting stronger. Each high is lower than the last. Expect a breakout to the downside.</p>
-            <p><strong>How to trade:</strong> Sell when price breaks below the horizontal support. Stop loss above the last swing high.</p>
-            
-            <h3>Symmetrical Triangle (Continuation)</h3>
-            <p><strong>What it looks like:</strong> Falling resistance line and rising support line. Both slope toward each other.</p>
-            <p><strong>What it means:</strong> Price is compressing. Expect a breakout in the direction of the prior trend.</p>
-            <p><strong>How to trade:</strong> Wait for breakout. Enter in the direction of the breakout. Stop loss on the opposite side of the triangle.</p>
-            
-            <div class="warning-box">
-                <strong>⚠️ Don't trade inside the triangle:</strong> Wait for the breakout. Triangles can fake out — wait for a close beyond the boundary before entering.
-            </div>
+<h3>Inverse Head and Shoulders (Bottom)</h3>
+<p>The same pattern inverted — signals the end of a downtrend and a move to the upside. Trade the breakout above the
+    neckline.</p>
 
-            <!-- SECTION 5 -->
-            <h2 id="flags-pennants">Flags and Pennants (Continuation)</h2>
-            
-            <h3>Bull Flag</h3>
-            <p><strong>What it looks like:</strong> A sharp upward move (flagpole), then a consolidation moving sideways or slightly down (the flag).</p>
-            <p><strong>What it means:</strong> A pause before continuing upward. Buyers are resting, not reversing.</p>
-            <p><strong>How to trade:</strong> Buy when price breaks above the flag. Stop loss below the flag's low.</p>
-            
-            <h3>Bear Flag</h3>
-            <p><strong>What it looks like:</strong> A sharp downward move (flagpole), then a consolidation moving sideways or slightly up (the flag).</p>
-            <p><strong>What it means:</strong> A pause before continuing downward. Sellers are resting, not reversing.</p>
-            <p><strong>How to trade:</strong> Sell when price breaks below the flag. Stop loss above the flag's high.</p>
-            
-            <div class="info-box">
-                <strong>📌 Pro Tip:</strong> Flags are high-probability patterns because they follow strong momentum. The stronger the flagpole, the more reliable the pattern.
-            </div>
+<div class="warning-box">
+    <strong>⚠️ Don't enter before the break:</strong> Wait for price to close below the neckline (for top) or above the
+    neckline (for bottom). Premature entries often fail.
+</div>
 
-            <!-- SECTION 6 -->
-            <h2 id="how-to-trade">How to Trade Chart Patterns</h2>
-            
-            <h3>Step-by-Step Process</h3>
-            <ol>
-                <li><strong>Identify the pattern:</strong> Scan daily and 4-hour charts for recognizable patterns</li>
-                <li><strong>Draw the pattern:</strong> Mark the key levels (neckline, support, resistance)</li>
-                <li><strong>Wait for confirmation:</strong> For reversal patterns, wait for neckline break. For triangles, wait for breakout.</li>
-                <li><strong>Enter on the break:</strong> Use a limit order at the break level or enter on candle close beyond it</li>
-                <li><strong>Set stop loss:</strong> Beyond the opposite side of the pattern</li>
-                <li><strong>Set target:</strong> Measured move or next support/resistance</li>
-            </ol>
-            
-            <h3>Risk Management Rules</h3>
-            <ul>
-                <li>Risk 1% of account per pattern trade</li>
-                <li>Ensure at least 1:2 risk-reward before entering</li>
-                <li>Don't force patterns — not every chart has one</li>
-            </ul>
+<!-- SECTION 3 -->
+<h2 id="double-top-bottom">Double Tops and Double Bottoms</h2>
 
-            <!-- INTERNAL LINK TO POST #35 -->
-            <div class="internal-link">
-                📖 <strong>Related Reading:</strong> <a href="/category/strategy-analysis/building-trading-strategy/">Building a Simple Trading Strategy</a> — Add chart patterns to your trading plan.
-            </div>
+<p><strong>Double top</strong> signals a reversal from uptrend to downtrend. <strong>Double bottom</strong> signals a
+    reversal from downtrend to uptrend.</p>
 
-            <!-- SECTION 7 -->
-            <h2 id="common-mistakes">Common Mistakes</h2>
-            
-            <ul>
-                <li><strong>Entering before the break:</strong> The pattern is not confirmed until price breaks the neckline or triangle boundary.</li>
-                <li><strong>Trading patterns against the trend:</strong> A double top in an uptrend is less reliable than a head and shoulders.</li>
-                <li><strong>Using too small timeframes:</strong> Patterns on 5-minute charts fail constantly. Use 4-hour or daily.</li>
-                <li><strong>Forcing patterns:</strong> If you have to squint to see the pattern, it's not there.</li>
-                <li><strong>Ignoring volume:</strong> On higher timeframes, breakout volume confirms the move.</li>
-            </ul>
-            
-            <div class="warning-box">
-                <strong>⚠️ My Recommendation:</strong> Start with one pattern — head and shoulders or double tops. Master that pattern before adding others. Trying to learn all patterns at once leads to confusion.
-            </div>
+<h3>What it looks like:</h3>
+<ul>
+    <li><strong>Double top:</strong> Price rises to a resistance level, falls, rises again to the same level, then falls
+    </li>
+    <li><strong>Double bottom:</strong> Price falls to a support level, rises, falls again to the same level, then rises
+    </li>
+</ul>
 
-            <hr>
+<h3>How to trade:</h3>
+<ul>
+    <li><strong>Entry (double top):</strong> When price breaks below the low between the two tops</li>
+    <li><strong>Entry (double bottom):</strong> When price breaks above the high between the two bottoms</li>
+    <li><strong>Stop loss:</strong> Beyond the opposite side of the pattern</li>
+    <li><strong>Target:</strong> Measured move = distance from tops to neckline, projected from break</li>
+</ul>
 
-            <!-- CONCLUSION -->
-            <h2>Patterns Are Signposts, Not Guarantees</h2>
-            <p>Chart patterns are not magical. They fail sometimes — even the perfect head and shoulders can reverse. That's why you use stop losses.</p>
-            
-            <p><strong>Focus on higher timeframes. Wait for confirmation. Risk 1% per trade. Use a stop loss. Do this, and chart patterns will become a valuable part of your trading.</strong></p>
+<div class="info-box">
+    <strong>📌 Validity:</strong> The two tops/bottoms should be roughly the same level. The time between them should be
+    at least 2-3 weeks (on daily chart) or 10-15 candles (on lower timeframes).
+</div>
 
-            <!-- INTERNAL LINK TO POST #1 -->
-            <div class="internal-link">
-                📖 <strong>Related Reading:</strong> <a href="/category/getting-started/how-to-start-forex-trading/">How to Start Forex Trading</a> — Your complete roadmap. Add chart patterns after mastering support/resistance.
-            </div>
+<!-- INTERNAL LINK TO POST #37 -->
+<div class="internal-link">
+    📖 <strong>Related Reading:</strong> <a href="/category/strategy-analysis/trend-lines-explained/">Trend Lines
+        Explained</a> — Double tops/bottoms often form at trend line breaks.
+</div>
 
-        </div>
+<!-- SECTION 4 -->
+<h2 id="triangles">Triangles (Ascending, Descending, Symmetrical)</h2>
 
-        <!-- SOFT CTA -->
-        <div class="blog-cta">
-            <h3>📌 Ready to Start Your Trading Journey?</h3>
-            <p>I've documented my entire broker setup — tight spreads, instant withdrawals, and why I've stuck with Exness for years.</p>
-            <a href="https://structuretradelab.com/broker-setup/" class="btn">View My Broker Setup →</a>
-            <p class="disclosure-small">📌 I'm an Introducing Broker. I earn commission when you trade. No extra cost to you.</p>
-        </div>
+<h3>Ascending Triangle (Bullish Continuation)</h3>
+<p><strong>What it looks like:</strong> A flat resistance line (horizontal top) and rising support line (higher lows).
+    Price compresses between them.</p>
+<p><strong>What it means:</strong> Buyers are getting stronger. Each low is higher than the last. Expect a breakout to
+    the upside.</p>
+<p><strong>How to trade:</strong> Buy when price breaks above the horizontal resistance. Stop loss below the last swing
+    low.</p>
 
-    </article>
+<h3>Descending Triangle (Bearish Continuation)</h3>
+<p><strong>What it looks like:</strong> A flat support line (horizontal bottom) and falling resistance line (lower
+    highs). Price compresses between them.</p>
+<p><strong>What it means:</strong> Sellers are getting stronger. Each high is lower than the last. Expect a breakout to
+    the downside.</p>
+<p><strong>How to trade:</strong> Sell when price breaks below the horizontal support. Stop loss above the last swing
+    high.</p>
 
-    <!-- FOOTER -->
-    <footer>
-        <div class="container">
-            <div class="footer-disclosure">
-                <strong>Disclosure:</strong> Structure Trade Lab is an independent educational website. As an Introducing Broker (IB), I may earn commissions when you trade through links on this site. This does not affect your trading conditions or costs.
-            </div>
-            <div class="footer-disclosure">
-                <strong>Risk Warning:</strong> Trading forex and CFDs carries a high level of risk. Past performance does not guarantee future results. Only trade with money you can afford to lose.
-            </div>
-            <p>© <span id="current-year"></span> Structure Trade Lab. All rights reserved.</p>
-            <p style="margin-top: 10px;">
-                <a href="https://structuretradelab.com">Home</a> | 
-                <a href="/">Blog</a> | 
-                <a href="https://tools.structuretradelab.com">Tools</a> |
-                <a href="https://structuretradelab.com/about">About</a>
-            </p>
-        </div>
-    </footer>
+<h3>Symmetrical Triangle (Continuation)</h3>
+<p><strong>What it looks like:</strong> Falling resistance line and rising support line. Both slope toward each other.
+</p>
+<p><strong>What it means:</strong> Price is compressing. Expect a breakout in the direction of the prior trend.</p>
+<p><strong>How to trade:</strong> Wait for breakout. Enter in the direction of the breakout. Stop loss on the opposite
+    side of the triangle.</p>
 
-    <!-- JavaScript for Hamburger Menu & Year -->
-    <script src="https://structuretradelab.com/assets/js/common.js" defer></script>
-</body>
-</html>
+<div class="warning-box">
+    <strong>⚠️ Don't trade inside the triangle:</strong> Wait for the breakout. Triangles can fake out — wait for a
+    close beyond the boundary before entering.
+</div>
+
+<!-- SECTION 5 -->
+<h2 id="flags-pennants">Flags and Pennants (Continuation)</h2>
+
+<h3>Bull Flag</h3>
+<p><strong>What it looks like:</strong> A sharp upward move (flagpole), then a consolidation moving sideways or slightly
+    down (the flag).</p>
+<p><strong>What it means:</strong> A pause before continuing upward. Buyers are resting, not reversing.</p>
+<p><strong>How to trade:</strong> Buy when price breaks above the flag. Stop loss below the flag's low.</p>
+
+<h3>Bear Flag</h3>
+<p><strong>What it looks like:</strong> A sharp downward move (flagpole), then a consolidation moving sideways or
+    slightly up (the flag).</p>
+<p><strong>What it means:</strong> A pause before continuing downward. Sellers are resting, not reversing.</p>
+<p><strong>How to trade:</strong> Sell when price breaks below the flag. Stop loss above the flag's high.</p>
+
+<div class="info-box">
+    <strong>📌 Pro Tip:</strong> Flags are high-probability patterns because they follow strong momentum. The stronger
+    the flagpole, the more reliable the pattern.
+</div>
+
+<!-- SECTION 6 -->
+<h2 id="how-to-trade">How to Trade Chart Patterns</h2>
+
+<h3>Step-by-Step Process</h3>
+<ol>
+    <li><strong>Identify the pattern:</strong> Scan daily and 4-hour charts for recognizable patterns</li>
+    <li><strong>Draw the pattern:</strong> Mark the key levels (neckline, support, resistance)</li>
+    <li><strong>Wait for confirmation:</strong> For reversal patterns, wait for neckline break. For triangles, wait for
+        breakout.</li>
+    <li><strong>Enter on the break:</strong> Use a limit order at the break level or enter on candle close beyond it
+    </li>
+    <li><strong>Set stop loss:</strong> Beyond the opposite side of the pattern</li>
+    <li><strong>Set target:</strong> Measured move or next support/resistance</li>
+</ol>
+
+<h3>Risk Management Rules</h3>
+<ul>
+    <li>Risk 1% of account per pattern trade</li>
+    <li>Ensure at least 1:2 risk-reward before entering</li>
+    <li>Don't force patterns — not every chart has one</li>
+</ul>
+
+<!-- INTERNAL LINK TO POST #35 -->
+<div class="internal-link">
+    📖 <strong>Related Reading:</strong> <a href="/category/strategy-analysis/building-trading-strategy/">Building a
+        Simple Trading Strategy</a> — Add chart patterns to your trading plan.
+</div>
+
+<!-- SECTION 7 -->
+<h2 id="common-mistakes">Common Mistakes</h2>
+
+<ul>
+    <li><strong>Entering before the break:</strong> The pattern is not confirmed until price breaks the neckline or
+        triangle boundary.</li>
+    <li><strong>Trading patterns against the trend:</strong> A double top in an uptrend is less reliable than a head and
+        shoulders.</li>
+    <li><strong>Using too small timeframes:</strong> Patterns on 5-minute charts fail constantly. Use 4-hour or daily.
+    </li>
+    <li><strong>Forcing patterns:</strong> If you have to squint to see the pattern, it's not there.</li>
+    <li><strong>Ignoring volume:</strong> On higher timeframes, breakout volume confirms the move.</li>
+</ul>
+
+<div class="warning-box">
+    <strong>⚠️ My Recommendation:</strong> Start with one pattern — head and shoulders or double tops. Master that
+    pattern before adding others. Trying to learn all patterns at once leads to confusion.
+</div>
+
+<hr>
+
+<!-- CONCLUSION -->
+<h2>Patterns Are Signposts, Not Guarantees</h2>
+<p>Chart patterns are not magical. They fail sometimes — even the perfect head and shoulders can reverse. That's why you
+    use stop losses.</p>
+
+<p><strong>Focus on higher timeframes. Wait for confirmation. Risk 1% per trade. Use a stop loss. Do this, and chart
+        patterns will become a valuable part of your trading.</strong></p>
+
+<!-- INTERNAL LINK TO POST #1 -->
+<div class="internal-link">
+    📖 <strong>Related Reading:</strong> <a href="/category/getting-started/how-to-start-forex-trading/">How to Start
+        Forex Trading</a> — Your complete roadmap. Add chart patterns after mastering support/resistance.
+</div>

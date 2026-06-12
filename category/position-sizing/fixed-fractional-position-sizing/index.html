@@ -1,358 +1,252 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+---
+layout: article
+title: "Fixed Fractional Position Sizing: The Professional Method"
+description: "Fixed fractional position sizing explained: The professional method for managing risk and compounding
+growth. Learn how to scale your position sizes as your account grows."
+keywords: "fixed fractional position sizing, professional position sizing, risk based position sizing, compounding
+trading, position sizing method"
+date: 2026-05-24
+image: /category/position-sizing/fixed-fractional-position-sizing/fixed-fractional-featured.webp
+image-alt: "Fixed fractional position sizing — growing account balance with compounding"
+category: position-sizing
+category-icon: 📐
+category-label: "Position Sizing"
+read-time: 7
+---
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Fixed fractional position sizing explained: The professional method for managing risk and compounding growth. Learn how to scale your position sizes as your account grows.">
-    <meta name="keywords" content="fixed fractional position sizing, professional position sizing, risk based position sizing, compounding trading, position sizing method">
-    <meta name="author" content="Structure Trade Lab">
-    <title>Fixed Fractional Position Sizing: The Professional Method | Structure Trade Lab</title>
+<p>You know the 1% rule. You calculate position size before every trade. But there's one more layer that separates
+    amateurs from professionals: <strong>fixed fractional position sizing.</strong></p>
 
-    <script>
-        (function () {
-            const savedTheme = localStorage.getItem('theme');
-            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-            if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
-                document.documentElement.classList.add('dark-mode');
-            }
-        })();
-    </script>
-    
-    <link rel="stylesheet" href="https://structuretradelab.com/assets/css/common.css">
-    <link rel="stylesheet" href="https://structuretradelab.com/assets/css/article.css">
-    
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": "Fixed Fractional Position Sizing: The Professional Method",
-        "description": "Fixed fractional position sizing explained: The professional method for managing risk and compounding growth. Learn how to scale your position sizes as your account grows.",
-        "image": "https://blog.structuretradelab.com/category/position-sizing/fixed-fractional-position-sizing/fixed-fractional-featured.webp",
-        "author": {
-            "@type": "Person",
-            "name": "Structure Trade Lab",
-            "url": "https://structuretradelab.com/about"
-        },
-        "publisher": {
-            "@type": "Organization",
-            "name": "Structure Trade Lab"
-        },
-        "datePublished": "2026-05-24",
-        "dateModified": "2026-05-24",
-        "mainEntityOfPage": {
-            "@type": "WebPage",
-            "@id": "https://blog.structuretradelab.com/category/position-sizing/fixed-fractional-position-sizing/"
-        },
-        "keywords": "fixed fractional position sizing, professional position sizing, risk based position sizing, compounding trading"
-    }
-    </script>
-</head>
-<body>
+<p>Most beginners risk the same dollar amount on every trade. If they start with $10,000, they risk $100 per trade —
+    even after their account grows to $12,000 or drops to $8,000. This is inefficient.</p>
 
-    <!-- HEADER -->
-    <header>
-        <div class="container header-flex">
-            <div class="logo">
-                <a href="https://structuretradelab.com">
-                    <h1>📊 Structure Trade Lab</h1>
-                    <p>Trade with Structure. Trade with a Plan.</p>
-                </a>
-            </div>
-            
-            <div style="display: flex; align-items: center; gap: 15px;">
-                <button class="dark-mode-toggle" id="darkModeToggle" aria-label="Dark mode">
-                    <span class="toggle-icon">🌙</span>
-                    <span class="toggle-text">Dark</span>
-                </button>
-                <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-            </div>
-            
-            <nav id="mainNav">
-                <a href="https://structuretradelab.com">Home</a>
-                <a href="/">Blog</a>
-                <a href="https://tools.structuretradelab.com">Tools</a>
-                <a href="https://structuretradelab.com/about">About</a>
-            </nav>
-        </div>
-    </header>
-    
-    <div class="menu-overlay" id="menuOverlay"></div>
+<p>Professional traders use <strong>fixed fractional position sizing</strong> — they risk the same
+    <strong>percentage</strong> of their current account on every trade. This method compounds winners and protects
+    during drawdowns.</p>
 
-    <!-- ARTICLE -->
-    <article class="article-container">
-        <div class="article-header">
-            <div class="article-category"><a href="/category/position-sizing/">📐 Position Sizing</a></div>
-            <h1 class="article-title">Fixed Fractional Position Sizing: The Professional Method</h1>
-            <div class="article-meta">
-                <span>📅 Published: May 2026</span>
-                <span>📖 7 min read</span>
-                <span>🏷️ Category: Position Sizing</span>
-            </div>
-        </div>
-        
-        <!-- FEATURED IMAGE -->
-        <div class="featured-image">
-            <img src="fixed-fractional-featured.webp" 
-                 alt="Fixed fractional position sizing — growing account balance with compounding" 
-                 loading="eager"
-                 width="800"
-                 height="450">
-        </div>
-        
-        <div class="article-content">
+<div class="info-box">
+    <strong>💡 Key Takeaway:</strong> Fixed fractional sizing means you risk a fixed percentage (e.g., 1%) of your
+    CURRENT account balance, not your starting balance. This compounds growth and automatically reduces risk during
+    losses.
+</div>
 
-            <p>You know the 1% rule. You calculate position size before every trade. But there's one more layer that separates amateurs from professionals: <strong>fixed fractional position sizing.</strong></p>
+<!-- TABLE OF CONTENTS -->
+<div class="table-of-contents">
+    <h3>📑 What You'll Learn</h3>
+    <ul>
+        <li><a href="#what-is">What is Fixed Fractional Position Sizing?</a></li>
+        <li><a href="#how-it-works">How It Works (With Examples)</a></li>
+        <li><a href="#compounding">The Compounding Effect</a></li>
+        <li><a href="#drawdown-protection">Drawdown Protection</a></li>
+        <li><a href="#fixed-dollar-vs-fixed-fractional">Fixed Dollar vs Fixed Fractional</a></li>
+        <li><a href="#how-to-implement">How to Implement This Method</a></li>
+    </ul>
+</div>
 
-            <p>Most beginners risk the same dollar amount on every trade. If they start with $10,000, they risk $100 per trade — even after their account grows to $12,000 or drops to $8,000. This is inefficient.</p>
+<!-- INTERNAL LINK TO POST #6 -->
+<div class="internal-link">
+    📖 <strong>Related Reading:</strong> <a href="/category/position-sizing/position-sizing-explained/">Position Sizing
+        Explained</a> — Master the basics before moving to advanced methods.
+</div>
 
-            <p>Professional traders use <strong>fixed fractional position sizing</strong> — they risk the same <strong>percentage</strong> of their current account on every trade. This method compounds winners and protects during drawdowns.</p>
+<!-- SECTION 1 -->
+<h2 id="what-is">What is Fixed Fractional Position Sizing?</h2>
 
-            <div class="info-box">
-                <strong>💡 Key Takeaway:</strong> Fixed fractional sizing means you risk a fixed percentage (e.g., 1%) of your CURRENT account balance, not your starting balance. This compounds growth and automatically reduces risk during losses.
-            </div>
+<p><strong>Fixed fractional position sizing</strong> means you risk a fixed percentage of your current account balance
+    on every trade.</p>
 
-            <!-- TABLE OF CONTENTS -->
-            <div class="table-of-contents">
-                <h3>📑 What You'll Learn</h3>
-                <ul>
-                    <li><a href="#what-is">What is Fixed Fractional Position Sizing?</a></li>
-                    <li><a href="#how-it-works">How It Works (With Examples)</a></li>
-                    <li><a href="#compounding">The Compounding Effect</a></li>
-                    <li><a href="#drawdown-protection">Drawdown Protection</a></li>
-                    <li><a href="#fixed-dollar-vs-fixed-fractional">Fixed Dollar vs Fixed Fractional</a></li>
-                    <li><a href="#how-to-implement">How to Implement This Method</a></li>
-                </ul>
-            </div>
+<p><strong>Example:</strong> You risk 1% per trade.</p>
+<ul>
+    <li>Account at $10,000 → risk $100 per trade</li>
+    <li>Account grows to $12,000 → risk $120 per trade</li>
+    <li>Account drops to $8,000 → risk $80 per trade</li>
+</ul>
 
-            <!-- INTERNAL LINK TO POST #6 -->
-            <div class="internal-link">
-                📖 <strong>Related Reading:</strong> <a href="/category/position-sizing/position-sizing-explained/">Position Sizing Explained</a> — Master the basics before moving to advanced methods.
-            </div>
+<div class="info-box">
+    <strong>📌 Simple Definition:</strong> Your risk amount changes as your account changes. When you win, you risk
+    more. When you lose, you risk less. This is how professionals compound their growth.
+</div>
 
-            <!-- SECTION 1 -->
-            <h2 id="what-is">What is Fixed Fractional Position Sizing?</h2>
-            
-            <p><strong>Fixed fractional position sizing</strong> means you risk a fixed percentage of your current account balance on every trade.</p>
-            
-            <p><strong>Example:</strong> You risk 1% per trade.</p>
-            <ul>
-                <li>Account at $10,000 → risk $100 per trade</li>
-                <li>Account grows to $12,000 → risk $120 per trade</li>
-                <li>Account drops to $8,000 → risk $80 per trade</li>
-            </ul>
-            
-            <div class="info-box">
-                <strong>📌 Simple Definition:</strong> Your risk amount changes as your account changes. When you win, you risk more. When you lose, you risk less. This is how professionals compound their growth.
-            </div>
+<!-- SECTION 2 -->
+<h2 id="how-it-works">How It Works (With Examples)</h2>
 
-            <!-- SECTION 2 -->
-            <h2 id="how-it-works">How It Works (With Examples)</h2>
-            
-            <p><strong>Scenario:</strong> You start with $10,000. You risk 1% per trade ($100). You win 10 trades in a row, gaining $100 each time.</p>
-            
-            <table class="spreads-table">
-                <thead>
-                    <tr>
-                        <th>Trade #</th>
-                        <th>Account Before Trade</th>
-                        <th>Risk Amount (1%)</th>
-                        <th>Win Amount</th>
-                        <th>Account After Trade</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>$10,000</td>
-                        <td>$100</td>
-                        <td>$100</td>
-                        <td>$10,100</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>$10,100</td>
-                        <td>$101</td>
-                        <td>$101</td>
-                        <td>$10,201</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>$10,201</td>
-                        <td>$102</td>
-                        <td>$102</td>
-                        <td>$10,303</td>
-                    </tr>
-                    <tr>
-                        <td>...</td>
-                        <td>...</td>
-                        <td>...</td>
-                        <td>...</td>
-                        <td>...</td>
-                    </tr>
-                    <tr>
-                        <td>10</td>
-                        <td>~$11,000</td>
-                        <td>~$110</td>
-                        <td>~$110</td>
-                        <td>~$11,110</td>
-                    </tr>
-                </tbody>
-            </table>
-            
-            <div class="info-box">
-                <strong>📊 Compare:</strong> Fixed dollar ($100 per trade) would yield $11,000. Fixed fractional yields ~$11,110. The difference grows over hundreds of trades.
-            </div>
+<p><strong>Scenario:</strong> You start with $10,000. You risk 1% per trade ($100). You win 10 trades in a row, gaining
+    $100 each time.</p>
 
-            <!-- INTERNAL LINK TO POST #5 -->
-            <div class="internal-link">
-                📖 <strong>Related Reading:</strong> <a href="/category/risk-management/risk-management-101/">Risk Management 101</a> — Fixed fractional sizing works with the 1% rule. Master both.
-            </div>
+<table class="spreads-table">
+    <thead>
+        <tr>
+            <th>Trade #</th>
+            <th>Account Before Trade</th>
+            <th>Risk Amount (1%)</th>
+            <th>Win Amount</th>
+            <th>Account After Trade</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>$10,000</td>
+            <td>$100</td>
+            <td>$100</td>
+            <td>$10,100</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>$10,100</td>
+            <td>$101</td>
+            <td>$101</td>
+            <td>$10,201</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>$10,201</td>
+            <td>$102</td>
+            <td>$102</td>
+            <td>$10,303</td>
+        </tr>
+        <tr>
+            <td>...</td>
+            <td>...</td>
+            <td>...</td>
+            <td>...</td>
+            <td>...</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>~$11,000</td>
+            <td>~$110</td>
+            <td>~$110</td>
+            <td>~$11,110</td>
+        </tr>
+    </tbody>
+</table>
 
-            <!-- SECTION 3 -->
-            <h2 id="compounding">The Compounding Effect</h2>
-            
-            <p>This is where fixed fractional shines. Because you risk a percentage of your current account, your position sizes grow as you win.</p>
-            
-            <p><strong>Example over 100 trades (60% win rate, 1:2 risk reward):</strong></p>
-            <ul>
-                <li><strong>Fixed dollar ($100 risk):</strong> Account grows from $10,000 to ~$12,000</li>
-                <li><strong>Fixed fractional (1% risk):</strong> Account grows from $10,000 to ~$15,000+</li>
-            </ul>
-            
-            <div class="warning-box">
-                <strong>⚠️ The Power of Compounding:</strong> Over time, the difference between fixed dollar and fixed fractional becomes massive. This is why professionals use fixed fractional.
-            </div>
+<div class="info-box">
+    <strong>📊 Compare:</strong> Fixed dollar ($100 per trade) would yield $11,000. Fixed fractional yields ~$11,110.
+    The difference grows over hundreds of trades.
+</div>
 
-            <!-- SECTION 4 -->
-            <h2 id="drawdown-protection">Drawdown Protection</h2>
-            
-            <p>Fixed fractional also protects you during losing streaks. When your account drops, your risk amount automatically decreases.</p>
-            
-            <p><strong>Scenario:</strong> 10 consecutive losses</p>
-            <ul>
-                <li><strong>Fixed dollar ($100 risk):</strong> Lose $1,000 total → account from $10,000 to $9,000</li>
-                <li><strong>Fixed fractional (1% risk):</strong> Risk decreases each time → total loss ~$950 → account to $9,050</li>
-            </ul>
-            
-            <div class="info-box">
-                <strong>📌 Key Insight:</strong> Fixed fractional makes you risk-averse when you're losing and aggressive when you're winning. This is exactly what you want.
-            </div>
+<!-- INTERNAL LINK TO POST #5 -->
+<div class="internal-link">
+    📖 <strong>Related Reading:</strong> <a href="/category/risk-management/risk-management-101/">Risk Management
+        101</a> — Fixed fractional sizing works with the 1% rule. Master both.
+</div>
 
-            <!-- SECTION 5 -->
-            <h2 id="fixed-dollar-vs-fixed-fractional">Fixed Dollar vs Fixed Fractional</h2>
+<!-- SECTION 3 -->
+<h2 id="compounding">The Compounding Effect</h2>
 
-            <table class="spreads-table">
-                <thead>
-                    <tr>
-                        <th>Feature</th>
-                        <th>Fixed Dollar</th>
-                        <th>Fixed Fractional</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>Risk amount</strong></td>
-                        <td>Same dollar every trade</td>
-                        <td>Percentage of current account</td>
-                    </tr>
-                    <tr>
-                        <td><strong>During winning streak</strong></td>
-                        <td>Stays the same</td>
-                        <td><strong>Increases</strong> (compounds gains)</td>
-                    </tr>
-                    <tr>
-                        <td><strong>During losing streak</strong></td>
-                        <td>Stays the same</td>
-                        <td><strong>Decreases</strong> (preserves capital)</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Long-term growth</strong></td>
-                        <td>Linear</td>
-                        <td><strong>Exponential (compounding)</strong></td>
-                    </tr>
-                </tbody>
-            </table>
+<p>This is where fixed fractional shines. Because you risk a percentage of your current account, your position sizes
+    grow as you win.</p>
 
-            <div class="info-box">
-                <strong>📌 Verdict:</strong> Fixed fractional is superior for long-term trading. The only downside is slightly more complex calculation — but your position size calculator handles this automatically.
-            </div>
+<p><strong>Example over 100 trades (60% win rate, 1:2 risk reward):</strong></p>
+<ul>
+    <li><strong>Fixed dollar ($100 risk):</strong> Account grows from $10,000 to ~$12,000</li>
+    <li><strong>Fixed fractional (1% risk):</strong> Account grows from $10,000 to ~$15,000+</li>
+</ul>
 
-            <!-- INTERNAL LINK TO POST #25 -->
-            <div class="internal-link">
-                📖 <strong>Related Reading:</strong> <a href="/category/position-sizing/position-size-calculator/">Position Size Calculator</a> — The calculator automatically applies fixed fractional when you update your balance.
-            </div>
+<div class="warning-box">
+    <strong>⚠️ The Power of Compounding:</strong> Over time, the difference between fixed dollar and fixed fractional
+    becomes massive. This is why professionals use fixed fractional.
+</div>
 
-            <!-- SECTION 6 -->
-            <h2 id="how-to-implement">How to Implement This Method</h2>
-            
-            <h3>Step 1: Choose Your Risk Percentage</h3>
-            <p>Risk 1% per trade. This is the professional standard.</p>
-            
-            <h3>Step 2: Update Your Balance Regularly</h3>
-            <p>After every trading session (or weekly), update your account balance in your position size calculator.</p>
-            
-            <h3>Step 3: Calculate Before Every Trade</h3>
-            <p>Always calculate your position size based on your <strong>current</strong> account balance, not your starting balance.</p>
-            
-            <h3>Step 4: Be Consistent</h3>
-            <p>Don't adjust your risk percentage based on emotion. Stick to 1% whether you're winning or losing.</p>
-            
-            <div class="warning-box">
-                <strong>⚠️ My Rule:</strong> I update my position size calculator with my current balance every Monday morning. Then I risk 1% of that balance on every trade that week. This is simple and effective.
-            </div>
+<!-- SECTION 4 -->
+<h2 id="drawdown-protection">Drawdown Protection</h2>
 
-            <!-- INTERNAL LINK TO POST #27 -->
-            <div class="internal-link">
-                📖 <strong>Related Reading:</strong> <a href="/category/position-sizing/how-to-calculate-position-size/">How to Calculate Position Size</a> — Apply the fixed fractional method to the formula.
-            </div>
+<p>Fixed fractional also protects you during losing streaks. When your account drops, your risk amount automatically
+    decreases.</p>
 
-            <hr>
+<p><strong>Scenario:</strong> 10 consecutive losses</p>
+<ul>
+    <li><strong>Fixed dollar ($100 risk):</strong> Lose $1,000 total → account from $10,000 to $9,000</li>
+    <li><strong>Fixed fractional (1% risk):</strong> Risk decreases each time → total loss ~$950 → account to $9,050
+    </li>
+</ul>
 
-            <!-- CONCLUSION -->
-            <h2>Think in Percentages, Not Dollars</h2>
-            <p>Amateurs think in dollars. Professionals think in percentages. Risking the same percentage of your current account — not the same dollar amount — is how you compound your winners and protect your losers.</p>
-            
-            <p><strong>Risk 1% of your current balance. Update your calculator regularly. Let compounding work for you. Do this, and your account will grow exponentially over time.</strong></p>
+<div class="info-box">
+    <strong>📌 Key Insight:</strong> Fixed fractional makes you risk-averse when you're losing and aggressive when
+    you're winning. This is exactly what you want.
+</div>
 
-        </div>
+<!-- SECTION 5 -->
+<h2 id="fixed-dollar-vs-fixed-fractional">Fixed Dollar vs Fixed Fractional</h2>
 
-        <!-- SOFT CTA -->
-        <div class="blog-cta">
-            <h3>📌 Ready to Start Your Trading Journey?</h3>
-            <p>I've documented my entire broker setup — tight spreads, instant withdrawals, and why I've stuck with Exness for years.</p>
-            <a href="https://structuretradelab.com/broker-setup/" class="btn">View My Broker Setup →</a>
-            <p class="disclosure-small">📌 I'm an Introducing Broker. I earn commission when you trade. No extra cost to you.</p>
-        </div>
+<table class="spreads-table">
+    <thead>
+        <tr>
+            <th>Feature</th>
+            <th>Fixed Dollar</th>
+            <th>Fixed Fractional</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Risk amount</strong></td>
+            <td>Same dollar every trade</td>
+            <td>Percentage of current account</td>
+        </tr>
+        <tr>
+            <td><strong>During winning streak</strong></td>
+            <td>Stays the same</td>
+            <td><strong>Increases</strong> (compounds gains)</td>
+        </tr>
+        <tr>
+            <td><strong>During losing streak</strong></td>
+            <td>Stays the same</td>
+            <td><strong>Decreases</strong> (preserves capital)</td>
+        </tr>
+        <tr>
+            <td><strong>Long-term growth</strong></td>
+            <td>Linear</td>
+            <td><strong>Exponential (compounding)</strong></td>
+        </tr>
+    </tbody>
+</table>
 
-    </article>
+<div class="info-box">
+    <strong>📌 Verdict:</strong> Fixed fractional is superior for long-term trading. The only downside is slightly more
+    complex calculation — but your position size calculator handles this automatically.
+</div>
 
-    <!-- FOOTER -->
-    <footer>
-        <div class="container">
-            <div class="footer-disclosure">
-                <strong>Disclosure:</strong> Structure Trade Lab is an independent educational website. As an Introducing Broker (IB), I may earn commissions when you trade through links on this site. This does not affect your trading conditions or costs.
-            </div>
-            <div class="footer-disclosure">
-                <strong>Risk Warning:</strong> Trading forex and CFDs carries a high level of risk. Past performance does not guarantee future results. Only trade with money you can afford to lose.
-            </div>
-            <p>© <span id="current-year"></span> Structure Trade Lab. All rights reserved.</p>
-            <p style="margin-top: 10px;">
-                <a href="https://structuretradelab.com">Home</a> | 
-                <a href="/">Blog</a> | 
-                <a href="https://tools.structuretradelab.com">Tools</a> |
-                <a href="https://structuretradelab.com/about">About</a>
-            </p>
-        </div>
-    </footer>
+<!-- INTERNAL LINK TO POST #25 -->
+<div class="internal-link">
+    📖 <strong>Related Reading:</strong> <a href="/category/position-sizing/position-size-calculator/">Position Size
+        Calculator</a> — The calculator automatically applies fixed fractional when you update your balance.
+</div>
 
-    <!-- JavaScript for Hamburger Menu & Year -->
-    <script src="https://structuretradelab.com/assets/js/common.js" defer></script>
-</body>
-</html>
+<!-- SECTION 6 -->
+<h2 id="how-to-implement">How to Implement This Method</h2>
 
+<h3>Step 1: Choose Your Risk Percentage</h3>
+<p>Risk 1% per trade. This is the professional standard.</p>
 
+<h3>Step 2: Update Your Balance Regularly</h3>
+<p>After every trading session (or weekly), update your account balance in your position size calculator.</p>
+
+<h3>Step 3: Calculate Before Every Trade</h3>
+<p>Always calculate your position size based on your <strong>current</strong> account balance, not your starting
+    balance.</p>
+
+<h3>Step 4: Be Consistent</h3>
+<p>Don't adjust your risk percentage based on emotion. Stick to 1% whether you're winning or losing.</p>
+
+<div class="warning-box">
+    <strong>⚠️ My Rule:</strong> I update my position size calculator with my current balance every Monday morning. Then
+    I risk 1% of that balance on every trade that week. This is simple and effective.
+</div>
+
+<!-- INTERNAL LINK TO POST #27 -->
+<div class="internal-link">
+    📖 <strong>Related Reading:</strong> <a href="/category/position-sizing/how-to-calculate-position-size/">How to
+        Calculate Position Size</a> — Apply the fixed fractional method to the formula.
+</div>
+
+<hr>
+
+<!-- CONCLUSION -->
+<h2>Think in Percentages, Not Dollars</h2>
+<p>Amateurs think in dollars. Professionals think in percentages. Risking the same percentage of your current account —
+    not the same dollar amount — is how you compound your winners and protect your losers.</p>
+
+<p><strong>Risk 1% of your current balance. Update your calculator regularly. Let compounding work for you. Do this, and
+        your account will grow exponentially over time.</strong></p>

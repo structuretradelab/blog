@@ -1,303 +1,196 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+---
+layout: article
+title: "Lot Sizes in Forex: Standard, Mini, and Micro Lots Explained"
+description: "Lot sizes in forex explained: standard, mini, and micro lots. Learn how many units each lot represents,
+pip values, and which lot size is right for you."
+keywords: "lot sizes in forex, standard lot, mini lot, micro lot, forex lot size explained, how many units in a forex
+lot"
+date: 2026-05-22
+image: /category/position-sizing/lot-sizes-explained/lot-sizes-featured.webp
+image-alt: "Comparison of forex lot sizes — standard lot 1.0 (100,000 units), mini lot 0.1 (10,000 units), and micro lot
+0.01 (1,000 units)"
+category: position-sizing
+category-icon: 📐
+category-label: "Position Sizing"
+read-time: 6
+---
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Lot sizes in forex explained: standard, mini, and micro lots. Learn how many units each lot represents, pip values, and which lot size is right for you.">
-    <meta name="keywords" content="lot sizes in forex, standard lot, mini lot, micro lot, forex lot size explained, how many units in a forex lot">
-    <meta name="author" content="Structure Trade Lab">
-    <title>Lot Sizes in Forex: Standard, Mini, and Micro Lots Explained | Structure Trade Lab</title>
+<p>When I first started trading, I saw numbers like "0.01" and "1.00" in my platform and had no idea what they meant.
+    What's a lot? How many units? How much is each pip worth?</p>
 
-    <script>
-        (function () {
-            const savedTheme = localStorage.getItem('theme');
-            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-            if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
-                document.documentElement.classList.add('dark-mode');
-            }
-        })();
-    </script>
-    
-    <link rel="stylesheet" href="https://structuretradelab.com/assets/css/common.css">
-    <link rel="stylesheet" href="https://structuretradelab.com/assets/css/article.css">
-    
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": "Lot Sizes in Forex: Standard, Mini, and Micro Lots Explained",
-        "description": "Lot sizes in forex explained: standard, mini, and micro lots. Learn how many units each lot represents, pip values, and which lot size is right for you.",
-        "image": "https://blog.structuretradelab.com/category/position-sizing/lot-sizes-explained/lot-sizes-featured.webp",
-        "author": {
-            "@type": "Person",
-            "name": "Structure Trade Lab",
-            "url": "https://structuretradelab.com/about"
-        },
-        "publisher": {
-            "@type": "Organization",
-            "name": "Structure Trade Lab"
-        },
-        "datePublished": "2026-05-22",
-        "dateModified": "2026-05-22",
-        "mainEntityOfPage": {
-            "@type": "WebPage",
-            "@id": "https://blog.structuretradelab.com/category/position-sizing/lot-sizes-explained/"
-        },
-        "keywords": "lot sizes in forex, standard lot, mini lot, micro lot, forex lot size explained"
-    }
-    </script>
-</head>
-<body>
+<p><strong>A lot is the standardized unit of trading in forex.</strong> It tells you how many currency units you're
+    buying or selling. Understanding lot sizes is essential because your position size (in lots) determines your risk
+    and reward.</p>
 
-    <!-- HEADER -->
-    <header>
-        <div class="container header-flex">
-            <div class="logo">
-                <a href="https://structuretradelab.com">
-                    <h1>📊 Structure Trade Lab</h1>
-                    <p>Trade with Structure. Trade with a Plan.</p>
-                </a>
-            </div>
-            
-            <div style="display: flex; align-items: center; gap: 15px;">
-                <button class="dark-mode-toggle" id="darkModeToggle" aria-label="Dark mode">
-                    <span class="toggle-icon">🌙</span>
-                    <span class="toggle-text">Dark</span>
-                </button>
-                <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-            </div>
-            
-            <nav id="mainNav">
-                <a href="https://structuretradelab.com">Home</a>
-                <a href="/">Blog</a>
-                <a href="https://tools.structuretradelab.com">Tools</a>
-                <a href="https://structuretradelab.com/about">About</a>
-            </nav>
-        </div>
-    </header>
-    
-    <div class="menu-overlay" id="menuOverlay"></div>
+<p>In this guide, I'll explain the three main lot sizes — standard, mini, and micro — their pip values, and which one
+    you should use as a beginner.</p>
 
-    <!-- ARTICLE -->
-    <article class="article-container">
-        <div class="article-header">
-            <div class="article-category"><a href="/category/position-sizing/">📐 Position Sizing</a></div>
-            <h1 class="article-title">Lot Sizes in Forex: Standard, Mini, and Micro Lots Explained</h1>
-            <div class="article-meta">
-                <span>📅 Published: May 2026</span>
-                <span>📖 6 min read</span>
-                <span>🏷️ Category: Position Sizing</span>
-            </div>
-        </div>
-        
-        <!-- FEATURED IMAGE -->
-        <div class="featured-image">
-            <img src="lot-sizes-featured.webp" 
-                 alt="Comparison of forex lot sizes — standard lot 1.0 (100,000 units), mini lot 0.1 (10,000 units), and micro lot 0.01 (1,000 units)" 
-                 loading="eager"
-                 width="800"
-                 height="450">
-        </div>
-        
-        <div class="article-content">
+<div class="info-box">
+    <strong>💡 Key Takeaway:</strong> As a beginner, trade micro lots (0.01). Each pip is worth $0.10, giving you room
+    to learn without risking significant money.
+</div>
 
-            <p>When I first started trading, I saw numbers like "0.01" and "1.00" in my platform and had no idea what they meant. What's a lot? How many units? How much is each pip worth?</p>
+<!-- TABLE OF CONTENTS -->
+<div class="table-of-contents">
+    <h3>📑 What You'll Learn</h3>
+    <ul>
+        <li><a href="#what-is-a-lot">What is a Lot in Forex?</a></li>
+        <li><a href="#standard-lot">Standard Lot (1.0)</a></li>
+        <li><a href="#mini-lot">Mini Lot (0.1)</a></li>
+        <li><a href="#micro-lot">Micro Lot (0.01)</a></li>
+        <li><a href="#comparison-table">Comparison Table</a></li>
+        <li><a href="#which-lot-size">Which Lot Size Should You Use?</a></li>
+    </ul>
+</div>
 
-            <p><strong>A lot is the standardized unit of trading in forex.</strong> It tells you how many currency units you're buying or selling. Understanding lot sizes is essential because your position size (in lots) determines your risk and reward.</p>
+<!-- INTERNAL LINK TO POST #6 -->
+<div class="internal-link">
+    📖 <strong>Related Reading:</strong> <a href="/category/position-sizing/position-sizing-explained/">Position Sizing
+        Explained</a> — Master the theory behind lot sizes.
+</div>
 
-            <p>In this guide, I'll explain the three main lot sizes — standard, mini, and micro — their pip values, and which one you should use as a beginner.</p>
+<!-- SECTION 1 -->
+<h2 id="what-is-a-lot">What is a Lot in Forex?</h2>
 
-            <div class="info-box">
-                <strong>💡 Key Takeaway:</strong> As a beginner, trade micro lots (0.01). Each pip is worth $0.10, giving you room to learn without risking significant money.
-            </div>
+<p>A <strong>lot</strong> is the standardized unit of measurement for forex trades. It represents a specific number of
+    currency units.</p>
 
-            <!-- TABLE OF CONTENTS -->
-            <div class="table-of-contents">
-                <h3>📑 What You'll Learn</h3>
-                <ul>
-                    <li><a href="#what-is-a-lot">What is a Lot in Forex?</a></li>
-                    <li><a href="#standard-lot">Standard Lot (1.0)</a></li>
-                    <li><a href="#mini-lot">Mini Lot (0.1)</a></li>
-                    <li><a href="#micro-lot">Micro Lot (0.01)</a></li>
-                    <li><a href="#comparison-table">Comparison Table</a></li>
-                    <li><a href="#which-lot-size">Which Lot Size Should You Use?</a></li>
-                </ul>
-            </div>
+<p>When you see "0.01" in your trading platform, that's a micro lot. "0.1" is a mini lot. "1.0" is a standard lot.</p>
 
-            <!-- INTERNAL LINK TO POST #6 -->
-            <div class="internal-link">
-                📖 <strong>Related Reading:</strong> <a href="/category/position-sizing/position-sizing-explained/">Position Sizing Explained</a> — Master the theory behind lot sizes.
-            </div>
+<div class="info-box">
+    <strong>📊 Quick Reference:</strong><br>
+    • Standard lot (1.0) = 100,000 units<br>
+    • Mini lot (0.1) = 10,000 units<br>
+    • Micro lot (0.01) = 1,000 units
+</div>
 
-            <!-- SECTION 1 -->
-            <h2 id="what-is-a-lot">What is a Lot in Forex?</h2>
-            
-            <p>A <strong>lot</strong> is the standardized unit of measurement for forex trades. It represents a specific number of currency units.</p>
-            
-            <p>When you see "0.01" in your trading platform, that's a micro lot. "0.1" is a mini lot. "1.0" is a standard lot.</p>
-            
-            <div class="info-box">
-                <strong>📊 Quick Reference:</strong><br>
-                • Standard lot (1.0) = 100,000 units<br>
-                • Mini lot (0.1) = 10,000 units<br>
-                • Micro lot (0.01) = 1,000 units
-            </div>
+<!-- SECTION 2 -->
+<h2 id="standard-lot">Standard Lot (1.0)</h2>
 
-            <!-- SECTION 2 -->
-            <h2 id="standard-lot">Standard Lot (1.0)</h2>
-            
-            <p>A <strong>standard lot</strong> represents 100,000 units of the base currency.</p>
-            
-            <ul>
-                <li><strong>Pip value (USD pairs):</strong> $10 per pip</li>
-                <li><strong>Margin required (1:100 leverage):</strong> $1,000</li>
-                <li><strong>Best for:</strong> Large accounts ($10,000+), experienced traders</li>
-            </ul>
-            
-            <p><strong>Example:</strong> Trading 1 standard lot of EUR/USD means you're controlling 100,000 Euros. Each pip movement is worth $10.</p>
+<p>A <strong>standard lot</strong> represents 100,000 units of the base currency.</p>
 
-            <!-- INTERNAL LINK TO POST #15 -->
-            <div class="internal-link">
-                📖 <strong>Related Reading:</strong> <a href="/category/getting-started/what-is-a-pip/">What is a Pip in Forex?</a> — Pips and lots work together. Understand both.
-            </div>
+<ul>
+    <li><strong>Pip value (USD pairs):</strong> $10 per pip</li>
+    <li><strong>Margin required (1:100 leverage):</strong> $1,000</li>
+    <li><strong>Best for:</strong> Large accounts ($10,000+), experienced traders</li>
+</ul>
 
-            <!-- SECTION 3 -->
-            <h2 id="mini-lot">Mini Lot (0.1)</h2>
-            
-            <p>A <strong>mini lot</strong> represents 10,000 units of the base currency. It's one-tenth of a standard lot.</p>
-            
-            <ul>
-                <li><strong>Pip value (USD pairs):</strong> $1 per pip</li>
-                <li><strong>Margin required (1:100 leverage):</strong> $100</li>
-                <li><strong>Best for:</strong> Intermediate traders, accounts $1,000-$5,000</li>
-            </ul>
-            
-            <p><strong>Example:</strong> Trading 0.1 lots of GBP/USD means you're controlling 10,000 British Pounds. Each pip movement is worth $1.</p>
+<p><strong>Example:</strong> Trading 1 standard lot of EUR/USD means you're controlling 100,000 Euros. Each pip movement
+    is worth $10.</p>
 
-            <!-- SECTION 4 -->
-            <h2 id="micro-lot">Micro Lot (0.01)</h2>
-            
-            <p>A <strong>micro lot</strong> represents 1,000 units of the base currency. It's one-tenth of a mini lot, and one-hundredth of a standard lot.</p>
-            
-            <ul>
-                <li><strong>Pip value (USD pairs):</strong> $0.10 per pip</li>
-                <li><strong>Margin required (1:100 leverage):</strong> $10</li>
-                <li><strong>Best for:</strong> Beginners, small accounts ($100-$1,000)</li>
-            </ul>
-            
-            <div class="info-box">
-                <strong>📌 Recommendation:</strong> Most beginners should start with <strong>micro lots (0.01)</strong>. At $0.10 per pip, you can lose 100 pips and only lose $10. This gives you room to learn.
-            </div>
+<!-- INTERNAL LINK TO POST #15 -->
+<div class="internal-link">
+    📖 <strong>Related Reading:</strong> <a href="/category/getting-started/what-is-a-pip/">What is a Pip in Forex?</a>
+    — Pips and lots work together. Understand both.
+</div>
 
-            <!-- SECTION 5 -->
-            <h2 id="comparison-table">Comparison Table</h2>
+<!-- SECTION 3 -->
+<h2 id="mini-lot">Mini Lot (0.1)</h2>
 
-            <table class="spreads-table">
-                <thead>
-                    <tr>
-                        <th>Lot Type</th>
-                        <th>Units</th>
-                        <th>Pip Value (USD pairs)</th>
-                        <th>Margin (1:100)</th>
-                        <th>Best For</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>Standard (1.0)</strong></td>
-                        <td>100,000</td>
-                        <td>$10</td>
-                        <td>$1,000</td>
-                        <td>Large accounts, professionals</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Mini (0.1)</strong></td>
-                        <td>10,000</td>
-                        <td>$1</td>
-                        <td>$100</td>
-                        <td>Intermediate traders</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Micro (0.01)</strong></td>
-                        <td>1,000</td>
-                        <td>$0.10</td>
-                        <td>$10</td>
-                        <td>Beginners, small accounts</td>
-                    </tr>
-                </tbody>
-            </table>
+<p>A <strong>mini lot</strong> represents 10,000 units of the base currency. It's one-tenth of a standard lot.</p>
 
-            <!-- SECTION 6 -->
-            <h2 id="which-lot-size">Which Lot Size Should You Use?</h2>
-            
-            <h3>Beginners (First 6-12 months)</h3>
-            <p>Use <strong>micro lots (0.01)</strong>. You can risk $0.10 per pip. A 20-pip loss costs $2. This lets you learn without blowing your account.</p>
-            
-            <h3>After Consistent Profitability (6-12 months)</h3>
-            <p>Gradually increase to <strong>mini lots (0.1)</strong>. Each pip is now $1. Your risk management must be solid before scaling up.</p>
-            
-            <h3>Professional/Full-time (2+ years profitable)</h3>
-            <p>Some trades may use <strong>standard lots (1.0)</strong>. But many professionals still trade mini and micro lots — consistency matters more than size.</p>
-            
-            <div class="warning-box">
-                <strong>⚠️ My Rule:</strong> Lot size is not a competition. Trading 0.01 lots profitably for a year is better than blowing a 1.0 lot account in a week. Start small. Prove yourself. Then scale.
-            </div>
+<ul>
+    <li><strong>Pip value (USD pairs):</strong> $1 per pip</li>
+    <li><strong>Margin required (1:100 leverage):</strong> $100</li>
+    <li><strong>Best for:</strong> Intermediate traders, accounts $1,000-$5,000</li>
+</ul>
 
-            <!-- INTERNAL LINK TO POST #5 -->
-            <div class="internal-link">
-                📖 <strong>Related Reading:</strong> <a href="/category/risk-management/risk-management-101/">Risk Management 101</a> — Lot size without risk management is dangerous. Master both.
-            </div>
+<p><strong>Example:</strong> Trading 0.1 lots of GBP/USD means you're controlling 10,000 British Pounds. Each pip
+    movement is worth $1.</p>
 
-            <hr>
+<!-- SECTION 4 -->
+<h2 id="micro-lot">Micro Lot (0.01)</h2>
 
-            <!-- CONCLUSION -->
-            <h2>Start Small, Stay Small, Scale Slowly</h2>
-            <p>The size of your lots doesn't determine your skill as a trader. I know traders who trade micro lots for years and are consistently profitable. I know traders who trade standard lots and blow their accounts monthly.</p>
-            
-            <p><strong>Start with micro lots (0.01). Prove you can be profitable. Then scale up slowly — one step at a time. Your account will thank you.</strong></p>
+<p>A <strong>micro lot</strong> represents 1,000 units of the base currency. It's one-tenth of a mini lot, and
+    one-hundredth of a standard lot.</p>
 
-            <!-- INTERNAL LINK TO POST #25 -->
-            <div class="internal-link">
-                📖 <strong>Related Reading:</strong> <a href="/category/position-sizing/position-size-calculator/">Position Size Calculator</a> — Use the free calculator to determine your exact lot size based on your risk.
-            </div>
+<ul>
+    <li><strong>Pip value (USD pairs):</strong> $0.10 per pip</li>
+    <li><strong>Margin required (1:100 leverage):</strong> $10</li>
+    <li><strong>Best for:</strong> Beginners, small accounts ($100-$1,000)</li>
+</ul>
 
-        </div>
+<div class="info-box">
+    <strong>📌 Recommendation:</strong> Most beginners should start with <strong>micro lots (0.01)</strong>. At $0.10
+    per pip, you can lose 100 pips and only lose $10. This gives you room to learn.
+</div>
 
-        <!-- SOFT CTA -->
-        <div class="blog-cta">
-            <h3>📌 Ready to Start Your Trading Journey?</h3>
-            <p>I've documented my entire broker setup — tight spreads, instant withdrawals, and why I've stuck with Exness for years.</p>
-            <a href="https://structuretradelab.com/broker-setup/" class="btn">View My Broker Setup →</a>
-            <p class="disclosure-small">📌 I'm an Introducing Broker. I earn commission when you trade. No extra cost to you.</p>
-        </div>
+<!-- SECTION 5 -->
+<h2 id="comparison-table">Comparison Table</h2>
 
-    </article>
+<table class="spreads-table">
+    <thead>
+        <tr>
+            <th>Lot Type</th>
+            <th>Units</th>
+            <th>Pip Value (USD pairs)</th>
+            <th>Margin (1:100)</th>
+            <th>Best For</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Standard (1.0)</strong></td>
+            <td>100,000</td>
+            <td>$10</td>
+            <td>$1,000</td>
+            <td>Large accounts, professionals</td>
+        </tr>
+        <tr>
+            <td><strong>Mini (0.1)</strong></td>
+            <td>10,000</td>
+            <td>$1</td>
+            <td>$100</td>
+            <td>Intermediate traders</td>
+        </tr>
+        <tr>
+            <td><strong>Micro (0.01)</strong></td>
+            <td>1,000</td>
+            <td>$0.10</td>
+            <td>$10</td>
+            <td>Beginners, small accounts</td>
+        </tr>
+    </tbody>
+</table>
 
-    <!-- FOOTER -->
-    <footer>
-        <div class="container">
-            <div class="footer-disclosure">
-                <strong>Disclosure:</strong> Structure Trade Lab is an independent educational website. As an Introducing Broker (IB), I may earn commissions when you trade through links on this site. This does not affect your trading conditions or costs.
-            </div>
-            <div class="footer-disclosure">
-                <strong>Risk Warning:</strong> Trading forex and CFDs carries a high level of risk. Past performance does not guarantee future results. Only trade with money you can afford to lose.
-            </div>
-            <p>© <span id="current-year"></span> Structure Trade Lab. All rights reserved.</p>
-            <p style="margin-top: 10px;">
-                <a href="https://structuretradelab.com">Home</a> | 
-                <a href="/">Blog</a> | 
-                <a href="https://tools.structuretradelab.com">Tools</a> |
-                <a href="https://structuretradelab.com/about">About</a>
-            </p>
-        </div>
-    </footer>
+<!-- SECTION 6 -->
+<h2 id="which-lot-size">Which Lot Size Should You Use?</h2>
 
-    <!-- JavaScript for Hamburger Menu & Year -->
-    <script src="https://structuretradelab.com/assets/js/common.js" defer></script>
-</body>
-</html>
+<h3>Beginners (First 6-12 months)</h3>
+<p>Use <strong>micro lots (0.01)</strong>. You can risk $0.10 per pip. A 20-pip loss costs $2. This lets you learn
+    without blowing your account.</p>
+
+<h3>After Consistent Profitability (6-12 months)</h3>
+<p>Gradually increase to <strong>mini lots (0.1)</strong>. Each pip is now $1. Your risk management must be solid before
+    scaling up.</p>
+
+<h3>Professional/Full-time (2+ years profitable)</h3>
+<p>Some trades may use <strong>standard lots (1.0)</strong>. But many professionals still trade mini and micro lots —
+    consistency matters more than size.</p>
+
+<div class="warning-box">
+    <strong>⚠️ My Rule:</strong> Lot size is not a competition. Trading 0.01 lots profitably for a year is better than
+    blowing a 1.0 lot account in a week. Start small. Prove yourself. Then scale.
+</div>
+
+<!-- INTERNAL LINK TO POST #5 -->
+<div class="internal-link">
+    📖 <strong>Related Reading:</strong> <a href="/category/risk-management/risk-management-101/">Risk Management
+        101</a> — Lot size without risk management is dangerous. Master both.
+</div>
+
+<hr>
+
+<!-- CONCLUSION -->
+<h2>Start Small, Stay Small, Scale Slowly</h2>
+<p>The size of your lots doesn't determine your skill as a trader. I know traders who trade micro lots for years and are
+    consistently profitable. I know traders who trade standard lots and blow their accounts monthly.</p>
+
+<p><strong>Start with micro lots (0.01). Prove you can be profitable. Then scale up slowly — one step at a time. Your
+        account will thank you.</strong></p>
+
+<!-- INTERNAL LINK TO POST #25 -->
+<div class="internal-link">
+    📖 <strong>Related Reading:</strong> <a href="/category/position-sizing/position-size-calculator/">Position Size
+        Calculator</a> — Use the free calculator to determine your exact lot size based on your risk.
+</div>
