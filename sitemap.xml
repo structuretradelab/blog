@@ -481,4 +481,12 @@
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
+
+    <url>
+        <loc>https://blog.structuretradelab.com/category/tools-resources/tradingview-review/</loc>
+        <lastmod>2026-06-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
 </urlset>
