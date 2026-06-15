@@ -1,3 +1,6 @@
+---
+---
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -42,41 +45,8 @@
 <body>
 
     <!-- HEADER -->
-    <header>
-        <div class="container header-flex">
-            <div class="logo">
-                <a href="https://structuretradelab.com">
-                    <h1>📊 Structure Trade Lab</h1>
-                    <p>Trade with Structure. Trade with a Plan.</p>
-                </a>
-            </div>
+     {% include header.html %}
 
-            <div style="display: flex; align-items: center; gap: 15px;">
-                <!-- Dark Mode Toggle Button -->
-                <button class="dark-mode-toggle" id="darkModeToggle" aria-label="Dark mode">
-                    <span class="toggle-icon">🌙</span>
-                    <span class="toggle-text">Dark</span>
-                </button>
-
-                <!-- Hamburger Button -->
-                <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-            </div>
-
-            <nav id="mainNav">
-                <a href="https://structuretradelab.com">Home</a>
-                <a href="/">Blog</a>
-                <a href="https://tools.structuretradelab.com">Tools</a>
-                <a href="https://structuretradelab.com/about">About</a>
-            </nav>
-        </div>
-    </header>
-
-    <!-- Overlay for mobile menu -->
-    <div class="menu-overlay" id="menuOverlay"></div>
 
     <!-- CATEGORY HEADER -->
     <div class="page-header">
@@ -214,26 +184,8 @@
     </div>
 
     <!-- FOOTER -->
-    <footer>
-        <div class="container">
-            <div class="footer-disclosure">
-                <strong>Disclosure:</strong> Structure Trade Lab is an independent educational website. As an
-                Introducing Broker (IB), I may earn commissions when you trade through links on this site. This does not
-                affect your trading conditions or costs.
-            </div>
-            <div class="footer-disclosure">
-                <strong>Risk Warning:</strong> Trading forex and CFDs carries a high level of risk. Past performance
-                does not guarantee future results. Only trade with money you can afford to lose.
-            </div>
-            <p>© <span id="current-year"></span> Structure Trade Lab. All rights reserved.</p>
-            <p style="margin-top: 10px;">
-                <a href="https://structuretradelab.com">Home</a> |
-                <a href="/">Blog</a> |
-                <a href="https://tools.structuretradelab.com">Tools</a> |
-                <a href="https://structuretradelab.com/about">About</a>
-            </p>
-        </div>
-    </footer>
+     {% include footer.html %}
+
 
     <!-- JavaScript for Hamburger Menu & Year -->
     <script src="https://structuretradelab.com/assets/js/common.js" defer></script>
