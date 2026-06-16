@@ -502,5 +502,12 @@
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
+
+    <url>
+        <loc>https://blog.structuretradelab.com/category/tools-resources/how-to-use-ctrader/</loc>
+        <lastmod>2026-06-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
     
 </urlset>
