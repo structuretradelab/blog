@@ -286,7 +286,8 @@
         <priority>0.8</priority>
     </url>
     
-    <!-- Risk Management Posts -->
+    <!-- Risk Management Posts -->                                                                                   <!-- Risk Management Posts -->
+
     <url>
         <loc>https://blog.structuretradelab.com/category/risk-management/risk-management-101/</loc>
         <lastmod>2026-05-10</lastmod>
@@ -343,6 +344,17 @@
         <priority>0.7</priority>
     </url>
     
+    <!-- ext Risk Management -->
+
+    <url>
+        <loc>https://blog.structuretradelab.com/category/risk-management/how-much-risk-per-trade-beginner/</loc>
+        <lastmod>2026-08-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+
+
 
     <!-- Position Sizing Posts -->                                                                             <!-- Position Sizing Posts -->
 
