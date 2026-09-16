@@ -607,6 +607,16 @@
         <priority>0.7</priority>
     </url>
 
+
+    <!-- ext strategy-analysis -->
+
+    <url>
+        <loc>https://blog.structuretradelab.com/category/strategy-analysis/identify-support-resistance-accurately/</loc>
+        <lastmod>2026-09-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
     
    <!-- mistakes Posts -->                                                                                                    <!-- mistakes Posts --> 
 
