@@ -795,5 +795,14 @@
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
+
+    <!-- ext Tools & Resources Posts -->
+
+    <url>
+        <loc>https://blog.structuretradelab.com/category/tools-resources/how-to-install-indicator-mt4/</loc>
+        <lastmod>2026-10-27</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
     
 </urlset>
