@@ -1,0 +1,239 @@
+---
+layout: article
+title: "How to Install an Expert Advisor on MT4"
+description: "How to install an Expert Advisor on MT4. Step-by-step guide to installing, attaching, and enabling automated trading robots on MetaTrader 4."
+keywords: "install ea mt4 step by step, how to install expert advisor mt4, MT4 automated trading, forex ea installation"
+date: 2026-10-28
+image: /category/tools-resources/how-to-install-ea-mt4/install-ea-mt4-featured.webp
+image-alt: "How to install an Expert Advisor on MT4 — MQL4 Experts folder with .ex4 file, Allow live trading checked, AutoTrading button green, and EA smiley face active"
+category: tools-resources
+category-icon: 🔧
+category-label: "Tools & Resources"
+read-time: 8
+---
+
+<p>You've downloaded an Expert Advisor (EA). You're ready to let a robot trade for you. But first, you need to install it.</p>
+
+<p>Installing an EA is similar to installing an indicator, but there are a few extra steps — and one critical setting that most beginners forget. If you miss it, the EA will load, but it won't trade.</p>
+
+<p>In this guide, let's walk through the process of installing, attaching, and enabling an EA on MT4.</p>
+
+<div class="info-box">
+    <strong>💡 Key Takeaway:</strong> EAs go in the <strong>MQL4 → Experts</strong> folder. After attaching to a chart, you must enable <strong>AutoTrading</strong> on the toolbar AND check <strong>"Allow live trading"</strong> in the EA settings. Both are required.
+</div>
+
+<!-- TABLE OF CONTENTS -->
+<div class="table-of-contents">
+    <h3>📑 What You'll Learn</h3>
+    <ul>
+        <li><a href="#before-you-start">Before You Start: Safety First</a></li>
+        <li><a href="#step-by-step">Step-by-Step Installation (Windows)</a></li>
+        <li><a href="#attach-ea">How to Attach the EA to a Chart</a></li>
+        <li><a href="#enable-trading">Enabling AutoTrading (The Critical Step)</a></li>
+        <li><a href="#verify">How to Verify the EA is Running</a></li>
+        <li><a href="#troubleshooting">Troubleshooting: EA Not Trading</a></li>
+    </ul>
+</div>
+
+<!-- INTERNAL LINK TO POST #41 (NEW PLAN) -->
+<div class="internal-link">
+    📖 <strong>Related Reading:</strong> <a href="/category/tools-resources/how-to-install-indicator-mt4/">How to Install an Indicator on MT4</a> — The process is similar, but EAs need extra permissions.
+</div>
+
+<!-- SECTION 1 -->
+<h2 id="before-you-start">Before You Start: Safety First</h2>
+
+<p>EAs can execute trades automatically. If something goes wrong, you could lose money fast. Before you install any EA:</p>
+
+<ul>
+    <li><strong>Test it on a demo account first.</strong> Never run an untested EA on a live account.</li>
+    <li><strong>Download from trusted sources.</strong> The MQL5 Market is the official, safest option.</li>
+    <li><strong>Understand what the EA does.</strong> Read the description. Know its strategy, risk settings, and recommended timeframe.</li>
+</ul>
+
+<div class="warning-box">
+    <strong>⚠️ Important:</strong> EAs run only while MT4 is open and connected. If your computer sleeps or loses internet, the EA stops. For 24/7 operation, you need a VPS.
+</div>
+
+<!-- SECTION 2 -->
+<h2 id="step-by-step">Step-by-Step Installation (Windows)</h2>
+
+<p>Here's how to install an EA on MT4:</p>
+
+<h3>Step 1: Download the EA</h3>
+<p>Download your EA file. It will be either a <strong>.ex4</strong> (compiled) or <strong>.mq4</strong> (source code) file.</p>
+
+<h3>Step 2: Open the MT4 Data Folder</h3>
+<ol>
+    <li>Open MetaTrader 4</li>
+    <li>Click <strong>File → Open Data Folder</strong></li>
+</ol>
+
+<h3>Step 3: Navigate to the Experts Folder</h3>
+<p>Inside the Data Folder, open: <strong>MQL4 → Experts</strong></p>
+<p>This is where MT4 looks for Expert Advisors.</p>
+
+<h3>Step 4: Copy the EA File</h3>
+<p>Copy or drag your .ex4 or .mq4 file into the <strong>Experts</strong> folder.</p>
+
+<h3>Step 5: Refresh the Navigator</h3>
+<ol>
+    <li>Return to MT4</li>
+    <li>Open the Navigator (Ctrl + N)</li>
+    <li>Right-click on <strong>Expert Advisors</strong> and select <strong>Refresh</strong></li>
+</ol>
+<p>The EA should now appear under the Expert Advisors section.</p>
+
+<div class="info-box">
+    <strong>📌 Pro Tip:</strong> If the EA doesn't appear, close and reopen MT4. The platform reloads the MQL4 folders on startup.
+</div>
+
+<!-- SECTION 3 -->
+<h2 id="attach-ea">How to Attach the EA to a Chart</h2>
+
+<p>Once the EA is in the Navigator, here's how to put it on a chart:</p>
+
+<ol>
+    <li>Open the chart for the instrument you want the EA to trade</li>
+    <li>Make sure the timeframe matches what the EA was designed for</li>
+    <li>Drag the EA from the Navigator onto the chart, or double-click it</li>
+    <li>The EA settings window opens</li>
+</ol>
+
+<h3>The Settings Window</h3>
+<p>You'll see several tabs:</p>
+<ul>
+    <li><strong>Common:</strong> Permissions (Allow live trading, Allow DLL imports)</li>
+    <li><strong>Inputs:</strong> The EA's parameters (lot size, risk, stop loss, etc.)</li>
+</ul>
+
+<p><strong>Critical step:</strong> On the <strong>Common</strong> tab, check <strong>"Allow live trading"</strong>. Without this, the EA will load but won't place trades.</p>
+
+<p>Click <strong>OK</strong> to attach the EA.</p>
+
+<!-- SECTION 4 -->
+<h2 id="enable-trading">Enabling AutoTrading (The Critical Step)</h2>
+
+<p>This is where most beginners get stuck. MT4 has <strong>two</strong> switches that must both be on for an EA to trade:</p>
+
+<table class="spreads-table">
+    <thead>
+        <tr>
+            <th>Switch</th>
+            <th>Where to Find It</th>
+            <th>What It Does</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Global AutoTrading</strong></td>
+            <td>Toolbar button (top of MT4)</td>
+            <td>Enables automated trading for the entire terminal. Must be green (play icon).</td>
+        </tr>
+        <tr>
+            <td><strong>Per-EA Permission</strong></td>
+            <td>"Allow live trading" checkbox in EA settings</td>
+            <td>Allows this specific EA to trade.</td>
+        </tr>
+    </tbody>
+</table>
+
+<p><strong>How to enable global AutoTrading:</strong></p>
+<ul>
+    <li>Look for the <strong>AutoTrading</strong> button on the toolbar</li>
+    <li>If it shows a <strong>red stop icon</strong>, click it to turn it green</li>
+</ul>
+
+<p><strong>Also check:</strong> Go to <strong>Tools → Options → Expert Advisors</strong> and ensure <strong>"Allow automated trading"</strong> is checked.</p>
+
+<div class="warning-box">
+    <strong>⚠️ The #1 Reason EAs Don't Trade:</strong> Either the global AutoTrading button is off, or "Allow live trading" wasn't checked. Both must be on.
+</div>
+
+<!-- SECTION 5 -->
+<h2 id="verify">How to Verify the EA is Running</h2>
+
+<p>After attaching the EA and enabling AutoTrading, check the top-right corner of your chart:</p>
+
+<table class="spreads-table">
+    <thead>
+        <tr>
+            <th>Icon</th>
+            <th>What It Means</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>😊 Smiley Face</strong></td>
+            <td>EA is active and trading is enabled. Everything is working.</td>
+        </tr>
+        <tr>
+            <td><strong>☹️ Frown / "X"</strong></td>
+            <td>EA is loaded but not trading. AutoTrading is off, or "Allow live trading" is unchecked.</td>
+        </tr>
+        <tr>
+            <td><strong>L</strong></td>
+            <td>Live trading is disabled in the EA settings.</td>
+        </tr>
+    </tbody>
+</table>
+
+<p>If you see a smiley face, your EA is ready. If not, double-check both switches from the previous section.</p>
+
+<!-- SECTION 6 -->
+<h2 id="troubleshooting">Troubleshooting: EA Not Trading</h2>
+
+<p>If your EA shows a smiley face but still isn't placing trades, check these common issues:</p>
+
+<table class="spreads-table">
+    <thead>
+        <tr>
+            <th>Problem</th>
+            <th>Solution</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>DLL imports needed</strong></td>
+            <td>If the EA requires .dll files, go to Tools → Options → Expert Advisors and check "Allow DLL imports".</td>
+        </tr>
+        <tr>
+            <td><strong>Symbol name mismatch</strong></td>
+            <td>Your broker's symbol might have a suffix (e.g., EURUSD.m instead of EURUSD). Check the EA's input settings or the EA code.</td>
+        </tr>
+        <tr>
+            <td><strong>Insufficient margin</strong></td>
+            <td>Check your account balance. The EA might be trying to open a position larger than your free margin allows.</td>
+        </tr>
+        <tr>
+            <td><strong>Market closed</strong></td>
+            <td>If the market is closed (weekend), the EA won't trade. Wait for market open.</td>
+        </tr>
+        <tr>
+            <td><strong>Check the logs</strong></td>
+            <td>Go to the Terminal window → Experts tab. Any errors the EA encounters will be logged there.</td>
+        </tr>
+    </tbody>
+</table>
+
+<div class="info-box">
+    <strong>📌 Pro Tip:</strong> Always check the Experts log after installing an EA. It will tell you exactly why the EA isn't trading — permission issues, invalid stops, or connection problems.
+</div>
+
+<!-- INTERNAL LINK TO POST #4 (ORIGINAL) -->
+<div class="internal-link">
+    📖 <strong>Related Reading:</strong> <a href="/category/getting-started/demo-trading-explained/">Demo Trading Explained</a> — Always test an EA on a demo account before running it live.
+</div>
+
+<hr>
+
+<!-- CONCLUSION -->
+<h2>Install, Attach, Enable — In That Order</h2>
+<p>Installing an EA is not complicated, but it requires attention to detail. The most common mistake is forgetting the global AutoTrading button. Once you've done it a few times, it becomes second nature.</p>
+
+<p><strong>Copy the file to MQL4 → Experts. Attach it to a chart. Check 'Allow live trading.' Turn on the global AutoTrading button. Verify the smiley face. That's how your EA is ready to run.</strong></p>
+
+<!-- INTERNAL LINK TO POST #1 -->
+<div class="internal-link">
+    📖 <strong>Related Reading:</strong> <a href="/category/getting-started/how-to-start-forex-trading/">How to Start Forex Trading</a> — Your complete roadmap. Master MT4 as you build your skills.
+</div>
