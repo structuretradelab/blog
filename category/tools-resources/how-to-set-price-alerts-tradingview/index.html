@@ -1,0 +1,217 @@
+---
+layout: article
+title: "How to Set Price Alerts on TradingView"
+description: "How to set price alerts on TradingView. Step-by-step guide to creating alerts for support, resistance, and breakouts so you never miss a setup."
+keywords: "how to set price alerts tradingview, TradingView alerts, TradingView price alert, forex alerts, TradingView tutorial"
+date: 2026-11-08
+image: /category/tools-resources/how-to-set-price-alerts-tradingview/tradingview-alerts-featured.webp
+image-alt: "How to set price alerts on TradingView — Create Alert dialog with Crossing Down condition, Once Per Bar Close frequency, App Push notification, and phone showing alert fired"
+category: tools-resources
+category-icon: 🔧
+category-label: "Tools & Resources"
+read-time: 8
+---
+
+<p>You've marked your key level. You know the setup. But you can't stare at the chart all day waiting for price to arrive.</p>
+
+<p>TradingView alerts solve this. You set the condition, and the platform watches the market for you. When price reaches your level, you get a notification — on your phone, in your email, or as a pop-up on your screen.</p>
+
+<p>But there's a right way and a wrong way to use alerts. Set them too loosely, and you'll be spammed with notifications. Set them too tightly, and you'll miss the move. In this guide, let's walk through how to set price alerts on TradingView so they actually help your trading.</p>
+
+<div class="info-box">
+    <strong>💡 Key Takeaway:</strong> For levels you're watching (support, resistance, breakouts), use <strong>"Once Per Bar Close"</strong> to avoid false triggers from wicks. For stop-loss alerts, the same setting matches how you actually exit a trade — a close beyond the level, not a brief poke.
+</div>
+
+<!-- TABLE OF CONTENTS -->
+<div class="table-of-contents">
+    <h3>📑 What You'll Learn</h3>
+    <ul>
+        <li><a href="#why-alerts">Why Use TradingView Alerts?</a></li>
+        <li><a href="#step-by-step">Step-by-Step: Creating a Price Alert</a></li>
+        <li><a href="#conditions">Choosing the Right Condition</a></li>
+        <li><a href="#frequency">The Frequency Setting That Matters Most</a></li>
+        <li><a href="#notifications">Notification Options</a></li>
+        <li><a href="#best-practices">Best Practices (Avoid Alert Fatigue)</a></li>
+        <li><a href="#my-routine">My Alert Routine</a></li>
+    </ul>
+</div>
+
+<!-- INTERNAL LINK TO POST #46 (NEW PLAN) -->
+<div class="internal-link">
+    📖 <strong>Related Reading:</strong> <a href="/category/tools-resources/economic-calendar-how-to-read/">What is an Economic Calendar and How to Read It</a> — Set time-based alerts for high-impact news events.
+</div>
+
+<!-- SECTION 1 -->
+<h2 id="why-alerts">Why Use TradingView Alerts?</h2>
+
+<p>Alerts reduce the need to monitor charts constantly. Markets move when you're away from the screen — during work, while sleeping, or when you're focused on something else.</p>
+
+<p><strong>What alerts are useful for:</strong></p>
+<ul>
+    <li>Monitoring support and resistance breaks</li>
+    <li>Tracking price targets</li>
+    <li>Spotting potential trend changes at key levels</li>
+    <li>Following chart patterns</li>
+    <li>Watching multiple instruments at once without staring at all of them</li>
+</ul>
+
+<p><strong>What alerts are NOT:</strong> They are not signals. They don't tell you to buy or sell. They just tell you that price has reached a condition you defined. The decision remains yours.</p>
+
+<!-- SECTION 2 -->
+<h2 id="step-by-step">Step-by-Step: Creating a Price Alert</h2>
+
+<p>Here's the exact process:</p>
+
+<h3>Step 1: Open the Chart</h3>
+<p>Log into TradingView and open the chart for the pair you want to monitor. Make sure you're on the correct symbol and that the data source matches your broker's feed if you're using broker-specific data.</p>
+
+<h3>Step 2: Identify Your Level</h3>
+<p>Before you set the alert, know <em>why</em> you're setting it. Is it a support level? A resistance zone? A breakout point? If you don't have a reason, you don't need an alert there.</p>
+
+<h3>Step 3: Open the Create Alert Window</h3>
+<p>You have three ways to do this:</p>
+<ul>
+    <li>Click the <strong>Alert</strong> button (bell icon) on the chart toolbar</li>
+    <li>Right-click directly on the price level on the chart</li>
+    <li>Press <strong>Alt + A</strong> (Windows) or <strong>Option + A</strong> (Mac)</li>
+</ul>
+
+<h3>Step 4: Set the Condition</h3>
+<p>Choose what needs to happen for the alert to fire (see the next section for details).</p>
+
+<h3>Step 5: Choose Frequency and Expiry</h3>
+<p>Select how often the alert can fire and when it expires. This is where most people get it wrong — more on this below.</p>
+
+<h3>Step 6: Choose Notification Method</h3>
+<p>Select how you want to be notified: app push, pop-up, email, or webhook.</p>
+
+<h3>Step 7: Name the Alert</h3>
+<p>Give it a clear name. "EURUSD break 1.0900; check setup" is better than "Alert 1." You'll thank yourself later.</p>
+
+<!-- SECTION 3 -->
+<h2 id="conditions">Choosing the Right Condition</h2>
+
+<p>TradingView offers several condition types:</p>
+
+<table class="spreads-table">
+    <thead>
+        <tr>
+            <th>Condition</th>
+            <th>What It Does</th>
+            <th>Best For</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Crossing</strong></td>
+            <td>Fires when price reaches or passes the level (either direction)</td>
+            <td>General level monitoring — but can fire multiple times on a wick</td>
+        </tr>
+        <tr>
+            <td><strong>Crossing Up</strong></td>
+            <td>Fires only when price moves upward through the level</td>
+            <td>Breakout alerts above resistance</td>
+        </tr>
+        <tr>
+            <td><strong>Crossing Down</strong></td>
+            <td>Fires only when price moves downward through the level</td>
+            <td>Breakdown alerts below support</td>
+        </tr>
+        <tr>
+            <td><strong>Greater Than / Less Than</strong></td>
+            <td>Fires when price is above or below the level</td>
+            <td>State-based alerts (e.g., "price is above the range")</td>
+        </tr>
+    </tbody>
+</table>
+
+<div class="warning-box">
+    <strong>⚠️ Avoid "Crossing" for levels price is hovering around.</strong> A plain crossing alert on a level that price grinds against will fire repeatedly — sometimes nine times in a minute. You'll start ignoring alerts, and then miss the one that matters.
+</div>
+
+<!-- SECTION 4 -->
+<h2 id="frequency">The Frequency Setting That Matters Most</h2>
+
+<p>This is the single most important setting. TradingView offers several frequency options:</p>
+
+<ul>
+    <li><strong>Only Once:</strong> Fires a single time, then stops</li>
+    <li><strong>Every Time:</strong> Fires every time the condition is met (can be noisy)</li>
+    <li><strong>Once Per Bar:</strong> Fires once per candle (good for approach alerts)</li>
+    <li><strong>Once Per Bar Close:</strong> Fires only when the candle closes beyond the level</li>
+</ul>
+
+<p><strong>Why "Once Per Bar Close" matters:</strong> A wick through your level doesn't mean the level is broken. A close beyond it does. The wick is the shakeout; the close is the information.</p>
+
+<p>If you're using the alert to monitor a stop-loss or a breakout level, set it to <strong>Once Per Bar Close</strong>. You'll hear about the break a few minutes later than a tick-based alert, but you'll avoid false triggers from wicks that immediately reverse.</p>
+
+<div class="info-box">
+    <strong>📌 My Rule:</strong> For support/resistance approach alerts, I use "Once Per Bar." For breakouts and stop-loss monitoring, I use "Once Per Bar Close." I never use "Every Time" — that's how you train yourself to ignore alerts.
+</div>
+
+<!-- SECTION 5 -->
+<h2 id="notifications">Notification Options</h2>
+
+<p>Choose how you want to be alerted:</p>
+
+<ul>
+    <li><strong>App Push:</strong> Best for when you're away from the computer. Requires the TradingView mobile app.</li>
+    <li><strong>Pop-up:</strong> Works while you're browsing other tabs. Requires desktop notifications enabled.</li>
+    <li><strong>Email:</strong> Good for non-urgent alerts or as a backup.</li>
+    <li><strong>Webhook:</strong> For advanced users connecting alerts to trading bots or automation tools.</li>
+    <li><strong>Sound:</strong> A simple audible cue if you're near the computer.</li>
+</ul>
+
+<p><strong>My setup:</strong> App push for everything. I don't need pop-ups or sounds — I check my phone when it buzzes. The alert message tells me what fired and what to do.</p>
+
+<!-- SECTION 6 -->
+<h2 id="best-practices">Best Practices (Avoid Alert Fatigue)</h2>
+
+<p>Too many alerts equal noise. Here's how to keep your alert system useful:</p>
+
+<ol>
+    <li><strong>Only set alerts on levels that matter.</strong> If you wouldn't trade it, don't alert on it.</li>
+    <li><strong>One alert per zone, not per tick.</strong> Set the alert on the edge of the zone nearest price, so you hear about it while there's still room to act.</li>
+    <li><strong>Name alerts clearly.</strong> Include the symbol, the level, and the action. "GBPUSD retest 1.2700" is useful. "Alert" is not.</li>
+    <li><strong>Delete old alerts.</strong> Yesterday's levels are not today's levels. Clean up before the session starts.</li>
+    <li><strong>Don't set alerts on indicators you don't trade.</strong> If you never act on RSI, don't alert on RSI.</li>
+</ol>
+
+<div class="warning-box">
+    <strong>⚠️ An ignored alert is worse than no alert.</strong> If you set so many alerts that you start swiping them away without reading, you've defeated the purpose. Fewer, higher-quality alerts.
+</div>
+
+<!-- SECTION 7 -->
+<h2 id="my-routine">My Alert Routine</h2>
+
+<p>Here's how I use TradingView alerts every day:</p>
+
+<ol>
+    <li><strong>Before the session:</strong> I mark my key levels on the 4-hour chart (support, resistance, breakout points).</li>
+    <li><strong>Set alerts:</strong> One alert per level. "Once Per Bar" for approach alerts, "Once Per Bar Close" for breakout alerts.</li>
+    <li><strong>Step away:</strong> I close the chart. The alerts will tell me when price arrives.</li>
+    <li><strong>When an alert fires:</strong> I open the chart and check for confirmation (candlestick pattern, momentum). If the setup is there, I execute on my broker's platform. If not, I delete the alert and reset.</li>
+    <li><strong>End of day:</strong> Delete any alerts that didn't trigger. Reset tomorrow with fresh levels.</li>
+</ol>
+
+<div class="info-box">
+    <strong>📌 The Mindset:</strong> Alerts are a tool for patience. They let you step away from the screen without missing the setup. They don't replace your analysis — they just tell you when it's time to look.
+</div>
+
+<!-- INTERNAL LINK TO POST #43 (NEW PLAN) -->
+<div class="internal-link">
+    📖 <strong>Related Reading:</strong> <a href="/category/tools-resources/how-to-use-tradingview-forex/">How to Use TradingView for Forex Analysis</a> — Master the platform before adding alerts.
+</div>
+
+<hr>
+
+<!-- CONCLUSION -->
+<h2>Let the Platform Watch for You</h2>
+<p>You don't need to stare at charts all day. You need to set the right alerts, on the right levels, with the right settings — then step away.</p>
+
+<p><strong>Open the chart. Mark the level. Set the alert to 'Once Per Bar Close.' Name it clearly. Step away. When it fires, check for confirmation. That's how you never miss a setup — and never become a slave to the screen.</strong></p>
+
+<!-- INTERNAL LINK TO POST #1 -->
+<div class="internal-link">
+    📖 <strong>Related Reading:</strong> <a href="/category/getting-started/how-to-start-forex-trading/">How to Start Forex Trading</a> — Your complete roadmap. Master your tools as you build your skills.
+</div>
