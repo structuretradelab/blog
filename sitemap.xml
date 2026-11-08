@@ -846,5 +846,12 @@
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
+
+    <url>
+        <loc>https://blog.structuretradelab.com/category/tools-resources/how-to-export-mt4-trade-history/</loc>
+        <lastmod>2026-11-09</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
     
 </urlset>

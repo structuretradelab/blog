@@ -1,0 +1,274 @@
+---
+layout: article
+title: "How to Export MT4 Trade History to Excel"
+description: "How to export MT4 trade history to Excel. Step-by-step guide to saving your trading history for journaling, analysis, and tax reporting."
+keywords: "export mt4 trade history, MT4 to excel, MT4 trade history export, forex trade history excel, MT4 statement"
+date: 2026-11-09
+image: /category/tools-resources/how-to-export-mt4-trade-history/export-mt4-history-featured.webp
+image-alt: "How to export MT4 trade history to Excel — Terminal Account History tab, right-click Save as Report, selecting .xlsx, and Excel spreadsheet with trade columns"
+category: tools-resources
+category-icon: 🔧
+category-label: "Tools & Resources"
+read-time: 7
+---
+
+<p>You've been trading for a few months. You want to analyze your performance. Or maybe it's tax season, and you need to report your trades.</p>
+
+<p>The problem: your trade history is buried inside MT4, and you don't know how to get it out.</p>
+
+<p>Exporting your MT4 trade history to Excel takes about 30 seconds once you know where to look. In this guide, let's walk through how to do it — and what to do with the data once you have it.</p>
+
+<div class="info-box">
+    <strong>💡 Key Takeaway:</strong> Your MT4 trade history is in the <strong>Terminal</strong> window under the <strong>Account History</strong> tab. Right-click, select <strong>Save as Report</strong>, and choose <strong>.xlsx</strong> or <strong>.html</strong> format.
+</div>
+
+<!-- TABLE OF CONTENTS -->
+<div class="table-of-contents">
+    <h3>📑 What You'll Learn</h3>
+    <ul>
+        <li><a href="#why-export">Why Export Your Trade History?</a></li>
+        <li><a href="#step-by-step">Step-by-Step: Exporting from MT4</a></li>
+        <li><a href="#html-vs-xlsx">HTML vs XLSX: Which Format to Choose</a></li>
+        <li><a href="#what-data">What Data You'll Get</a></li>
+        <li><a href="#how-to-use">How to Use the Data for Analysis</a></li>
+        <li><a href="#troubleshooting">Troubleshooting Common Issues</a></li>
+    </ul>
+</div>
+
+<!-- INTERNAL LINK TO POST #45 (NEW PLAN) -->
+<div class="internal-link">
+    📖 <strong>Related Reading:</strong> <a href="/category/tools-resources/how-to-sync-mt4-multiple-computers/">How to Sync MT4 Between Multiple Computers</a> — Keep your history consistent across machines.
+</div>
+
+<!-- SECTION 1 -->
+<h2 id="why-export">Why Export Your Trade History?</h2>
+
+<p>Your trade history is your most valuable data. Exporting it lets you:</p>
+
+<ul>
+    <li><strong>Journal properly:</strong> Analyze every trade outside the platform — entries, exits, risk, outcome</li>
+    <li><strong>Identify patterns:</strong> See which setups work and which fail over hundreds of trades</li>
+    <li><strong>Calculate performance:</strong> Win rate, average risk reward, drawdown, expectancy</li>
+    <li><strong>Prepare taxes:</strong> Most jurisdictions require trade records for reporting</li>
+    <li><strong>Back up your data:</strong> If you switch brokers or platforms, you keep your history</li>
+</ul>
+
+<div class="info-box">
+    <strong>📌 Pro Tip:</strong> Export your history at the end of every month. Save it in a dedicated folder. After a year, you'll have 12 files that tell the complete story of your trading.
+</div>
+
+<!-- SECTION 2 -->
+<h2 id="step-by-step">Step-by-Step: Exporting from MT4</h2>
+
+<p>Here's the exact process :</p>
+
+<h3>Step 1: Open the Terminal Window</h3>
+<p>In MT4, press <strong>Ctrl + T</strong> or click <strong>View → Terminal</strong> at the bottom of the platform. The Terminal panel will open at the bottom of your screen.</p>
+
+<h3>Step 2: Go to the Account History Tab</h3>
+<p>At the bottom of the Terminal panel, click the <strong>Account History</strong> tab. This shows all your closed trades.</p>
+
+<h3>Step 3: Select the Date Range</h3>
+<p>Right-click anywhere in the Account History area. Select <strong>All History</strong> to see every trade, or <strong>Custom Period</strong> to choose specific dates.</p>
+
+<h3>Step 4: Save as Report</h3>
+<p>Right-click again and select <strong>Save as Report</strong>.</p>
+
+<h3>Step 5: Choose Your Format</h3>
+<p>A dialog box appears. You have two main options:</p>
+<ul>
+    <li><strong>.html</strong> — A web page report. Opens in any browser. Can be opened in Excel but formatting may be messy.</li>
+    <li><strong>.xlsx</strong> — A native Excel file. Opens directly in Excel with clean columns.</li>
+</ul>
+<p>Choose <strong>.xlsx</strong> if you want clean data for analysis. Choose <strong>.html</strong> if you want a formatted report you can print or share.</p>
+
+<h3>Step 6: Save the File</h3>
+<p>Name the file with the date range (e.g., `MT4_History_2026-11.xlsx`) and save it to a folder you'll remember.</p>
+
+<div class="info-box">
+    <strong>📌 Pro Tip:</strong> Some versions of MT4 also offer a <strong>.csv</strong> option. If you're comfortable with data analysis, CSV is the cleanest format for importing into Excel, Google Sheets, or Python.
+</div>
+
+<!-- SECTION 3 -->
+<h2 id="html-vs-xlsx">HTML vs XLSX: Which Format to Choose</h2>
+
+<table class="spreads-table">
+    <thead>
+        <tr>
+            <th>Format</th>
+            <th>Best For</th>
+            <th>Pros</th>
+            <th>Cons</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>.xlsx</strong></td>
+            <td>Data analysis, journaling</td>
+            <td>Clean columns, opens directly in Excel, easy to sort/filter</td>
+            <td>Some MT4 builds may not offer this option</td>
+        </tr>
+        <tr>
+            <td><strong>.html</strong></td>
+            <td>Printing, sharing, visual review</td>
+            <td>Formatted report, includes summary statistics</td>
+            <td>Data is embedded in HTML — harder to manipulate</td>
+        </tr>
+        <tr>
+            <td><strong>.csv</strong></td>
+            <td>Advanced analysis, coding</td>
+            <td>Universal format, works with any tool</td>
+            <td>No formatting, requires manual column mapping</td>
+        </tr>
+    </tbody>
+</table>
+
+<div class="warning-box">
+    <strong>⚠️ If .xlsx isn't available:</strong> Save as .html, then open the file in Excel. Excel can read HTML tables. The formatting won't be perfect, but the data will be there.
+</div>
+
+<!-- SECTION 4 -->
+<h2 id="what-data">What Data You'll Get</h2>
+
+<p>When you export your history, you'll get a spreadsheet with these columns :</p>
+
+<table class="spreads-table">
+    <thead>
+        <tr>
+            <th>Column</th>
+            <th>What It Tells You</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Ticket</strong></td>
+            <td>Unique trade ID</td>
+        </tr>
+        <tr>
+            <td><strong>Open Time</strong></td>
+            <td>When you entered</td>
+        </tr>
+        <tr>
+            <td><strong>Type</strong></td>
+            <td>Buy or Sell</td>
+        </tr>
+        <tr>
+            <td><strong>Size</strong></td>
+            <td>Position size in lots</td>
+        </tr>
+        <tr>
+            <td><strong>Symbol</strong></td>
+            <td>Currency pair</td>
+        </tr>
+        <tr>
+            <td><strong>Open Price</strong></td>
+            <td>Entry price</td>
+        </tr>
+        <tr>
+            <td><strong>Close Time</strong></td>
+            <td>When you exited</td>
+        </tr>
+        <tr>
+            <td><strong>Close Price</strong></td>
+            <td>Exit price</td>
+        </tr>
+        <tr>
+            <td><strong>Profit</strong></td>
+            <td>Gross profit/loss in account currency</td>
+        </tr>
+        <tr>
+            <td><strong>Commission</strong></td>
+            <td>Broker commission</td>
+        </tr>
+        <tr>
+            <td><strong>Swap</strong></td>
+            <td>Overnight funding</td>
+        </tr>
+    </tbody>
+</table>
+
+<p><strong>What's missing:</strong> Your stop loss and take profit levels aren't always included in the basic export. If you need those, you'll need to record them manually in your journal.</p>
+
+<!-- SECTION 5 -->
+<h2 id="how-to-use">How to Use the Data for Analysis</h2>
+
+<p>Once you have the Excel file, here's what to do with it:</p>
+
+<h3>1. Calculate Your Core Metrics</h3>
+<p>Add these columns/formulas to your spreadsheet:</p>
+<ul>
+    <li><strong>Win Rate:</strong> Count of winning trades ÷ total trades</li>
+    <li><strong>Average Win:</strong> Average profit of winning trades</li>
+    <li><strong>Average Loss:</strong> Average loss of losing trades</li>
+    <li><strong>Profit Factor:</strong> Total profit ÷ total loss</li>
+    <li><strong>Expectancy:</strong> (Win Rate × Average Win) − (Loss Rate × Average Loss)</li>
+</ul>
+
+<h3>2. Group Trades by Setup</h3>
+<p>Add a column for "Setup Type" (e.g., "Support Bounce," "Breakout," "Pin Bar"). Tag each trade. Then use Excel's PivotTable to see which setups have the highest win rate.</p>
+
+<h3>3. Group Trades by Session</h3>
+<p>Add a column for "Session" (London, New York, Asian). See which session produces your best results.</p>
+
+<h3>4. Group Trades by Day of Week</h3>
+<p>See if you perform better on certain days. Some traders are consistently profitable on Tuesday-Thursday but lose on Mondays and Fridays.</p>
+
+<div class="info-box">
+    <strong>📌 Pro Tip:</strong> After 50+ trades, patterns emerge. You might discover that your "Breakout" setup has a 25% win rate, while your "Support Bounce" setup has 60%. That's actionable information you can't get from memory.
+</div>
+
+<!-- SECTION 6 -->
+<h2 id="troubleshooting">Troubleshooting Common Issues</h2>
+
+<table class="spreads-table">
+    <thead>
+        <tr>
+            <th>Problem</th>
+            <th>Solution</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Account History is empty</strong></td>
+            <td>Right-click in the Account History tab and select "All History" or "Last 3 Months." MT4 only shows recent trades by default.</td>
+        </tr>
+        <tr>
+            <td><strong>No "Save as Report" option</strong></td>
+            <td>Make sure you're right-clicking inside the Account History list, not on a specific trade. Try right-clicking on a blank area.</td>
+        </tr>
+        <tr>
+            <td><strong>Excel file won't open</strong></td>
+            <td>If you saved as .html, change the file extension to .xls and try again. Or open Excel first, then File → Open and select the .html file.</td>
+        </tr>
+        <tr>
+            <td><strong>Missing trades</strong></td>
+            <td>Check that your date range includes all trades. Some brokers split history across multiple server connections.</td>
+        </tr>
+        <tr>
+            <td><strong>Formatting is messy in Excel</strong></td>
+            <td>This happens with .html files. Use Text to Columns (Data → Text to Columns) to split the data into proper columns.</td>
+        </tr>
+    </tbody>
+</table>
+
+<div class="warning-box">
+    <strong>⚠️ Important:</strong> Your MT4 history is stored on your computer. If you uninstall MT4 or switch computers, you lose it. Export regularly and back up your files.
+</div>
+
+<!-- INTERNAL LINK TO POST #33 (NEW PLAN) -->
+<div class="internal-link">
+    📖 <strong>Related Reading:</strong> <a href="/category/trading-psychology/trading-journal/">Trading Journal: How to Track and Improve Every Trade</a> — Your exported history is the raw data for your journal.
+</div>
+
+<hr>
+
+<!-- CONCLUSION -->
+<h2>Your History is Your Edge</h2>
+<p>Most traders never export their history. They rely on memory. Memory is biased — it remembers the wins and forgets the losses. The spreadsheet doesn't.</p>
+
+<p><strong>Open the Terminal. Go to Account History. Right-click and Save as Report. Choose .xlsx. Save it with the date. Do that every month, and you'll build a data asset that makes you a better trader.</strong></p>
+
+<!-- INTERNAL LINK TO POST #1 -->
+<div class="internal-link">
+    📖 <strong>Related Reading:</strong> <a href="/category/getting-started/how-to-start-forex-trading/">How to Start Forex Trading</a> — Your complete roadmap. Master your tools as you build your skills.
+</div>
