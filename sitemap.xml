@@ -505,6 +505,15 @@
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
+
+    <!-- ext trading-psychology Posts -->
+
+    <url>
+        <loc>https://blog.structuretradelab.com/category/trading-psychology/how-to-stay-calm-losing-streak/</loc>
+        <lastmod>2026-11-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
     
 
     <!-- strategy-analysis Posts -->                                                                         <!-- strategy-analysis Posts --> 
